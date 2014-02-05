@@ -1,0 +1,23 @@
+h1
+{
+    font-family: 'Lemon', sans-serif;
+    font-size: 60px;
+    text-transform: lowercase;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.1)
+}
+
+h2
+{
+    font-family: 'Lemon', sans-serif;
+    text-transform: lowercase;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.1)
+}
+
+p
+{
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    
+}
