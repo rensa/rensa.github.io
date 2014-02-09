@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href='http://fonts.googleapis.com/css?family=Jockey+One|Roboto:300,300italic|Lemon' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300|Roboto+Condensed:400italic|Roboto+Slab:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css" />
+    
+    <!-- Google Maps initialisation code -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+        function initialize()
+        {
+            var map_canvas = document.getElementById("unsw-map-canvas");
+            var mapOptions =
+            {
+                center: new google.maps.LatLng(-32.082217, 151.234050),
+                zoom: 8,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+                panControl: false,
+                zoomControl: false
+            }
+            var map = new google.maps.Map(map_canvas, map_options);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
+
 <body>
-    <div class="screen-header">
-        <h1>rensa.co</h1>
-        <h2>Videos, climate, data</h2>
-        <p>I make videos and study the climate!</p>
+    <div id="intro-scene">
+        <h1>Rensa.co</h1>
+        <h2>I make videos, study the climate and play with data</h2>
+        <!-- left angled brackets are escaped as &lt; -->
+        <p>I &lt;3 gadgets, gaming and running. I played way too much Sonic the Hedgehog as a kid.</p>
     </div>
+    <div id="climate-scene">
+        <div class="description">
+            <h2>I study the effects of climate change</h2>
+            <div id="unsw-map-canvas"></div>
+            <p>When I'm not out fighting the crimes of motion graphics, I study the Earth's climate
+                at the <a href="http://ccrc.unsw.edu.au">Climate Change Research Centre</a> in the
+                University of New South Wales.</p>
+            <p>I'm doing a Bachelor of Advanced Science (Honours), investigating the links between
+                humidity and human health in northern Australia.</p>
+            <p>If you'd like to chat about research, climate or other academic matters, it's best
+                to hit me up at <a href="mailto:j.goldie@unsw.edu.au">j.goldie@unsw.edu.au.</a></p>
+            
+        </div>
+    </div>
+    <div id="video-scene">
+    </div>
+    <div id="data-scene">
+    </div>
+    <footer>
+    </footer>
 </body>
 </html>
