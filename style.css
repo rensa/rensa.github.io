@@ -14,9 +14,9 @@ h1
     -webkit-text-stroke: 1px rgba(0,0,0,0.1);
 }
 
-h2
+h2, #contact
 {
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     font-style: italic;
@@ -25,7 +25,7 @@ h2
     
 }
 
-p
+p, .boxout-text li
 {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
@@ -64,13 +64,11 @@ p
 {
     vertical-align:top;
     overflow:hidden;
-    padding: 0 0 0 0;
 }
 
 #climate-scene
 {
-    background: linear-gradient(#02296B, #1460E3, #66B5FA);
-    text-align: center;
+    background: linear-gradient(#02296B 0, #1460E3 50%, #66B5FA 95%, #5E4D46 95%);
 }
 
 .boxout
@@ -81,18 +79,20 @@ p
     
     padding: 20px;
     width: 50%;
-    min-width: 400px;
+    min-width: 425px;
     max-width: 500px;
-}
-
-#climate-scene .boxout
-{
-    
     
     color: #cccccc;
     background-color: rgba(52,52,52,0.5);
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px,
         rgba(255,255,255,.025) 10px, rgba(255,255,255,.025) 20px);
+}
+
+#climate-scene .boxout, #video-scene .boxout
+{
+    position: relative;
+    top: 10%;
+    left: 10%;
 }
 
 #unsw-map-canvas
@@ -110,3 +110,32 @@ p
 #climate-scene a            {color: #ff9900;}
 
 #climate-scene a:visited    {color: #ff0000;}
+
+#video-scene
+{
+    background: linear-gradient(#5E4D46 60%, #DE551F 100%);
+}
+
+footer
+{
+    height:25vh;
+    background: linear-gradient(#DE551F 0, #FFFCD6 60%, #FFFFFF 100%);
+    margin: 0;
+    padding: 20px;
+}
+
+footer h2
+{
+    margin: 0;
+    font-size: 300%;
+}
+
+#contact {list-style-type: none;}
+
+#contact li {margin-bottom: 10px;}
+
+#contact a
+{
+    color: black;
+    text-decoration: none;
+}

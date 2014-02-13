@@ -7,15 +7,13 @@
     <!-- Google Maps initialisation code -->
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script>
-        var map;
-        function initialize()
-        {
-            var mapOptions =
-            {
-                center: new google.maps.LatLng(-32.082217, 151.234050),
-                zoom: 8
+        function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(-33.917747, 151.2340060),
+                zoom: 14,
+                disableDefaultUI: true
             };
-            map = new google.maps.Map(document.getElementById('unsw-map-canvas'), map_options);
+            var map = new google.maps.Map(document.getElementById('unsw-map-canvas'), mapOptions);
         }
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
@@ -33,7 +31,7 @@
             <h2>I study the effects of climate change</h2>
             <div id="unsw-map-canvas"></div>
             <div class="boxout-text">
-                <p>When I'm not out fighting the crimes of motion graphics, I study the Earth's climate
+                <p>I spend my days studying the Earth's climate
                     at the <a href="http://ccrc.unsw.edu.au">Climate Change Research Centre</a> in the
                     University of New South Wales.</p>
                 <p>I'm doing a Bachelor of Advanced Science (Honours), investigating the links between
@@ -44,10 +42,44 @@
         </div>
     </div>
     <div id="video-scene">
-    </div>
-    <div id="data-scene">
+        <div class="boxout">
+            <h2>I make videos for people</h2>
+            <div class="boxout-text">
+                <p>When I'm not in academia, I make animated videos for people! I can help you get
+                    your message across to just about any audience possible, whether you want your
+                    clients and customers to know what makes your business special or your staff to
+                    get excited about a company initiative.</p>
+                <p>I can help you with the entire process, starting with what you want to achieve,
+                    who your audience is and where you want them to see the video. I'll storyboard
+                    the concept, go back and forth with you until you're happy with it, then whip
+                    the whole thing up. I can even help you with deployment, whether you want to put
+                    it on YouTube for the world to see, in a blog post (or both!) or send it to clients
+                    for secure internal viewing.</p>
+                <p>Like what you see? <a href="#contact">Get in touch!</a></p>
+            </div>
+            <h2>I also have other video and graphics skills!</h2>
+            <div class="boxout-text">
+                <p>I've helped clients out with other video-related tasks, including:</p>
+                <ul>
+                    <li>building standalone graphics and animations for use in videos,</li>
+                    <li>re-cutting video footage,</li>
+                    <li>building and compositing things like overlays ("James Goldie: Concerned
+                        Citizen"),</li>
+                    <li>reformatting  video for further use (including resizing, cropping and
+                        transcoding), and</li>
+                    <li>advising on video deployment options and strategy.</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <footer>
+        <h2>Say hello</h2>
+        <ul id="contact">
+            <li><a href="http://facebook.com/rensa.co">Facebook: /rensa.co</a></li>
+            <li><a href="http://twitter.com/rensa_co">Twitter: /rensa_co</a></li>
+            <li><a href="mailto:me@rensa.co">Email: me@rensa.co</a></li>
+            <li><a href="tel:+61421747208">Phone: +61 421 747 208</a></li>
+        </ul>
     </footer>
 </body>
 </html>
