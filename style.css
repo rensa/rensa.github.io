@@ -91,7 +91,9 @@ ul.nav-trail a
     width: 100%;
 
     padding-top: 100px;
-    background: linear-gradient(black 75%, #02296B), black;
+    background:
+        linear-gradient(rgba(0,0,0,1) 25%, rgba(2,41,107,0.75))  no-repeat,
+        url(patterns/dark/pw_maze_black.png)                    repeat;
 }
 
 #intro-scene h1
@@ -121,7 +123,9 @@ ul.nav-trail a
 
 #climate-scene
 {
-    background: linear-gradient(#02296B 0, #1460E3 50%, #66B5FA 95%, #5E4D46 95%);
+    background:
+        linear-gradient(rgba(2,41,107,0.75) 0, rgba(20,96,227,0.75) 50%, rgba(102,181,250,0.75) 95%, rgba(94,77,70,1) 95%) no-repeat,
+        url(patterns/dark/pw_maze_black.png) repeat;
 }
 
 #unsw-map-canvas
