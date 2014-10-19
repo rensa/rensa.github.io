@@ -1,70 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300|Roboto+Condensed:400italic|Roboto+Slab:700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css" />
-    
-    <!-- Google Maps initialisation code -->
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script>
-        function initialize() {
-            var mapOptions = {
-                center: new google.maps.LatLng(-33.917747, 151.2340060),
-                zoom: 14,
-                disableDefaultUI: true
-            };
-            var map = new google.maps.Map(document.getElementById('unsw-map-canvas'), mapOptions);
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-    <title>rensa.co</title>
-</head>
 
-<body>
-    <div id="intro-scene">
-        <h1>Rensa.co</h1>
-        <h2>I make videos, study the climate and play with data</h2>
-    </div>
-    <div id="climate-scene">
-        <div class="boxout">
-            <h2>I study the effects of climate change</h2>
-            <div id="unsw-map-canvas"></div>
-            <div class="boxout-text">
-                <p>I spend my days studying the Earth's climate
-                    at the <a href="http://ccrc.unsw.edu.au">Climate Change Research Centre</a> in the
-                    University of New South Wales.</p>
-                <p>I'm doing a Bachelor of Advanced Science (Honours), investigating the links between
-                    humidity and human health in northern Australia.</p>
-                <p>If you'd like to chat about research, climate or other academic matters, it's best
-                    to hit me up at <a href="mailto:j.goldie@unsw.edu.au">j.goldie@unsw.edu.au.</a></p>
+    <head>
+	<link rel="stylesheet" href="/boilerplate.css">
+	<link rel="stylesheet" href="index.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+	<script>var __adobewebfontsappname__ = "reflow"</script>
+	<script src="http://use.edgefonts.net/open-sans:n7,i7,n8,i8,i4,n3,i3,n4,n6,i6:all.js"></script>
+    </head>
+    <body>
+
+    <div id="primaryContainer" class="primaryContainer clearfix">
+        <div id="header" class="clearfix">
+            <div id="box" class="clearfix">
+                <p id="text">
+                <span id="textspan">Blog</span> &nbsp;<a href="/research/">Research</a>
+                </p>
+                <p id="text1">
+                <a href="/">rensa.co</a>
+                </p>
+                <p id="text2">
+                <span id="textspan1">Play</span> &nbsp;<a href="/contact/">Contact</a>
+                </p>
             </div>
         </div>
-    </div>
-    <div id="video-scene">
-        <div class="boxout">
-            <h2>I make videos for people</h2>
-            <div class="boxout-text">
-                <p>When I'm not studying, I love building awesome animated videos for people! I've helped
-                    managers communicate workplace updates, employees spice up thier job applications, and
-                    companies talk to their clients.</p>
-                <p>I can help you with a video, whether you want to put it on YouTube for the world to see,
-                    drop it into a blog post or send it securely to clients.</p>
+        <div id="shelf1" class="clearfix">
+            <p id="text3">
+            I&#x27;m James&#x21;<br /><br />I&#x27;m a climate &#x2b; health researcher at UNSW and ANU by day.&nbsp;I do dangerous experiments with video, data and science communication by night&#x21;<br />
+            </p>
+        </div>
+        <div id="shelf2" class="clearfix">
+            <div id="ColBox" class="clearfix">
+                <div id="BoxACol" class="clearfix">
+                    <a href="research/"><div id="BoxA" class="clearfix">
+                        <div id="box1" class="clearfix">
+                        </div>
+                        <p id="text4">
+                        Research
+                        </p>
+                        <p id="text5">
+                        I'm doing a PhD. Learn more about my research into the effect of humidity on human health in the tropics.
+                        </p>
+                    </div></a>
+                </div>
+                <div id="BoxBCol" class="clearfix">
+                    <div id="BoxB" class="clearfix">
+                        <div id="box2" class="clearfix">
+                        </div>
+                        <p id="text6">
+                        Play
+                        </p>
+                        <p id="text7">
+                        I used to do freelance animation. Now I'm interested in visualising data and communicating climate science&#x21;
+                        </p>
+                    </div>
+                </div>
+                <div id="BoxCCol" class="clearfix">
+                    <div id="BoxC" class="clearfix">
+                        <div id="box3" class="clearfix">
+                        </div>
+                        <p id="text8">
+                        Blog
+                        </p>
+                        <p id="text9">
+                        Watch this space&#x21;
+                        </p>
+                    </div>
+                </div>
             </div>
-            <ul class="nav-trail">
-                <li><a href="/services">&gt; Learn more</a></li>
-                <li><a href="/folio">&gt;  See my work</a></li>
-                <li><a href="#contact">&gt; Get in touch</a></li>
-            </ul>
+        </div>
+        <div id="shelf-footerpad" class="clearfix">
+        </div>
+        <div id="Footer" class="clearfix">
+            <div id="box4" class="clearfix">
+                <p id="text10">
+                Blog &nbsp;<a href="/research/">Research</a>
+                </p>
+                <p id="text11">
+                ...
+                </p>
+                <p id="text12">
+                Play &nbsp;<a href="/contact/">Contact</a>
+                </p>
+            </div>
+            <p id="text13">
+            Sequi is designed by and licensed from <a href="https://www.behance.net/gallery/sequi-free-typeface/7987725">João Andrade</a>.<br />Platformer Art Deluxe &#x28;Pixel Redux&#x29; is licensed from <a href="www.kenney.nl">Kenney Vleugels</a>.<br />Other content is copyright James Goldie.<br />&nbsp;
+            </p>
         </div>
     </div>
-    <footer>
-        <h2>Say hello</h2>
-        <ul id="contact">
-            <li><a href="http://facebook.com    /rensa.co">Fb /rensa.co</a></li>
-            <li><a href="http://twitter.com/rensa_co">Tw /rensa_co</a></li>
-            <li><a href="mailto:me@rensa.co">me@rensa.co</a></li>
-            <li><a href="tel:+61421747208">+61 421 747 208</a></li>
-        </ul>
-    </footer>
-</body>
+    </body>
 </html>

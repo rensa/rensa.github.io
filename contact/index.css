@@ -1,0 +1,412 @@
+@font-face
+{
+    font-family: Sequi;
+    src: url("/Sequi_light.otf");
+}
+
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    background-image:-webkit-linear-gradient(270deg, rgb(30, 48, 149) 0%, rgb(54, 153, 214) 100%);
+    background-image: linear-gradient(180deg, rgb(30, 48, 149) 0%, rgb(54, 153, 214) 100%);
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    padding: 0px;
+    min-width: 450px;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+body {
+    padding: 0px;
+}
+
+#header {
+    float: left;
+    height: auto;
+    clear: none;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: static;
+    top: 0px;
+    z-index: 0;
+    padding-top: 50px;
+    left: 0px;
+}
+
+#box {
+    float: none;
+    height: auto;
+    clear: none;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#text {
+    float: left;
+    font-size: 1.5em;
+    width: 225px;
+    height: auto;
+    text-align: right;
+    font-weight: 200;
+    line-height: 2em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    min-height: 88px;
+    color: rgb(255, 255, 255);
+    font-family: Sequi;
+    text-transform: uppercase;
+    margin-right: 0px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+#text2 {
+    float: left;
+    font-size: 1.5em;
+    width: 225px;
+    height: auto;
+    text-align: left;
+    font-weight: 200;
+    line-height: 2em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 88px;
+    color: rgb(255, 255, 255);
+    font-family: Sequi;
+    text-transform: uppercase;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 30px;
+}
+
+#shelf1 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    width: 100%;
+    min-height: 50px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#text3 {
+    float: none;
+    font-size: 1.5em;
+    width: 800px;
+    height: auto;
+    text-align: center;
+    font-weight: 200;
+    line-height: 1.25em;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    min-height: 160px;
+    font-family: open-sans;
+    color: rgb(255, 255, 255);
+    margin-right: auto;
+    font-style: italic;
+    padding: 0px;
+}
+
+#text1 {
+    float: left;
+    font-size: 5em;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    font-weight: 100;
+    line-height: 1em;
+    clear: none;
+    min-height: 88px;
+    font-family: Sequi;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+#shelf-footerpad {
+    float: left;
+    height: 100px;
+    margin-left: 0%;
+    margin-top: 396px;
+    clear: both;
+    width: 100%;
+    min-height: 50px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 0%;
+}
+
+#textspan1 {
+    float: none;
+    font-size: 1em;
+    line-height: 1em;
+    opacity: 0.3;
+}
+
+#textspan {
+    float: none;
+    font-size: 1em;
+    line-height: 1em;
+    opacity: 0.3;
+}
+
+#Footer {
+    float: left;
+    height: 100px;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    position: fixed;
+    top: auto;
+    left: 0%;
+    right: auto;
+    bottom: -0.7470651%;
+    display: block;
+    background-image:url("/img/footer-xtile2.gif");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-color: rgba(69, 48, 14, 0);
+    background-position: 0% -150px;
+    background-repeat: repeat no-repeat;
+}
+
+#box1 {
+    float: none;
+    height: 50px;
+    clear: none;
+    width: 450px;
+    margin: 25px auto 0px;
+    min-width: 0px;
+    max-width: none;
+    display: none;
+}
+
+#text4 {
+    float: left;
+    font-size: 1.5em;
+    width: 200px;
+    height: 50px;
+    text-align: right;
+    font-weight: 200;
+    line-height: 2em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    min-height: 0px;
+    color: rgb(255, 255, 255);
+    font-family: Sequi;
+    text-transform: uppercase;
+    margin-right: 0px;
+    padding: 0px;
+    display: block;
+    visibility: visible;
+}
+
+#text5 {
+    float: left;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: 100;
+    line-height: 1em;
+    clear: none;
+    min-height: 0px;
+    font-family: Sequi;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    visibility: visible;
+}
+
+#text6 {
+    float: left;
+    font-size: 1.5em;
+    width: 200px;
+    height: 50px;
+    text-align: left;
+    font-weight: 200;
+    line-height: 2em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(255, 255, 255);
+    font-family: Sequi;
+    text-transform: uppercase;
+    margin-right: 0px;
+    padding: 0px;
+    display: block;
+    visibility: visible;
+}
+
+#text7 {
+    float: none;
+    font-size: 0.8em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: 200;
+    line-height: 1.5em;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    min-height: 19px;
+    margin-right: auto;
+    color: rgb(255, 255, 255);
+    font-family: open-sans;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    opacity: 0.8;
+}
+
+#textspan2 {
+    float: none;
+    font-size: 1em;
+    line-height: 1.25em;
+    font-family: open-sans;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+    .primaryContainer {
+        width: 100%;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    #text {
+        height: 100%;
+        display: none;
+        margin-top: -50px;
+        margin-left: 0%;
+        clear: none;
+    }
+
+    #text2 {
+        height: 100%;
+        display: none;
+    }
+
+    #box {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #text3 {
+        width: 100%;
+    }
+
+    #text1 {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+    }
+
+    #Footer {
+        float: left;
+        margin-left: 0px;
+        margin-top: 0px;
+        clear: none;
+        width: 100%;
+        position: fixed;
+        top: auto;
+        left: 0%;
+        right: auto;
+        height: 80px;
+    }
+
+    #box1 {
+        margin: 25px auto 0px;
+        height: 50px;
+        display: block;
+    }
+
+    #text4 {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: none;
+        visibility: visible;
+        height: 50px;
+        min-height: 0px;
+    }
+
+    #text5 {
+        margin-left: 0%;
+        margin-right: 0px;
+        float: left;
+        clear: none;
+        margin-top: 0px;
+        height: 50px;
+        min-height: 0px;
+    }
+
+    #text6 {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: none;
+        visibility: visible;
+        height: 50px;
+        min-height: 0px;
+    }
+
+    #text7 {
+        float: none;
+        font-size: 0.8em;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: 200;
+        line-height: 1.5em;
+        margin-left: auto;
+        margin-top: 0px;
+        clear: none;
+        min-height: 19px;
+        margin-right: auto;
+        color: rgb(255, 255, 255);
+        font-family: open-sans;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        opacity: 0.8;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #shelf-footerpad {
+        margin-top: 6px;
+        margin-right: 0%;
+        margin-left: 0%;
+        clear: both;
+        height: 100px;
+    }
+
+    #shelf1 {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    .primaryContainer {
+        width: 100%;
+    }
+}
+
