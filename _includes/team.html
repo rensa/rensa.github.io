@@ -1,0 +1,34 @@
+<!-- Team Section -->
+    <section id="me" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Get in Touch</h2>
+                    <h3 class="section-subheading text-muted">You can touch base with me on social media or shoot me an email at either <a href="mailto:j.goldie@unsw.edu.au">j.goldie@unsw.edu.au</a> or <a href="mailto:me@rensa.co">me@rensa.co</a>.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <!-- {% for member in site.people %} -->
+                <!-- <div class="col-sm-4"> -->
+                    <div class="team-member">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="" style="max-width:250px">
+                        <h4>James Goldie</h4>
+                        <p class="text-muted">PhD Candidate</p>
+                        <ul class="list-inline social-buttons">
+                        {% for network in site.social %}
+                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                        </li>
+                        {% endfor %}
+
+                        </ul>
+                    </div>
+                <!-- </div> -->
+                <!-- {% endfor %} -->
+            </div>
+            <!-- <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
