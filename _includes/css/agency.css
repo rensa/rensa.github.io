@@ -4,6 +4,20 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+#research-papers
+{
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.nobullet-list
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -232,6 +246,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 @media(min-width:768px) {
+
     .navbar-default {
         padding: 25px 0;
         border: 0;
@@ -299,8 +314,8 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+        padding-top: 250px;
+        padding-bottom: 150px;
     }
 
     header .intro-text .intro-lead-in {
@@ -342,7 +357,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 100px 0;
     }
 }
 
@@ -580,6 +595,14 @@ section h3.section-subheading {
 }
 
 @media(min-width:992px) {
+    
+    #research-location
+    {
+        margin-top: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
     .timeline>li {
         min-height: 150px;
     }
@@ -630,7 +653,7 @@ section h3.section-subheading {
 }
 
 .team-member {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     text-align: center;
 }
 
@@ -721,7 +744,7 @@ section#contact .text-danger {
 footer {
     padding: 25px 0;
     text-align: center;
-    background-color: #333;
+    background-color: #222;
     color: #fff;
 }
 
@@ -764,6 +787,40 @@ ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
     background-color: #{{ site.color.primary }};
 }
+
+#static-header-navset
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media(min-width:768px){
+
+    #static-header-navset
+    {
+        margin-right: -5px;
+        margin-left: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+nav ul.social-buttons
+{
+    text-align: center;
+}
+
+nav ul.social-buttons li a
+{
+    color: #222;
+    background-color: #fff;
+}
+
+nav ul.social-buttons li a i
+{
+    color: #222;
+}
+
 
 .btn:focus,
 .btn:active,

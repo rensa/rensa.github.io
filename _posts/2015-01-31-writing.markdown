@@ -1,0 +1,14 @@
+---
+title: Writing
+subtitle: Climate & Health
+layout: default
+modal-id: 1
+date: 2015-01-31
+img: writing.png
+thumbnail: writing-thumb.png
+alt: Thumbnail of my writing work
+project-date: 2015&mdash;present
+description:
+---
+I write about (mostly) professional topics like climate change, statistics, health and coding on [Medium](medium.com/@rensa). Some of my written work also makes it onto the [ARCCSS Blog](http://www.climatescience.org.au/blog/jgoldie/)!
+
