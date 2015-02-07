@@ -4,6 +4,35 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
+#regpage
+{
+    padding: 100px 50px;
+}
+
+@media(min-width: 768px) {
+
+    #regpage
+    {
+        padding: 100px;
+    }
+}
+
+#regpage div.row
+    {
+        margin: 0px;
+    }
+
+    #regpage-info
+    {
+        text-align: center;
+    }
+
+    #regpage-info h3.section-subheading
+    {
+        line-height: 150%;
+    }
+
 #research-papers
 {
     padding-top: 50px;

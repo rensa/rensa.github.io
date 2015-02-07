@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+	<body id="page-top" class="index">
+
+	{% include static-header.html %}
+
+	<section id="regpage">
+		<div id="regpage-info" class="row">
+			<h3>{{ page.project-date }}</h3>
+			<h2>{{ page.title }}</h2>
+			<h3 class= "section-subheading text-muted">{{ page.description }}</h3>
+		</div>
+		<div id="regpage-content" class="row">
+			{{ content }}
+		</div>
+	</section>
+
+	{% include footer.html %}
+	{% include js-static-header.html %}
+
+    </body>
+</html>
