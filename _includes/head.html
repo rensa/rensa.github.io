@@ -6,13 +6,18 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- Facebook Open Graph properties -->
-    
-
+    <!-- Open Graph properties -->
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="{% if page.url %}{{ site.url }}{{ page.url }}{% else %}{{ site.url }}{% endif %}" /> 
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" /> 
-    <meta property="og:image" content="{% if page.img %}{{ page.img }}{% else %}{{ site.url }}/img/site-thumb.png{% endif %}" />
+    <meta property="og:image:secure_url" content="{% if page.img %}{{ site.url}}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/site-thumb.png{% endif %}" />
+
+    <!-- Twitter card meta data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:image" content="{% if page.img %}{{ site.url}}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/site-thumb.png{% endif %}" />
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">

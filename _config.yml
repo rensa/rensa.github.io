@@ -1,5 +1,7 @@
 url: https://rensa.co
-baseurl: 
+baseurl:
+twitter_username: rensa_co
+github_username: rensa
 
 # Site settings
 title: rensa.co
