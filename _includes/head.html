@@ -8,11 +8,11 @@
 
     <!-- Open Graph properties -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{% if page.url %}http://{{ site.url }}{{ page.url }}{% else %}http://{{ site.url }}{% endif %}/" /> 
+    <meta property="og:url" content="{% if page.url %}{{ site.url }}{{ page.url }}{% else %}{{ site.url }}{% endif %}/" /> 
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" /> 
-     <meta property="og:image" content="{% if page.img %}http://{{ site.url}}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/site-thumb.png{% endif %}" />
-    <meta property="og:image:secure_url" content="{% if page.img %}https://{{ site.url}}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/site-thumb.png{% endif %}" />
+     <meta property="og:image" content="{% if page.img %}{{ site.url}}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/site-thumb.png{% endif %}" />
+    <!-- <meta property="og:image:secure_url" content="{% if page.img %}https://{{ site.url}}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/site-thumb.png{% endif %}" /> -->
 
     <!-- Twitter card meta data -->
     <meta name="twitter:card" content="summary" />
