@@ -19,19 +19,41 @@
 }
 
 #regpage div.row
-    {
-        margin: 0px;
-    }
+{
+    margin: 0px;
+}
 
-    #regpage-info
-    {
-        text-align: center;
-    }
+#regpage-info
+{
+    text-align: center;
+}
 
-    #regpage-info h3.section-subheading
-    {
-        line-height: 150%;
-    }
+#regpage-info h3.section-subheading
+{
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+
+#regpage hr
+{
+    width: 100%;
+}
+
+#regpage div.share-page         {text-align: center;}
+#regpage div.share-page a       {font-size: 125%;}
+#regpage div.share-page a + a   {margin-left: 10px;}
+#regpage div.share-page p
+{
+    
+    margin-top: 50px;
+    font-size: 75%;
+    text-transform: uppercase;
+}
+
+#regpage div.share-page a:link      {text-decoration: none;}
+#regpage div.share-page a:hover     {text-decoration: none;}
+#regpage div.share-page a:visited   {text-decoration: none;}
+#regpage div.share-page a:active    {text-decoration: none;}
 
 #research-papers
 {
