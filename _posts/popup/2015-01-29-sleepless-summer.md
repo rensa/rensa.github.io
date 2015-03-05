@@ -6,7 +6,7 @@ category: popup
 modal-id: 1
 date: 2015-03-05
 img: sleepless-summer.png
-thumbnail: sleepless-summer.png
+thumbnail: sleepless-summer-thumb.png
 alt: image-alt
 project-date: Mar 2015
 description:
