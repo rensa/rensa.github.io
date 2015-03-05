@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="icon" type="image/png" href="{{ site.url }}/icon-default.png" />
 
     <!-- Open Graph properties -->
     <meta property="og:url" content="{% if page.url %}{{ site.url }}{{ page.url }}{% else %}{{ site.url }}{% endif %}/" /> 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" /> 
-     <meta property="og:image" content="{% if page.img %}{{ site.url}}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/site-thumb.png{% endif %}" />
+    <meta property="og:image" content="{% if page.img %}{{ site.url}}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/site-thumb.png{% endif %}" />
     <!-- <meta property="og:image:secure_url" content="{% if page.img %}https://{{ site.url}}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/site-thumb.png{% endif %}" /> -->
 
     <!-- Twitter card meta data -->
@@ -25,6 +26,12 @@
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    
+    <!-- extra css for some posts -->
+    {% if page.title == "What Do They Know?" %}
+    <link rel="stylesheet" href="/css/what-do-they-know.css">
+    {% endif %}
+    
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
