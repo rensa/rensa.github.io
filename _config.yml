@@ -29,7 +29,9 @@ people:
     - title: medium
       url: http://medium.com/@rensa
     - title: youtube
-      url: http://youtube.com/user/rensadotco
+      url: http://youtube.com/c/RensaCo
+    - title: google-plus
+      url: https://plus.google.com/+RensaCo
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
