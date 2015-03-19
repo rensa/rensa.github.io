@@ -27,7 +27,7 @@ people:
     - title: stack-exchange
       url: http://stackexchange.com/users/3610237/rensa
     - title: medium
-      url: http://mediu.com/@rensa
+      url: http://medium.com/@rensa
     - title: youtube
       url: http://youtube.com/user/rensadotco
 
@@ -42,7 +42,9 @@ social:
   - title: medium
     url: http://medium.com/@rensa
   - title: youtube
-    url: http://youtube.com/user/rensadotco
+    url: http://youtube.com/c/RensaCo
+  - title:google-plus
+    url: https://plus.google.com/+RensaCo
 
 # Postal address (add as many lines as necessary)
 address:
