@@ -1,29 +1,68 @@
 <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
+    <section id="portfolio" class="bg-light-gray" style="padding: 0;">
+        <div class="container" style="width: 100%">
+            <!-- <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Projects</h2>
-                    <h3 class="section-subheading text-muted">Things I've written, produced or built during office hours or in my down time.</h3>
+                    <h2 class="section-heading">Latest updates</h2>
                 </div>
-            </div>
+            </div> -->
             <div class="row">
-            {% for post in site.posts %}
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+            <!-- show latest post in each of the three categories (science, projects, writing) -->
+            {% for post in site.categories['science'] limit:1 %}
+                <!-- box containing image, post name and 'More v' link here -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="{{ post.url }}" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                <h4>{{ post.title }}</h4>
+                                <i class="fa fa-area-chart fa-3x" style="align: center; margin-top: 25px;"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive" alt="">
+                        <div class="img-responsive portfolio-non-hover" alt="{{ post.title }}" style="background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), {% if post.thumbnail %}url(img/portfolio/{{ post.thumbnail }}){% else %}url(img/portfolio/science-thumb-default.png){% endif %} no-repeat center;" class="fa fa-pencil fa-4x">
+                        </div>
                     </a>
                     <div class="portfolio-caption">
-                        <h4>{{ post.title }}</h4>
-                        <p class="text-muted">{{ post.subtitle }}</p>
+                        <a href="{{ site.url }}/science"><h4>More science</h4></a>
                     </div>
                 </div>
             {% endfor %}
+            {% for post in site.categories['projects'] limit:1 %}
+                <!-- box containing image, post name and 'More v' link here -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="{{ post.url }}" class="portfolio-link">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <h4>{{ post.title }}</h4>
+                                <i class="fa fa-cogs fa-3x" style="align: center; margin-top: 25px;"></i>
+                            </div>
+                        </div>
+                        <div class="img-responsive portfolio-non-hover" alt="{{ post.title }}" style="background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), {% if post.thumbnail %}url(img/portfolio/{{ post.thumbnail }}){% else %}url(img/portfolio/projects-thumb-default.png){% endif %} no-repeat center;" class="fa fa-pencil fa-4x">
+                        </div>
+                    </a>
+                    <div class="portfolio-caption">
+                        <a href="{{ site.url }}/projects"><h4>More projects</h4></a>
+                    </div>
+                </div>
+            {% endfor %}
+            {% for post in site.categories['writing'] limit:1 %}
+                <!-- box containing image, post name and 'More v' link here -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="{{ post.url }}" class="portfolio-link">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <h4>{{ post.title }}</h4>
+                                <i class="fa fa-pencil fa-3x" style="align: center; margin-top: 25px;"></i>
+                            </div>
+                        </div>
+                        <div class="img-responsive portfolio-non-hover" alt="{{ post.title }}" style="background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), {% if post.thumbnail %}url(img/portfolio/{{ post.thumbnail }}){% else %}url(img/portfolio/writing-thumb-default.png){% endif %} no-repeat center;" class="fa fa-pencil fa-4x">
+                        </div>
+                    </a>
+                    <div class="portfolio-caption">
+                        <a href="{{ site.url }}/writing"><h4>More writing</h4></a>
+                    </div>
+                </div>
+            {% endfor %}
+            
             </div>
         </div>
     </section>

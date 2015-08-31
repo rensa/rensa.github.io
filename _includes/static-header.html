@@ -21,12 +21,16 @@
                     <!-- <li>
                         <a class="page-scroll" href="/">James Goldie</a>
                     </li> -->
+                    {% for cat in site.categories %}
+                    <li>
+                        <a href="{{ site.url }}/{{ cat[0] }}">{{ cat[0] }}</a>
+                    </li>
+                    {% endfor %}
                     <ul class="list-inline social-buttons">
                     {% for network in site.social %}
                     <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a></li>
                     {% endfor %}
                     </ul>
-
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

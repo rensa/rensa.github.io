@@ -18,21 +18,11 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    {% for cat in site.categories %}
                     <li>
-                        <a class="page-scroll" href="#portfolio">Projects</a>
+                        <a href="{{ site.url }}/{{ cat[0] }}">{{ cat[0] }}</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#research">Research</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#social">Social</a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li> -->
+                    {% endfor %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -46,7 +36,7 @@
             <div class="intro-text">
                 <div class="intro-heading">James Goldie</div>
                 <div class="intro-lead-in">I'm a climate researcher based in Canberra, Australia!</div>
-                <a href="#portfolio" class="page-scroll btn btn-xl">Have a look at what I do</a>
+                <a href="#portfolio" class="page-scroll btn btn-xl">Here's what I'm up to</a>
             </div>
         </div>
     </header>

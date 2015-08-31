@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+	<body id="page-top" class="index">
+
+	{% include static-header.html %}
+
+	{% include research.html %}
+	<section id="regpage" class="bg-light-gray" style="padding-top: 60px;">
+		
+		<div class="row">
+			<h1 style="text-align: center; margin-bottom: 50px;">My published work</h2>
+		</div>
+		{% for post in site.categories['science'] %}
+		<div id="regpage-info" class="row">
+			<!-- insert icon depending on type of work -->
+			{% if post.work-type == 'paper' %}	
+			<i class="fa fa-file-text-o fa-3x"></i>
+			{% elsif post.work-type == 'poster' %}
+			<i class="fa fa-image fa-3x"></i>
+			{% elsif post.work-type == 'presentation' %}
+			<i class="fa fa-film fa-3x"></i>
+			{% endif %}
+			
+			<h3>{{ post.project-date }}</h3>
+			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+			<h3 class= "section-subheading text-muted">{{ post.description }}</h3>
+		<hr />
+		</div>
+		{% endfor %}
+		<div id="regpage-content" class="row">
+			{{ content }}
+		</div>
+	</section>
+
+	{% include footer.html %}
+	{% include js-static-header.html %}
+
+    </body>
+</html>

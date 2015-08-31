@@ -20,40 +20,36 @@ people:
   pic: 1
   position: PhD Candidate
   social:
+    - title: facebook
+      url: http://facebook.com/rensa.co
     - title: twitter
       url: http://twitter.com/rensa_co
     - title: linkedin
       url: http://linkedin.com/in/rensaco
     - title: stack-exchange
       url: http://stackexchange.com/users/3610237/rensa
-    - title: medium
-      url: http://medium.com/@rensa
     - title: youtube
       url: http://youtube.com/c/RensaCo
-    - title: google-plus
-      url: https://plus.google.com/+RensaCo
+    - title: medium
+      url: https://medium.com/@rensa
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: facebook
+    url: http://facebook.com/rensa.co
   - title: twitter
     url: http://twitter.com/rensa_co
   - title: linkedin
     url: http://linkedin.com/in/rensaco
   - title: stack-exchange
     url: http://stackexchange.com/users/3610237/rensa
-  - title: medium
-    url: http://medium.com/@rensa
   - title: youtube
     url: http://youtube.com/c/RensaCo
-  - title: google-plus
-    url: https://plus.google.com/+RensaCo
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: "J7.222, Jaeger Bldg J7"
-  - line: The Australian National University
-  - line: "Mills Rd, Acton, ACT 2601"
+  - title: medium
+    url: https://medium.com/@rensa
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: "/:categories/:title/"
+paginate: 5
+paginate_path: "/:categories/:num"
