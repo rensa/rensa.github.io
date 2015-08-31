@@ -18,7 +18,7 @@
                                 <i class="fa fa-area-chart fa-3x" style="align: center; margin-top: 25px;"></i>
                             </div>
                         </div>
-                        <div class="img-responsive portfolio-non-hover" alt="{{ post.title }}" style="background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), {% if post.thumbnail %}url(img/portfolio/{{ post.thumbnail }}){% else %}url(img/portfolio/science-thumb-default.png){% endif %} no-repeat center;" class="fa fa-pencil fa-4x">
+                        <div class="img-responsive portfolio-non-hover" alt="{{ post.title }}" style="background: {% if post.thumbnail %}linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(img/portfolio/{{ post.thumbnail }}){% else %}url(img/portfolio/science-thumb-default.png){% endif %} no-repeat center;">
                         </div>
                     </a>
                     <div class="portfolio-caption">
@@ -36,7 +36,7 @@
                                 <i class="fa fa-cogs fa-3x" style="align: center; margin-top: 25px;"></i>
                             </div>
                         </div>
-                        <div class="img-responsive portfolio-non-hover" alt="{{ post.title }}" style="background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), {% if post.thumbnail %}url(img/portfolio/{{ post.thumbnail }}){% else %}url(img/portfolio/projects-thumb-default.png){% endif %} no-repeat center;" class="fa fa-pencil fa-4x">
+                        <div class="img-responsive portfolio-non-hover" alt="{{ post.title }}" style="background: {% if post.thumbnail %}linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(img/portfolio/{{ post.thumbnail }}){% else %}url(img/portfolio/projects-thumb-default.png){% endif %} no-repeat center;">
                         </div>
                     </a>
                     <div class="portfolio-caption">
@@ -54,7 +54,7 @@
                                 <i class="fa fa-pencil fa-3x" style="align: center; margin-top: 25px;"></i>
                             </div>
                         </div>
-                        <div class="img-responsive portfolio-non-hover" alt="{{ post.title }}" style="background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), {% if post.thumbnail %}url(img/portfolio/{{ post.thumbnail }}){% else %}url(img/portfolio/writing-thumb-default.png){% endif %} no-repeat center;" class="fa fa-pencil fa-4x">
+                        <div class="img-responsive portfolio-non-hover" alt="{{ post.title }}" style="background: {% if post.thumbnail %}linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(img/portfolio/{{ post.thumbnail }}){% else %}url(img/portfolio/writing-thumb-default.png){% endif %} no-repeat center;">
                         </div>
                     </a>
                     <div class="portfolio-caption">

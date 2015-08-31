@@ -4,7 +4,7 @@ layout: regpage
 category: writing
 date: 2015-01-29
 img: writing.png
-thumbnail: writing-thumb.png
+thumbnail: research-stayed-thumb.png
 alt: Thumbnail of my writing work
 ext-link: https://medium.com/@rensa/research-came-for-the-answer-stayed-for-the-question-79f6be1e5ae
 project-date: Jan 2015
