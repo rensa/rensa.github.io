@@ -49,7 +49,10 @@ social:
     url: http://youtube.com/c/RensaCo
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 permalink: "/:categories/:title/"
 paginate: 5
 paginate_path: "/:categories/:num"
+
+redcarpet:
+    extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]

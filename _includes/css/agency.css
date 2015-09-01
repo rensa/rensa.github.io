@@ -4,6 +4,18 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+figure
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+figure figcaption
+{
+    color: #777;
+    font-size: 10pt;
+}
+
 html, body, #regpage
 {
     height: 100%;
