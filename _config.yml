@@ -28,10 +28,10 @@ people:
       url: http://linkedin.com/in/rensaco
     - title: stack-exchange
       url: http://stackexchange.com/users/3610237/rensa
+    - title: github
+      url: https://github.com/rensa
     - title: youtube
       url: http://youtube.com/c/RensaCo
-    - title: medium
-      url: https://medium.com/@rensa
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -43,10 +43,10 @@ social:
     url: http://linkedin.com/in/rensaco
   - title: stack-exchange
     url: http://stackexchange.com/users/3610237/rensa
+  - title: github
+    url: https://github.com/rensa
   - title: youtube
     url: http://youtube.com/c/RensaCo
-  - title: medium
-    url: https://medium.com/@rensa
 
 # Build settings
 markdown: kramdown
