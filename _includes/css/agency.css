@@ -16,6 +16,15 @@ figure figcaption
     font-size: 10pt;
 }
 
+a.updates
+{
+    position: relative;
+    top: -80px;
+    display: block;
+    height: 0;
+    width: 0;
+}
+
 html, body, #regpage
 {
     height: 100%;

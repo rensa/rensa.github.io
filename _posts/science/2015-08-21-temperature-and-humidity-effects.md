@@ -5,7 +5,7 @@ layout: regpage
 category: science
 date: 2015-08-21
 img: writing.png
-
+thumbnail: goldie-etal-2015-thumb.png
 alt: Thumbnail of my writing work
 project-date: Aug 2015
 work-type: paper

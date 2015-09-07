@@ -3,7 +3,6 @@ title: Freelance Animation
 layout: regpage
 category: projects
 date: 2014-12-31
-img: animation-thumb.gif
 thumbnail: animation-thumb.png
 alt: image-alt
 project-date: 2010&mdash;2014

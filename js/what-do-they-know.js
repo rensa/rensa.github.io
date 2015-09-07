@@ -1,3 +1,0 @@
-$(function  () {
-  $("ol.unsorted").sortable()
-})
