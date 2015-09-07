@@ -20,12 +20,13 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:image" content="{% if page.img %}{{ site.url}}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/site-thumb.png{% endif %}" />
+    <meta name="twitter:image" content="{% if page.img %}{{ site.url }}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/site-thumb.png{% endif %}" />
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
 
     <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ "/css/academicons.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
     
     <!-- extra css for some posts -->

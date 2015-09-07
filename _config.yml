@@ -20,33 +20,37 @@ people:
   pic: 1
   position: PhD Candidate
   social:
-    - title: facebook
+    - title: fa fa-facebook
       url: http://facebook.com/rensa.co
-    - title: twitter
+    - title: fa fa-twitter
       url: http://twitter.com/rensa_co
-    - title: linkedin
+    - title: fa fa-linkedin
       url: http://linkedin.com/in/rensaco
-    - title: stack-exchange
+    - title: fa fa-stack-exchange
       url: http://stackexchange.com/users/3610237/rensa
-    - title: github
+    - title: fa fa-github
       url: https://github.com/rensa
-    - title: youtube
-      url: http://youtube.com/c/RensaCo
+    - title: ai ai-researchgate
+      url: https://www.researchgate.net/profile/James_Goldie2
+    # - title: fa fa-youtube
+    #   url: http://youtube.com/c/RensaCo
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: facebook
+  - title: fa fa-facebook
     url: http://facebook.com/rensa.co
-  - title: twitter
+  - title: fa fa-twitter
     url: http://twitter.com/rensa_co
-  - title: linkedin
+  - title: fa fa-linkedin
     url: http://linkedin.com/in/rensaco
-  - title: stack-exchange
+  - title: fa fa-stack-exchange
     url: http://stackexchange.com/users/3610237/rensa
-  - title: github
+  - title: fa fa-github
     url: https://github.com/rensa
-  - title: youtube
-    url: http://youtube.com/c/RensaCo
+  - title: ai ai-researchgate
+    url: https://www.researchgate.net/profile/James_Goldie2
+  # - title: fa fa-youtube
+  #   url: http://youtube.com/c/RensaCo
 
 # Build settings
 markdown: redcarpet
