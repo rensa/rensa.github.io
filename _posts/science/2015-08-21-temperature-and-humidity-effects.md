@@ -9,7 +9,12 @@ thumbnail: goldie-etal-2015-thumb.png
 alt: Thumbnail of my writing work
 project-date: Aug 2015
 work-type: paper
-description: Goldie J, Sherwood S C, Green D & Alexander L (2015). Temperature and humidity effects on hospital morbidity in Darwin, Australia. Annals of Global Health. doi 10.1016/j.aogh.2015.07.003 (Accepted)
+ref-authors: Goldie J, Sherwood S C, Green D & Alexander L
+ref-year: 2015
+ref-title: Temperature and humidity effects on hospital morbidity in Darwin, Australia
+ref-journal: Annals of Global Health
+ref-vol: 81(3):333-341
+ref-doi: 10.1016/j.aogh.2015.07.003
 ---
 Looking for a more visual primer on this? [Here's a presentation I gave on it]({% post_url science/2015-07-16-amos-2015 %}).
 
