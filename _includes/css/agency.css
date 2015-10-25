@@ -26,6 +26,11 @@ a.updates
     width: 0;
 }
 
+#regpage-content h2, #regpage-content h3, #regpage-content h4
+{
+    margin-top: 40px;
+}
+
 html, body, #regpage
 {
     height: 100%;
@@ -75,8 +80,6 @@ body > #regpage
     width: 100%;
     max-width: 800px;
 }
-
-
 
 #regpage div.share-page         {text-align: center;}
 #regpage div.share-page a       {font-size: 125%;}

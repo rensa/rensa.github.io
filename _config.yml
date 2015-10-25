@@ -29,9 +29,9 @@ people:
     - title: fa fa-stack-exchange
       url: http://stackexchange.com/users/3610237/rensa
     - title: fa fa-github
-      url: https://github.com/rensa
+      url: http://github.com/rensa
     - title: ai ai-researchgate
-      url: https://www.researchgate.net/profile/James_Goldie2
+      url: http://www.researchgate.net/profile/James_Goldie2
     # - title: fa fa-youtube
     #   url: http://youtube.com/c/RensaCo
 
@@ -46,9 +46,9 @@ social:
   - title: fa fa-stack-exchange
     url: http://stackexchange.com/users/3610237/rensa
   - title: fa fa-github
-    url: https://github.com/rensa
+    url: http://github.com/rensa
   - title: ai ai-researchgate
-    url: https://www.researchgate.net/profile/James_Goldie2
+    url: http://www.researchgate.net/profile/James_Goldie2
   # - title: fa fa-youtube
   #   url: http://youtube.com/c/RensaCo
 
