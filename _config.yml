@@ -55,8 +55,6 @@ social:
 # Build settings
 markdown: redcarpet
 permalink: "/:categories/:title/"
-# paginate: 5
-# paginate_path: "/:categories/:num"
 
 redcarpet:
     extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
