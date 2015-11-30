@@ -6,6 +6,7 @@ category: science
 date: 2015-08-21
 img: writing.png
 thumbnail: goldie-etal-2015-thumb.png
+ext-link: http://www.researchgate.net/publication/284913519_Temperature_and_Humidity_Effects_on_Hospital_Morbidity_in_Darwin_Australia
 alt: Thumbnail of my writing work
 project-date: Aug 2015
 work-type: paper
