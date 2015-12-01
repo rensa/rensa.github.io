@@ -53,7 +53,7 @@ social:
   #   url: http://youtube.com/c/RensaCo
 
 # Build settings
-markdown: redcarpet
+# markdown: redcarpet
 permalink: "/:categories/:title/"
 
 # redcarpet:
