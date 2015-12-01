@@ -16,7 +16,7 @@
 		<div id="regpage-info" class="row">
 				
 			<h3>{{ post.project-date }}</h3>
-			<a href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url }}{% endif %}"><h2>{{ post.title }}</h2></a>
+			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
 			<h3 class= "section-subheading text-muted">{{ post.description }}</h3>
 		<hr />
 		</div>

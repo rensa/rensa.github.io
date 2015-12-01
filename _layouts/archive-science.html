@@ -25,7 +25,7 @@
 			{% endif %}
 			
 			<h3>{{ post.project-date }}</h3>
-			<a href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url }}{% endif %}"><h2>{{ post.title }}</h2></a>
+			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
 			<!-- if it's a paper, insert a reference. if not, insert the description -->
 			{% if post.work-type == 'paper' %}
 			<h3 class="section-subheading text-muted">{{ post.ref-authors }} ({{ post.ref-year }}). {{ post.ref-title }}. {{ post.ref-journal }}{% if post.ref-vol %} {{ post.ref-vol }}{% endif %}. {% if post.ref-doi %}doi:{{ post.ref-doi }}{% endif %}</h3>
