@@ -16,7 +16,7 @@ ref-journal: Annals of Global Health
 ref-vol: 81(3):333-341
 ref-doi: 10.1016/j.aogh.2015.07.003
 ---
-Looking for a more visual primer on this? [Here's a presentation I gave on it]({% post_url science/2015-07-16-amos-2015 %}).
+Looking for a more visual primer on this? [Here's a presentation I gave on it]({% post_url 2015-07-16-amos-2015 %}).
 
 **Abstract**
 

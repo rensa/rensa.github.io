@@ -53,8 +53,10 @@ social:
   #   url: http://youtube.com/c/RensaCo
 
 # Build settings
-# markdown: redcarpet
+markdown: redcarpet
 permalink: "/:categories/:title/"
+# css for the syntax highlighting is manually linekd in _includes/head.html
 
-# redcarpet:
-    # extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
+redcarpet:
+    extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
+
