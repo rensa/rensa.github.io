@@ -1,4 +1,7 @@
-.highlight pre { background-color: #49483e }
+.highlight pre { background-color: #49483e; padding: 0px; margin: 0px; }
+/* .highlight .code pre {  } */
+.highlight pre.lineno { background-color: #262620; padding: 10px; }
+.highlight code pre { border: 0px; border-radius: 0px; }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
 .highlight .k { color: #66d9ef } /* Keyword */

@@ -4,6 +4,13 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/* override boostrap ode block formatting */
+code,kbd,pre,samp
+{
+    /* font-family: Menlo,Monaco,Consolas,"Courier New",monospace */
+    font-size: 12px;
+}
+
 figure
 {
     margin-top: 25px;

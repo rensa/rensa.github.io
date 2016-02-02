@@ -28,7 +28,7 @@ I had a few requirements, though. I wanted to be able to do this:
 
 The existing code (which is [now on Github](https://github.com/rensa/ccrc-weather-station-uploads)—I'm working on getting the code that sits on the station itself up at a later date) already uses [ffmpeg](https://ffmpeg.org/) to stitch the image sequence together. Because the images aren't taken at regular intervals (though the station tries very hard), this script uses ffmpeg's concat filter, which accepts a list of image paths, to render the video:
 
-{% highlight shell %}
+{% highlight shell linenos=table %}
     # get the list of files in the matching date-time range
     find "$DATA_DIR"/images -type f -mmin -"$VID_START" -mmin +"$VID_END" > custom-list.txt
 
