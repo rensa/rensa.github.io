@@ -3,12 +3,12 @@ title: Global Game Jam 2016 (Raceline)
 layout: regpage
 category: projects
 date: 2016-02-02
-thumbnail: raceline-thumb.jpg
+thumbnail: raceline-thumb.png
 alt: Raceline
 project-date: Jan 2016
 description: We made a dumb little JavaScript game. Which is more of a game than I've made before!
 ---
-We made a game! And you can [go play it](flairgenes.github.io/raceline) on your computer or phone right now! It's small and dumb, but it works, and I love it.
+We made a game! And you can [go play it](http://flairgenes.github.io/raceline) on your computer or phone right now! It's small and dumb, but it works, and I love it.
 
 I was pretty determined to try [Global Game Jam](globalgamejam.org) this year. Game development is something I put aside as a career choice at the end of high school; I wanted to continue do it as an amateur (although the indie scene hadn't exploded back then), but I was falling out of love with code back then, so it never really stuck.
 
@@ -18,7 +18,7 @@ I've tinkered with Unity a bit, and I'd love to use it more, but that's not some
 
 {% include figure.html url='/img/portfolio/raceline-thumb.png' %}
 
-As it happens, we [cobbled something together!](flairgenes.github.io/raceline) We spent most of the first half grappling with the engine, but we all came out of it understanding how the library makes the magic happen with sprites and tilesets, and we were able to get a working demo functioning. It's a little race car game (think Micro-Machines) where the idea was to stick to the line on subsequent laps. We had some ideas about how to riff on that as the game progressed, but it took most of two days just to get the initial idea happening.
+As it happens, we [cobbled something together!](http://flairgenes.github.io/raceline) We spent most of the first half grappling with the engine, but we all came out of it understanding how the library makes the magic happen with sprites and tilesets, and we were able to get a working demo functioning. It's a little race car game (think Micro-Machines) where the idea was to stick to the line on subsequent laps. We had some ideas about how to riff on that as the game progressed, but it took most of two days just to get the initial idea happening.
 
 The really rewarding thing is that the engine is complex enough and performance-focussed enough (with its JS base) to get interesting ideas working but simple enough that I'm not using a complete black box. Plus, with HTML5/CSS/JS you can see and publish the results immediately: you can leave a simple web server like Python or Node running in the background for testing or publish to Github Pages to show everyone else (though we also learned that this stack does _not_ mean completely trivial cross-browser compatibility). It works using keyboard controls or touchscreen buttons that were a cinch to set up (and it supports more complex touchscreen controls if you desire them). So even as we were finishing the jam up, I could ask my friends interstate and my partner overseas to test on their phones.
 
