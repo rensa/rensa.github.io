@@ -741,13 +741,6 @@ section h3.section-subheading {
 }
 
 @media(min-width:992px) {
-    
-    #research-location
-    {
-        margin-top: 50px;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
 
     .timeline>li {
         min-height: 150px;
