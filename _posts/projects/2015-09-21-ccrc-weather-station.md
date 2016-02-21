@@ -3,7 +3,8 @@ title: CCRC Weather Station
 layout: regpage
 category: projects
 date: 2015-09-21
-thumbnail: weather-station-thumb.jpg
+thumbnail: thumb-2015-09-21-ccrc-weather-station.jpg
+img: thumb-2015-09-21-ccrc-weather-station.jpg
 alt: image-alt
 project-date: 2014&mdash;2015
 description: Raspberry Pi + camera + enthusiast weather station + really tall building = epic weather data

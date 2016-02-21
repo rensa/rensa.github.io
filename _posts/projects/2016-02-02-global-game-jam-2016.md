@@ -3,7 +3,8 @@ title: Global Game Jam 2016 (Raceline)
 layout: regpage
 category: projects
 date: 2016-02-02
-thumbnail: raceline-thumb.png
+thumbnail: thumb-2016-02-02-global-game-jam-2016.png
+img: thumb-2016-02-02-global-game-jam-2016.png
 alt: Raceline
 project-date: Jan 2016
 description: We made a dumb little JavaScript game. Which is more of a game than I've made before!
@@ -16,7 +17,7 @@ But since I started research, I've started to really enjoy coding again. At uni,
 
 I've tinkered with Unity a bit, and I'd love to use it more, but that's not something to learn over a weekend. I had a few friends who were in a similar position to me—coders who had some familiarity with JS but who weren't doing game dev professionally even though it interested them—so we decided to find a [lightweight JS game dev library](www.html5quintus.com) and have a go, even if it meant we came up with a pile of crap after 48 hours.
 
-{% include figure.html url='/img/portfolio/raceline-thumb.png' %}
+{% include figure.html url='/img/portfolio/raceline.png' %}
 
 As it happens, we [cobbled something together!](http://flairgenes.github.io/raceline) We spent most of the first half grappling with the engine, but we all came out of it understanding how the library makes the magic happen with sprites and tilesets, and we were able to get a working demo functioning. It's a little race car game (think Micro-Machines) where the idea was to stick to the line on subsequent laps. We had some ideas about how to riff on that as the game progressed, but it took most of two days just to get the initial idea happening.
 

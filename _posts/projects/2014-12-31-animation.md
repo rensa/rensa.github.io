@@ -3,7 +3,8 @@ title: Freelance Animation
 layout: regpage
 category: projects
 date: 2014-12-31
-thumbnail: animation-thumb.png
+img: thumb-2014-12-31-animation.png
+thumbnail: thumb-2014-12-31-animation.png
 alt: image-alt
 project-date: 2010&mdash;2014
 description: I used to be a freelance animator!

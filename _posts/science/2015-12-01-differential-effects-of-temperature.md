@@ -4,8 +4,8 @@ subtitle: Differential effects of temperature extremes on hospital admission rat
 layout: regpage
 category: science
 date: 2015-12-01
-img: writing.png
-thumbnail: goldie-etal-2015-thumb.png
+img: thumb-2015-12-01-differential-effects-of-temperature.png
+thumbnail: thumb-2015-12-01-differential-effects-of-temperature.png
 alt: Differential effects of temperature extremes on hospital admission rates for respiratory disease between Indigenous and non-Indigenous Australians in the Northern Territory
 project-date: Nov 2015
 work-type: paper

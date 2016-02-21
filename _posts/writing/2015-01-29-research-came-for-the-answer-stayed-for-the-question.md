@@ -3,8 +3,8 @@ title: Research—came for the answer, stayed for the question
 layout: regpage
 category: writing
 date: 2015-01-29
-img: writing.png
-thumbnail: research-stayed-thumb.png
+img: writing-thumb-default.png
+thumbnail: writing-thumb-default.png
 alt: Thumbnail of my writing work
 ext-link: https://medium.com/@rensa/research-came-for-the-answer-stayed-for-the-question-79f6be1e5ae
 project-date: Jan 2015

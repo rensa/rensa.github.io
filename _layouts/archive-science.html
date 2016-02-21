@@ -11,10 +11,20 @@
 	<section id="regpage" class="bg-light-gray" style="padding-top: 60px;">
 		
 		<div class="row">
-			<h1 style="text-align: center; margin-bottom: 50px;">My published work</h2>
+			<h1 class="text-center" style="margin-bottom: 50px;">My published work</h2>
+            <!-- post category toggles -->
+            <div class="text-center">
+                <div class="btn-group" data-toggle="buttons" role="group" aria-label="..." style="margin-bottom: 50px;">
+                    <button type="button" class="btn btn-primary">Papers</button>
+                    <button type="button" class="btn btn-primary">Posters</button>
+                    <button type="button" class="btn btn-primary">Presentations</button>
+                </div>
+            </div>
 		</div>
-		{% for post in site.categories['science'] %}
-		<div id="regpage-info" class="row">
+		
+        <!-- create post entries for each post, but hide them by default! -->
+        {% for post in site.categories['science'] %}
+		<div id="regpage-info" class="row work-type-{{ post.work-type }}" style="display: none;">
 			<!-- insert icon depending on type of work -->
 			{% if post.work-type == 'paper' %}	
 			<i class="fa fa-file-text-o fa-3x"></i>
@@ -42,6 +52,7 @@
 
 	{% include footer.html %}
 	{% include js-static-header.html %}
+    <script src="{{ "/js/archive-science.js" | prepend: site.baseurl }}"></script>
 
     </body>
 </html>

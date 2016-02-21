@@ -3,7 +3,8 @@ title: Weather station—timelapse update
 layout: regpage
 category: projects
 date: 2016-01-06
-thumbnail: weather-station-thumb.jpg
+thumbnail: thumb-2016-01-06-weather-station-update.jpg
+img: thumb-2016-01-06-weather-station-update.jpg
 alt: image-alt
 project-date: Jan 2016
 description: tl;dr ffmpeg is pretty powerful!
