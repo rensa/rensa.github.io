@@ -11,11 +11,11 @@ description: We made a dumb little JavaScript game. Which is more of a game than
 ---
 We made a game! And you can [go play it](http://flairgenes.github.io/raceline) on your computer or phone right now! It's small and dumb, but it works, and I love it.
 
-I was pretty determined to try [Global Game Jam](globalgamejam.org) this year. Game development is something I put aside as a career choice at the end of high school; I wanted to continue do it as an amateur (although the indie scene hadn't exploded back then), but I was falling out of love with code back then, so it never really stuck.
+I was pretty determined to try [Global Game Jam](http://globalgamejam.org) this year. Game development is something I put aside as a career choice at the end of high school; I wanted to continue do it as an amateur (although the indie scene hadn't exploded back then), but I was falling out of love with code back then, so it never really stuck.
 
 But since I started research, I've started to really enjoy coding again. At uni, it's all data analysis with R, which is interesting in its own right but probably one of the worst possible choices for game development (unless the game is to learn statistics). But I've also found that my interest has spread to web development as I've tinkered with this Jekyll-powered site, and I've _really_ become interested in JavaScript, even though I think it's a horrid language.
 
-I've tinkered with Unity a bit, and I'd love to use it more, but that's not something to learn over a weekend. I had a few friends who were in a similar position to me—coders who had some familiarity with JS but who weren't doing game dev professionally even though it interested them—so we decided to find a [lightweight JS game dev library](www.html5quintus.com) and have a go, even if it meant we came up with a pile of crap after 48 hours.
+I've tinkered with Unity a bit, and I'd love to use it more, but that's not something to learn over a weekend. I had a few friends who were in a similar position to me—coders who had some familiarity with JS but who weren't doing game dev professionally even though it interested them—so we decided to find a [lightweight JS game dev library](http://www.html5quintus.com) and have a go, even if it meant we came up with a pile of crap after 48 hours.
 
 {% include figure.html url='/img/portfolio/raceline.png' %}
 
