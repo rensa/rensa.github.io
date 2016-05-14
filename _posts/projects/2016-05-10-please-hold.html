@@ -1,0 +1,75 @@
+---
+title: Please Hold
+layout: regpage
+category: projects
+date: 2016-05-10
+alt: Please Hold
+extra_css: please-hold.css
+
+project-date: May 2016
+description: Track the time you waste with Centrelink.
+---
+
+<!-- old input testing -->
+<!--<form class='form-inline'>
+    <p>Some storage test buttons</p>
+    <label class='sr-only' for='ph-message'>Message</label>
+    <input type='message' id='ph-message' placeholder='Message'>
+    <button class='btn btn-primary' type='button' id='ph-write'>Write</button>
+    <button class='btn btn-info' type='button' id='ph-get'>Get</button>
+    <button class='btn btn-danger' type='button' id='ph-delete'>Delete</button>
+    <button class='btn btn-default' type='button' id='ph-test'>Test</button>
+    <p id='ph-result'>Result goes here</p>
+</form>-->
+
+
+<!-- input: start question -->
+<div id='ph-q0' class='ph-question row'>
+    <hr />
+    <p>So, you have to deal with Centrelink? What're you doing?</p>
+    <!--<div id='input-start' class='btn-group-vertical' role='group' aria-label="...">-->
+        <div class='ph-btn ph-btn-green'>
+            <p><span class='fa fa-phone'></span></p>
+            <p>Calling them</p>
+        </div>
+        <div class='ph-btn ph-btn-blue'>
+            <p><span class='fa fa-building'></span></p>
+            <p>Visiting an office</p>
+        </div>
+        <div class='ph-btn ph-btn-purple'>
+            <p><span class='fa fa-paper-plane'></span></p>
+            <p>Going elsewhere</p>
+        </div>
+        
+        
+        <!--<button type='button' id='ph-start-call-btn' class='btn btn-info'><span class='fa fa-phone'></span>Calling them</button>
+        <button type='button' id='ph-start-office-btn' class='btn btn-default'><span class='fa fa-building'></span>Going to an office</button>
+        <button type='button' class='btn btn-danger'><span class='fa fa-paper-plane'></span>Getting something for them</button>-->
+    <!--</div>-->
+</div>
+
+<!-- input: how long did the call last? -->
+<div id='ph-q0a-q1' class='ph-question row'>
+    <hr />
+    <p>Aaaaaand we're off. How long ago did you make the call?</p>
+    <label class='sr-only' for='ph-q0a-q1-a'>Just now</label>
+    <button type='button' id='ph-q0a-q1-a' class='btn btn-info'><span class='fa fa-clock-o'></span>Just now</button>
+    <div class='input-group' style='margin-top: 20px;'>
+        <label class='sr-only' for='ph-q0a-q1-bbtn'>n minutes ago</label>
+        <input type='text' id='ph-q0a-q1-btext' class='form-control' placeholder='2''>
+        <span class='input-group-btn'>
+            <button class="btn btn-info" id='ph-q0a-q1-bbtn' type="button">minutes ago</button>
+        </span>
+    </div>
+</div>
+
+<!-- input: how did the call end? -->
+<div id='ph-q0a-q2' class='ph-question row'>
+    <hr />
+    <p>Ugh. Then what happened?</p>
+    <!--<div id='input-start' class='btn-group-vertical' role='group' aria-label="...">-->
+        <button type='button' class='btn btn-success'><span class='fa fa-thumbs-up'></span>They picked up!</button>
+        <button type='button' class='btn btn-default'><span class=' fa fa-exclamation'></span>I hung up!</button>
+        <button type='button' class='btn btn-danger'><span class='fa fa-thumbs-down'></span>I got disconnected!</button>
+    <!--</div>-->
+</div>

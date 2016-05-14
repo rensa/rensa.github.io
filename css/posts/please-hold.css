@@ -1,0 +1,86 @@
+/* common button styling */
+.ph-btn
+{
+    display: inline-block;
+    margin: 10px 10px;
+    width: 120px;
+    height: 105px;
+    padding-top: 10px;
+    
+    border: 1px solid #777;
+    border-radius: 6px;
+    
+    
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* icon sizing */
+.ph-btn span
+{
+    font-size: 250%;
+}
+
+/* button shading */
+.ph-btn-green
+{
+    background-color: #5cb85c;
+    border: 1px solid #4cae4c;
+    color: #fff;
+}
+
+.ph-btn-blue
+{
+    background-color: #5bc0de;
+    border: 1px solid #46b8da;
+    color: #fff;
+}
+
+.ph-btn-purple
+{
+    background-color: #7b5aa6;
+    border: 1px solid #6c4e91;
+    color: #fff;
+}
+
+.ph-btn-red
+{
+    background-color: #d9534f;
+    border: 1px solid #d43f3a;
+    color: #fff;
+}
+
+.ph-btn-orange
+{
+    background-color: #fe9036;
+    border: 1px solid #cc742b;
+    color: #fff;
+}
+
+.ph-btn-yellow
+{
+    background-color: #ffd700;
+    border: 1px solid #ffbb00;
+    color: #000;
+}
+
+.ph-btn p
+{
+    line-height: 100%;
+}
+
+
+.ph-question span.fa
+{
+    font-size: 200%;
+    /*margin-right: 10px;*/
+}
+
+/*.ph-question .input-group .form-control
+{
+    width: 50px;
+    float: right;
+}*/
