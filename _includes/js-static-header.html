@@ -15,3 +15,7 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
     
+    <!-- extra js for some posts, as specified by YAML -->
+    {% for js_name in page.extra_js %}
+    <script src="stylesheet" href="/js/posts/{{ js_name }}">
+    {% endfor %}
