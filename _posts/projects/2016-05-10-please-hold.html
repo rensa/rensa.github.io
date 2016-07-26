@@ -24,11 +24,13 @@ description: Track the time you waste with Centrelink.
         <p><span class='fa fa-building'></span></p>
         <p>Visiting an office</p>
     </div>
-    <div class='ph-btn ph-purple' id='ph-start-elsewhere'>
+    <div class='ph-btn ph-purple' id='ph-start-sthelse'>
         <p><span class='fa fa-paper-plane'></span></p>
-        <p>Going elsewhere</p>
+        <p>Something else</p>
     </div>
 </div>
+
+<h3>Debug: calling Centrelink</h3>
 
 <!-- scenario: calling centrelink -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=->
 <!-- order: startdt, pickup, pickupdt, resolution, resolutiondt -->
@@ -138,6 +140,179 @@ description: Track the time you waste with Centrelink.
         </span>
     </div>
 </div>
+
+<h3>Debug: visiting Centrelink</h3>
+
+<!-- scenario: visiting centrelink =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=->
+<!-- order: startdt, arrival, arrivaldt, resolution, resolutiondt -->
+
+<!-- input: when did the visit start? -->
+<div id='ph-visit-startdt' class='ph-question row'>
+    <hr />
+    <p id='ph-visit-startdt-remark'>
+        Aaaaaand we're off. How long ago did you leave?
+    </p>
+    <div class='ph-btn ph-green' id='ph-visit-startdt-now'>
+        <p><span class='fa fa-clock-o'></span></p>
+        <p>Just<br>now</p>
+    </div>
+    <div class='input-group'>
+        <input type='text'  id='ph-visit-startdt-nmins'
+            class='form-control ph-blue' placeholder='5''>
+        <span class='input-group-btn'>
+            <button class="btn btn-info" id='ph-visit-startdt-nminsago'
+                type="button">minutes ago</button>
+        </span>
+    </div>
+</div>
+
+<!-- input: did you get there? -->
+<div id='ph-visit-arrival' class='ph-question row'>
+    <hr />
+    <p id='ph-visit-arrival-remark'>
+        Ugh. Then what happened?
+    </p>
+    <div class='ph-btn ph-green' id='ph-visit-arrival-arrived'>
+        <p><span class='fa fa-thumbs-up'></span></p>
+        <p>I made it!</p>
+    </div>
+    <!-- if hang up or disconnected, skip straight to end after answerdt -->
+    <div class='ph-btn ph-yellow' id='ph-visit-arrival-abandoned'>
+        <p><span class='fa fa-exclamation'></span></p>
+        <p>I gave<br>up</p>
+    </div>
+    <div class='ph-btn ph-red' id='ph-visit-arrival-closed'>
+        <p><span class='fa fa-thumbs-down'></span></p>
+        <p>They were closed!</p>
+    </div>
+</div>
+
+<!-- input: when did you get get there/give up? -->
+<div id='ph-visit-arrivaldt' class='ph-question row'>
+    <hr />
+    <p id='ph-visit-arrivaldt-remark'>
+        And when did that happen?
+    </p>
+    <div class='ph-btn ph-green' id='ph-visit-arrivaldt-now'>
+        <p><span class='fa fa-clock-o'></span></p>
+        <p>Just<br>now</p>
+    </div>
+    <div class='input-group'>
+        <input type='text'  id='ph-visit-arrivaldt-nmins'
+            class='form-control ph-blue' placeholder='5''>
+        <span class='input-group-btn'>
+            <button class="btn btn-info" id='ph-visit-arrivaldt-nminsago'
+                type="button">minutes ago</button>
+        </span>
+    </div>
+</div>
+
+<!-- input: visit result? -->
+<div id='ph-visit-resolution' class='ph-question row'>
+    <hr />
+    <p id='ph-visit-resolution-remark'>
+        Did they get everything sorted?
+    </p>
+    <div class='ph-btn ph-green' id='ph-visit-resolution-good'>
+        <p><span class='fa fa-thumbs-up'></span></p>
+        <p>Yeah, all good!</p>
+    </div>
+    <div class='ph-btn ph-yellow' id='ph-visit-resolution-unsure'>
+        <p><span class='fa fa-question'></span></p>
+        <p>Not quite yet...</p>
+    </div>
+    <div class='ph-btn ph-red' id='ph-visit-resolution-bad'>
+        <p><span class='fa fa-thumbs-down'></span></p>
+        <p>Ugh,<br>nope</p>
+    </div>
+</div>
+
+<!-- input: when did you leave? -->
+<div id='ph-visit-resolutiondt' class='ph-question row'>
+    <hr />
+    <p id='ph-visit-resolutiondt-remark'>
+        And when did you leave?
+    </p>
+    <div class='ph-btn ph-green' id='ph-visit-resolutiondt-now'>
+        <p><span class='fa fa-clock-o'></span></p>
+        <p>Just<br>now</p>
+    </div>
+    <div class='input-group'>
+        <input type='text'  id='ph-visit-resolutiondt-nmins'
+            class='form-control ph-blue' placeholder='5''>
+        <span class='input-group-btn'>
+            <button class="btn btn-info" id='ph-visit-resolutiondt-nminsago'
+                type="button">minutes ago</button>
+        </span>
+    </div>
+</div>
+
+<h3>Debug: something else</h3>
+
+<!-- scenario: something else -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=->
+<!-- order: startdt, resolution, resolutiondt -->
+
+<!-- input: when did the task start? -->
+<div id='ph-sthelse-startdt' class='ph-question row'>
+    <hr />
+    <p id='ph-sthelse-startdt-remark'>
+        Aaaaaand we're off. How long ago did you start this?
+    </p>
+    <div class='ph-btn ph-green' id='ph-sthelse-startdt-now'>
+        <p><span class='fa fa-clock-o'></span></p>
+        <p>Just<br>now</p>
+    </div>
+    <div class='input-group'>
+        <input type='text'  id='ph-sthelse-startdt-nmins'
+            class='form-control ph-blue' placeholder='5''>
+        <span class='input-group-btn'>
+            <button class="btn btn-info" id='ph-sthelse-startdt-nminsago'
+                type="button">minutes ago</button>
+        </span>
+    </div>
+</div>
+
+<!-- input: sthelse result? -->
+<div id='ph-sthelse-resolution' class='ph-question row'>
+    <hr />
+    <p id='ph-sthelse-resolution-remark'>
+        Did you get it sorted?
+    </p>
+    <div class='ph-btn ph-green' id='ph-sthelse-resolution-good'>
+        <p><span class='fa fa-thumbs-up'></span></p>
+        <p>Yeah, all good!</p>
+    </div>
+    <div class='ph-btn ph-yellow' id='ph-sthelse-resolution-unsure'>
+        <p><span class='fa fa-question'></span></p>
+        <p>Not quite yet...</p>
+    </div>
+    <div class='ph-btn ph-red' id='ph-sthelse-resolution-bad'>
+        <p><span class='fa fa-thumbs-down'></span></p>
+        <p>Ugh,<br>nope</p>
+    </div>
+</div>
+
+<!-- input: when did you leave? -->
+<div id='ph-sthelse-resolutiondt' class='ph-question row'>
+    <hr />
+    <p id='ph-sthelse-resolutiondt-remark'>
+        And when did you finish?
+    </p>
+    <div class='ph-btn ph-green' id='ph-sthelse-resolutiondt-now'>
+        <p><span class='fa fa-clock-o'></span></p>
+        <p>Just<br>now</p>
+    </div>
+    <div class='input-group'>
+        <input type='text'  id='ph-sthelse-resolutiondt-nmins'
+            class='form-control ph-blue' placeholder='5''>
+        <span class='input-group-btn'>
+            <button class="btn btn-info" id='ph-sthelse-resolutiondt-nminsago'
+                type="button">minutes ago</button>
+        </span>
+    </div>
+</div>
+
+<h3>Debug: end</h3>
 
 <!-- end experience (all scenarios) -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=->
 

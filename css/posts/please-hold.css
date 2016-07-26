@@ -3,9 +3,11 @@
 */
 
 /* center question content */
+/* nb: questions are all hidden by default (enabled by js) */
 .ph-question
 {
     text-align: center;
+    display: none;
 }
 
 /* common button styling -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
