@@ -13,7 +13,6 @@ description: Track the time you waste with Centrelink.
 
 <!-- input: start question -->
 <div id='ph-start' class='ph-question row'>
-    <hr />
     <p  id='ph-start-remark'>
         So, you have to deal with Centrelink? What're you doing?
     </p>
@@ -33,12 +32,11 @@ description: Track the time you waste with Centrelink.
 
 <h3>Debug: calling Centrelink</h3>
 
-<!-- scenario: calling centrelink -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=->
+<!-- scenario: calling centrelink <-></->->
 <!-- order: startdt, pickup, pickupdt, resolution, resolutiondt -->
 
 <!-- input: when did the call start? -->
 <div id='ph-call-startdt' class='ph-question row'>
-    <hr />
     <p id='ph-call-startdt-remark'>
         Aaaaaand we're off. How long ago did you make the call?
     </p>
@@ -58,7 +56,6 @@ description: Track the time you waste with Centrelink.
 
 <!-- input: did you get through? -->
 <div id='ph-call-pickup' class='ph-question row'>
-    <hr />
     <p id='ph-call-pickup-remark'>
         Ugh. Then what happened?
     </p>
@@ -79,7 +76,6 @@ description: Track the time you waste with Centrelink.
 
 <!-- input: when did you get through/get disconnected/give up? -->
 <div id='ph-call-pickupdt' class='ph-question row'>
-    <hr />
     <p id='ph-call-pickupdt-remark'>
         And when did that happen?
     </p>
@@ -99,7 +95,6 @@ description: Track the time you waste with Centrelink.
 
 <!-- input: call result? -->
 <div id='ph-call-resolution' class='ph-question row'>
-    <hr />
     <p id='ph-call-resolution-remark'>
         Did they get everything sorted?
     </p>
@@ -124,7 +119,6 @@ description: Track the time you waste with Centrelink.
 
 <!-- input: when did you hang up? -->
 <div id='ph-call-resolutiondt' class='ph-question row'>
-    <hr />
     <p id='ph-call-resolutiondt-remark'>
         And when did that happen?
     </p>
@@ -144,12 +138,11 @@ description: Track the time you waste with Centrelink.
 
 <h3>Debug: visiting Centrelink</h3>
 
-<!-- scenario: visiting centrelink =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=->
+<!-- scenario: visiting centrelink -->
 <!-- order: startdt, arrival, arrivaldt, resolution, resolutiondt -->
 
 <!-- input: when did the visit start? -->
 <div id='ph-visit-startdt' class='ph-question row'>
-    <hr />
     <p id='ph-visit-startdt-remark'>
         Aaaaaand we're off. How long ago did you leave?
     </p>
@@ -169,7 +162,6 @@ description: Track the time you waste with Centrelink.
 
 <!-- input: did you get there? -->
 <div id='ph-visit-arrival' class='ph-question row'>
-    <hr />
     <p id='ph-visit-arrival-remark'>
         Ugh. Then what happened?
     </p>
@@ -190,7 +182,6 @@ description: Track the time you waste with Centrelink.
 
 <!-- input: when did you get get there/give up? -->
 <div id='ph-visit-arrivaldt' class='ph-question row'>
-    <hr />
     <p id='ph-visit-arrivaldt-remark'>
         And when did that happen?
     </p>
@@ -210,7 +201,6 @@ description: Track the time you waste with Centrelink.
 
 <!-- input: visit result? -->
 <div id='ph-visit-resolution' class='ph-question row'>
-    <hr />
     <p id='ph-visit-resolution-remark'>
         Did they get everything sorted?
     </p>
@@ -230,7 +220,6 @@ description: Track the time you waste with Centrelink.
 
 <!-- input: when did you leave? -->
 <div id='ph-visit-resolutiondt' class='ph-question row'>
-    <hr />
     <p id='ph-visit-resolutiondt-remark'>
         And when did you leave?
     </p>
@@ -250,12 +239,11 @@ description: Track the time you waste with Centrelink.
 
 <h3>Debug: something else</h3>
 
-<!-- scenario: something else -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=->
+<!-- scenario: something else -->
 <!-- order: startdt, resolution, resolutiondt -->
 
 <!-- input: when did the task start? -->
 <div id='ph-sthelse-startdt' class='ph-question row'>
-    <hr />
     <p id='ph-sthelse-startdt-remark'>
         Aaaaaand we're off. How long ago did you start this?
     </p>
@@ -275,7 +263,6 @@ description: Track the time you waste with Centrelink.
 
 <!-- input: sthelse result? -->
 <div id='ph-sthelse-resolution' class='ph-question row'>
-    <hr />
     <p id='ph-sthelse-resolution-remark'>
         Did you get it sorted?
     </p>
@@ -295,7 +282,6 @@ description: Track the time you waste with Centrelink.
 
 <!-- input: when did you leave? -->
 <div id='ph-sthelse-resolutiondt' class='ph-question row'>
-    <hr />
     <p id='ph-sthelse-resolutiondt-remark'>
         And when did you finish?
     </p>
@@ -315,11 +301,10 @@ description: Track the time you waste with Centrelink.
 
 <h3>Debug: end</h3>
 
-<!-- end experience (all scenarios) -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=->
+<!-- end experience (all scenarios) -->
 
 <!-- input: closing remarks/save -->
 <div id='ph-finish' class='ph-question row'>
-    <hr />
     <p id='ph-finish-remark'>
         Anything else to add?
     </p>
@@ -332,4 +317,10 @@ description: Track the time you waste with Centrelink.
         <p><span class='fa fa-thumbs-up'></span></p>
         <p>All<br>done</p>
     </div>
+</div>
+
+<!-- record of previous interactions with centrelink -->
+
+<div id='ph-history' class='row'>
+    <h3>Previous run-ins</h3>
 </div>
