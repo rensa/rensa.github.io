@@ -31,60 +31,129 @@ description: Track the time you waste with Centrelink.
 </div>
 
 <!-- scenario: calling centrelink -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=->
+<!-- order: startdt, pickup, pickupdt, resolution, resolutiondt -->
 
-<!-- input: how long did the call last? -->
-<div id='ph-call-length' class='ph-question row'>
+<!-- input: when did the call start? -->
+<div id='ph-call-startdt' class='ph-question row'>
     <hr />
-    <p id='ph-call-length-remark'>
+    <p id='ph-call-startdt-remark'>
         Aaaaaand we're off. How long ago did you make the call?
     </p>
-    <div class='ph-btn ph-green' id='ph-call-length-now'>
+    <div class='ph-btn ph-green' id='ph-call-startdt-now'>
         <p><span class='fa fa-clock-o'></span></p>
         <p>Just<br>now</p>
     </div>
     <div class='input-group'>
-        <input type='text'  id='ph-call-length-nmins'
+        <input type='text'  id='ph-call-startdt-nmins'
             class='form-control ph-blue' placeholder='5''>
         <span class='input-group-btn'>
-            <button class="btn btn-info" id='ph-call-length-nminsago'
+            <button class="btn btn-info" id='ph-call-startdt-nminsago'
                 type="button">minutes ago</button>
         </span>
     </div>
 </div>
 
-<!-- input: how did the call end? -->
-<div id='ph-call-result' class='ph-question row'>
+<!-- input: did you get through? -->
+<div id='ph-call-pickup' class='ph-question row'>
     <hr />
-    <p id='ph-call-result-remark'>
+    <p id='ph-call-pickup-remark'>
         Ugh. Then what happened?
     </p>
-    <div class='ph-btn ph-green' id='ph-call-result-answered'>
+    <div class='ph-btn ph-green' id='ph-call-pickup-answered'>
         <p><span class='fa fa-thumbs-up'></span></p>
         <p>I got through!</p>
     </div>
-    <div class='ph-btn ph-yellow' id='ph-call-result-abandoned'>
+    <!-- if hang up or disconnected, skip straight to end after answerdt -->
+    <div class='ph-btn ph-yellow' id='ph-call-pickup-abandoned'>
         <p><span class='fa fa-exclamation'></span></p>
         <p>I hung<br>up</p>
     </div>
-    <div class='ph-btn ph-red' id='ph-call-result-dropped'>
+    <div class='ph-btn ph-red' id='ph-call-pickup-dropped'>
         <p><span class='fa fa-thumbs-down'></span></p>
         <p>They hung up!</p>
     </div>
 </div>
 
-<!-- input: closing remarks/save -->
-<div id='ph-call-finish' class='ph-question row'>
+<!-- input: when did you get through/get disconnected/give up? -->
+<div id='ph-call-pickupdt' class='ph-question row'>
     <hr />
-    <p id='ph-call-finish-remark'>
+    <p id='ph-call-pickupdt-remark'>
+        And when did that happen?
+    </p>
+    <div class='ph-btn ph-green' id='ph-call-pickupdt-now'>
+        <p><span class='fa fa-clock-o'></span></p>
+        <p>Just<br>now</p>
+    </div>
+    <div class='input-group'>
+        <input type='text'  id='ph-call-pickupdt-nmins'
+            class='form-control ph-blue' placeholder='5''>
+        <span class='input-group-btn'>
+            <button class="btn btn-info" id='ph-call-pickupdt-nminsago'
+                type="button">minutes ago</button>
+        </span>
+    </div>
+</div>
+
+<!-- input: call result? -->
+<div id='ph-call-resolution' class='ph-question row'>
+    <hr />
+    <p id='ph-call-resolution-remark'>
+        Did they get everything sorted?
+    </p>
+    <div class='ph-btn ph-green' id='ph-call-resolution-good'>
+        <p><span class='fa fa-thumbs-up'></span></p>
+        <p>Yeah, all good!</p>
+    </div>
+    <div class='ph-btn ph-yellow' id='ph-call-resolution-unsure'>
+        <p><span class='fa fa-question'></span></p>
+        <p>Not quite yet...</p>
+    </div>
+    <div class='ph-btn ph-red' id='ph-call-resolution-bad'>
+        <p><span class='fa fa-thumbs-down'></span></p>
+        <p>Ugh,<br>nope</p>
+    </div>
+    <!-- if back on hold, loop back to startdt and add the time up -->
+    <div class='ph-btn ph-black' id='ph-call-resolution-onhold'>
+        <p><span class='fa fa-thumbs-down'></span></p>
+        <p>Back on hold! D:</p>
+    </div>
+</div>
+
+<!-- input: when did you hang up? -->
+<div id='ph-call-resolutiondt' class='ph-question row'>
+    <hr />
+    <p id='ph-call-resolutiondt-remark'>
+        And when did that happen?
+    </p>
+    <div class='ph-btn ph-green' id='ph-call-resolutiondt-now'>
+        <p><span class='fa fa-clock-o'></span></p>
+        <p>Just<br>now</p>
+    </div>
+    <div class='input-group'>
+        <input type='text'  id='ph-call-resolutiondt-nmins'
+            class='form-control ph-blue' placeholder='5''>
+        <span class='input-group-btn'>
+            <button class="btn btn-info" id='ph-call-resolutiondt-nminsago'
+                type="button">minutes ago</button>
+        </span>
+    </div>
+</div>
+
+<!-- end experience (all scenarios) -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=->
+
+<!-- input: closing remarks/save -->
+<div id='ph-finish' class='ph-question row'>
+    <hr />
+    <p id='ph-finish-remark'>
         Anything else to add?
     </p>
     <textarea
         maxlength=300
         placeholder='Anything you want to remember later?'
-        id='ph-call-finish-notes'>
+        id='ph-finish-notes'>
     </textarea>
-    <div class='ph-btn ph-green' id='ph-call-finish-save'>
+    <div class='ph-btn ph-green' id='ph-finish-save'>
         <p><span class='fa fa-thumbs-up'></span></p>
-        <p>Done</p>
+        <p>All<br>done</p>
     </div>
 </div>
