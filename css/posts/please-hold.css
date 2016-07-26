@@ -152,6 +152,7 @@ input.form-control.ph-purple:focus
 {
     display: block;
     width: 300px;
+    height: 150px;
     resize: none;
     margin-left: auto;
     margin-right: auto;
