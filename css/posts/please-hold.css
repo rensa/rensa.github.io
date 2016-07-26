@@ -1,4 +1,14 @@
-/* common button styling */
+/* extra styling for the please hold app
+   james goldie, 2016
+*/
+
+/* center question content */
+.ph-question
+{
+    text-align: center;
+}
+
+/* common button styling -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 .ph-btn
 {
     display: inline-block;
@@ -18,69 +28,132 @@
     vertical-align: middle;
 }
 
-/* icon sizing */
-.ph-btn span
+.ph-btn p
 {
-    font-size: 250%;
+    line-height: 100%;
 }
 
-/* button shading */
-.ph-btn-green
+/* font awesome glyph styling */
+.ph-question .ph-btn span.fa, .ph-question .input-group-btn span.fa
 {
-    background-color: #5cb85c;
-    border: 1px solid #4cae4c;
-    color: #fff;
+    font-size: 200%;
 }
 
-.ph-btn-blue
-{
-    background-color: #5bc0de;
-    border: 1px solid #46b8da;
-    color: #fff;
-}
-
-.ph-btn-purple
-{
-    background-color: #7b5aa6;
-    border: 1px solid #6c4e91;
-    color: #fff;
-}
-
-.ph-btn-red
+/* button and input shading -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+.ph-red
 {
     background-color: #d9534f;
     border: 1px solid #d43f3a;
     color: #fff;
 }
 
-.ph-btn-orange
+.ph-orange
 {
     background-color: #fe9036;
     border: 1px solid #cc742b;
     color: #fff;
 }
 
-.ph-btn-yellow
+.ph-yellow
 {
     background-color: #ffd700;
     border: 1px solid #ffbb00;
     color: #000;
 }
 
-.ph-btn p
+.ph-green
 {
-    line-height: 100%;
+    background-color: #5cb85c;
+    border: 1px solid #4cae4c;
+    color: #fff;
 }
 
-
-.ph-question span.fa
+.ph-blue
 {
-    font-size: 200%;
-    /*margin-right: 10px;*/
+    background-color: #5bc0de;
+    border: 1px solid #46b8da;
+    color: #fff;
 }
 
-/*.ph-question .input-group .form-control
+.ph-purple
+{
+    background-color: #7b5aa6;
+    border: 1px solid #6c4e91;
+    color: #fff;
+}
+
+input.form-control.ph-red, input.form-control.ph-orange, input.form-control.ph-yellow, input.form-control.ph-green, input.form-control.ph-blue, input.form-control.ph-purple 
+{
+    border: 2px solid #dce4ec;
+    background-color: #fff;
+}
+
+input.form-control.ph-red:focus
+{
+    border: 2px solid #d43f3a;
+    color: #d43f3a;
+    background-color: #fff;
+}
+
+input.form-control.ph-orange:focus
+{
+    border: 2px solid #cc742b;
+    color: #cc742b;
+    background-color: #fff;
+}
+
+input.form-control.ph-yellow:focus
+{
+    border: 2px solid #ffbb00;
+    color: #ffbb00;
+    background-color: #fff;
+}
+
+input.form-control.ph-green:focus
+{
+    border: 2px solid #4cae4c;
+    color: #4cae4c;
+    background-color: #fff;
+}
+
+input.form-control.ph-blue:focus
+{
+    border: 2px solid #46b8da;
+    color: #46b8da;
+    background-color: #fff;
+}
+
+input.form-control.ph-purple:focus
+{
+    border: 2px solid #6c4e91;
+    color: #6c4e91;
+    background-color: #fff;
+}
+
+/* form group controls (for example, n minutes ago) -=-=-=-=-=-=-=-=-=-=-=-=-*/
+.input-group
+{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group .form-control
 {
     width: 50px;
-    float: right;
-}*/
+}
+
+.input-group .input-group-btn
+{
+    width: auto;
+}
+
+.ph-question textarea
+{
+    display: block;
+    width: 300px;
+    resize: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}

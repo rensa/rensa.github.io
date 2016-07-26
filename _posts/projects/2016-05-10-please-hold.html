@@ -10,66 +10,81 @@ project-date: May 2016
 description: Track the time you waste with Centrelink.
 ---
 
-<!-- old input testing -->
-<!--<form class='form-inline'>
-    <p>Some storage test buttons</p>
-    <label class='sr-only' for='ph-message'>Message</label>
-    <input type='message' id='ph-message' placeholder='Message'>
-    <button class='btn btn-primary' type='button' id='ph-write'>Write</button>
-    <button class='btn btn-info' type='button' id='ph-get'>Get</button>
-    <button class='btn btn-danger' type='button' id='ph-delete'>Delete</button>
-    <button class='btn btn-default' type='button' id='ph-test'>Test</button>
-    <p id='ph-result'>Result goes here</p>
-</form>-->
-
-
 <!-- input: start question -->
-<div id='ph-q0' class='ph-question row'>
+<div id='ph-start' class='ph-question row'>
     <hr />
-    <p>So, you have to deal with Centrelink? What're you doing?</p>
-    <!--<div id='input-start' class='btn-group-vertical' role='group' aria-label="...">-->
-        <div class='ph-btn ph-btn-green'>
-            <p><span class='fa fa-phone'></span></p>
-            <p>Calling them</p>
-        </div>
-        <div class='ph-btn ph-btn-blue'>
-            <p><span class='fa fa-building'></span></p>
-            <p>Visiting an office</p>
-        </div>
-        <div class='ph-btn ph-btn-purple'>
-            <p><span class='fa fa-paper-plane'></span></p>
-            <p>Going elsewhere</p>
-        </div>
-        
-        
-        <!--<button type='button' id='ph-start-call-btn' class='btn btn-info'><span class='fa fa-phone'></span>Calling them</button>
-        <button type='button' id='ph-start-office-btn' class='btn btn-default'><span class='fa fa-building'></span>Going to an office</button>
-        <button type='button' class='btn btn-danger'><span class='fa fa-paper-plane'></span>Getting something for them</button>-->
-    <!--</div>-->
+    <p  id='ph-start-remark'>
+        So, you have to deal with Centrelink? What're you doing?
+    </p>
+    <div class='ph-btn ph-green' id='ph-start-call'>
+        <p><span class='fa fa-phone'></span></p>
+        <p>Calling them</p>
+    </div>
+    <div class='ph-btn ph-blue' id='ph-start-visit'>
+        <p><span class='fa fa-building'></span></p>
+        <p>Visiting an office</p>
+    </div>
+    <div class='ph-btn ph-purple' id='ph-start-elsewhere'>
+        <p><span class='fa fa-paper-plane'></span></p>
+        <p>Going elsewhere</p>
+    </div>
 </div>
 
+<!-- scenario: calling centrelink -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=->
+
 <!-- input: how long did the call last? -->
-<div id='ph-q0a-q1' class='ph-question row'>
+<div id='ph-call-length' class='ph-question row'>
     <hr />
-    <p>Aaaaaand we're off. How long ago did you make the call?</p>
-    <label class='sr-only' for='ph-q0a-q1-a'>Just now</label>
-    <button type='button' id='ph-q0a-q1-a' class='btn btn-info'><span class='fa fa-clock-o'></span>Just now</button>
-    <div class='input-group' style='margin-top: 20px;'>
-        <label class='sr-only' for='ph-q0a-q1-bbtn'>n minutes ago</label>
-        <input type='text' id='ph-q0a-q1-btext' class='form-control' placeholder='2''>
+    <p id='ph-call-length-remark'>
+        Aaaaaand we're off. How long ago did you make the call?
+    </p>
+    <div class='ph-btn ph-green' id='ph-call-length-now'>
+        <p><span class='fa fa-clock-o'></span></p>
+        <p>Just<br>now</p>
+    </div>
+    <div class='input-group'>
+        <input type='text'  id='ph-call-length-nmins'
+            class='form-control ph-blue' placeholder='5''>
         <span class='input-group-btn'>
-            <button class="btn btn-info" id='ph-q0a-q1-bbtn' type="button">minutes ago</button>
+            <button class="btn btn-info" id='ph-call-length-nminsago'
+                type="button">minutes ago</button>
         </span>
     </div>
 </div>
 
 <!-- input: how did the call end? -->
-<div id='ph-q0a-q2' class='ph-question row'>
+<div id='ph-call-result' class='ph-question row'>
     <hr />
-    <p>Ugh. Then what happened?</p>
-    <!--<div id='input-start' class='btn-group-vertical' role='group' aria-label="...">-->
-        <button type='button' class='btn btn-success'><span class='fa fa-thumbs-up'></span>They picked up!</button>
-        <button type='button' class='btn btn-default'><span class=' fa fa-exclamation'></span>I hung up!</button>
-        <button type='button' class='btn btn-danger'><span class='fa fa-thumbs-down'></span>I got disconnected!</button>
-    <!--</div>-->
+    <p id='ph-call-result-remark'>
+        Ugh. Then what happened?
+    </p>
+    <div class='ph-btn ph-green' id='ph-call-result-answered'>
+        <p><span class='fa fa-thumbs-up'></span></p>
+        <p>I got through!</p>
+    </div>
+    <div class='ph-btn ph-yellow' id='ph-call-result-abandoned'>
+        <p><span class='fa fa-exclamation'></span></p>
+        <p>I hung<br>up</p>
+    </div>
+    <div class='ph-btn ph-red' id='ph-call-result-dropped'>
+        <p><span class='fa fa-thumbs-down'></span></p>
+        <p>They hung up!</p>
+    </div>
+</div>
+
+<!-- input: closing remarks/save -->
+<div id='ph-call-finish' class='ph-question row'>
+    <hr />
+    <p id='ph-call-finish-remark'>
+        Anything else to add?
+    </p>
+    <textarea
+        maxlength=300
+        placeholder='Anything you want to remember later?'
+        id='ph-call-finish-notes'>
+    </textarea>
+    <div class='ph-btn ph-green' id='ph-call-finish-save'>
+        <p><span class='fa fa-thumbs-up'></span></p>
+        <p>Done</p>
+    </div>
 </div>
