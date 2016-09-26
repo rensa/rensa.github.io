@@ -1,0 +1,8 @@
+<ul>
+    {% for cat in site.categories %}
+    <li>
+        <a href="{{ site.url }}/{{ cat[0] }}">{{ cat[0] }}</a>
+        <!-- insert a link to the newest work here, or maybe a paragraph describing the section? --> 
+    </li>
+    {% endfor %}
+</ul>

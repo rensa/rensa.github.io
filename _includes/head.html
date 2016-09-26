@@ -1,13 +1,16 @@
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}rensa.co | James Goldie: climate change and health research, science communication, data viz{% endif %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">       
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="icon" type="image/png" href="{{ site.url }}/icon-default.png" />
 
-    <!-- Open Graph properties -->
+    <title>{% if page.title %}{{ page.title }}{% else %}rensa.co | James Goldie: climate change and health research, science communication, data viz{% endif %}</title>
+
+    <!-- social info ---------------------------------------------------------->
+
+    <!-- facebook (open graph) -->
     <meta property="og:url" content="{% if page.url %}{{ site.url }}{{ page.url }}{% else %}{{ site.url }}{% endif %}" /> 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{% if page.title %}{{ site.title }}: {{ page.title }}{% else %}{{ site.title }}{% endif %}" />
@@ -16,7 +19,7 @@
     <meta property="og:image" content="{% if page.img %}{{ site.url}}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/portfolio/thumb-site-default.png{% endif %}" />
     <meta property="fb:app_id" content="1583566641860122" />
 
-    <!-- Twitter card meta data -->
+    <!-- twitter -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@rensa_co" />
     <meta name="twitter:creator" content="@rensa_co" />
@@ -24,14 +27,20 @@
     <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.title }}: {{ site.description }}{% endif %}" />
     <meta name="twitter:image" content="{% if page.img %}{{ site.url }}/img/portfolio/{{ page.img }}{% else %}{{ site.url }}/img/portfolio/thumb-site-default.png{% endif %}" />
 
-    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <!-- style ---------------------------------------------------------------->
+
+    <!-- base css (defined in _layouts/style.css):
+         http://bootswatch.com/flatly/ + my own work -->
     <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
 
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" href="{{ "/css/academicons/css/academicons.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    <!-- custom fonts -->
+    <link rel="stylesheet" href="{{ "/css/academicons/css/academicons.css" |
+        prepend: site.baseurl }}">
+    <link rel="stylesheet"
+        href="{{ "/css/font-awesome/css/font-awesome.min.css" |
+        prepend: site.baseurl }}">
     
-    <!-- extra css for some posts, as specified by YAML -->
+    <!-- post-specific styles (defined in yaml; stored in /css/posts) -->
     {% for css_name in page.extra_css %}
     <link rel="stylesheet" href="/css/posts/{{ css_name }}">
     {% endfor %}
@@ -39,6 +48,8 @@
     <!-- syntax highlighting css -->
     <link rel="stylesheet" href="/css/monokai.css">
     
+    <!-- font set -->
+    <!-- TODO - shoud i be doing this here or using css @import? -->
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -50,6 +61,8 @@
     <script src="/js/posts/{{ js_name }}"></script>
     {% endfor %}
 
+    <!-- compatibility -------------------------------------------------------->
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
