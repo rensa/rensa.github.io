@@ -1,0 +1,247 @@
+.projects
+{
+    /* fancy gradient headings! */
+    h1, h2.card__header
+    {
+        color: $color-projects-a;
+        background: -webkit-linear-gradient(to top right,
+            $color-projects-a,
+            $color-projects-a,
+            $color-projects-b);
+        background: -moz-linear-gradient(to top right,
+            $color-projects-a,
+            $color-projects-a,
+            $color-projects-b);
+        background: linear-gradient(to top right,
+            $color-projects-a,
+            $color-projects-a,
+            $color-projects-b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.mast__container h1, &.preview h1
+    {   
+        background: -webkit-linear-gradient(to top right,
+            $color-projects-a,
+            $color-projects-b);
+        background: -moz-linear-gradient(to top right,
+            $color-projects-a,
+            $color-projects-b);
+        background: linear-gradient(to top right,
+            $color-projects-a,
+            $color-projects-b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: $color-projects-a;
+        
+    }
+    
+    /* gradient bgs for next post link */
+    &.next__link
+    {
+        &:hover:after
+        {
+            background-color: rgba($color-projects-a, 0.6) 
+        }
+    }
+
+    &.preview
+    {
+        &:hover:after
+        {
+            background-color: rgba($color-projects-a, 0.6) 
+        }
+    }
+
+    /* archive background hover colour */
+    .card {
+        &__link { 
+            &:hover {
+            background-color: $color-projects-light;
+            }
+        }
+    }
+}
+
+/* home page gradient heading */
+.previews__container h2 a.projects
+{
+    color: $color-projects-a;
+        background: -webkit-linear-gradient(to top right,
+            $color-projects-a,
+            $color-projects-b);
+        background: -moz-linear-gradient(to top right,
+            $color-projects-a,
+            $color-projects-b);
+        background: linear-gradient(to top right,
+            $color-projects-a,
+            $color-projects-b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.science
+{
+    /* fancy gradient headings! */
+    h1, h2.card__header
+    {
+        color: $color-science-a;
+        background: -webkit-linear-gradient(to top right,
+            $color-science-a,
+            $color-science-a,
+            $color-science-b);
+        background: -moz-linear-gradient(to top right,
+            $color-science-a,
+            $color-science-a,
+            $color-science-b);
+        background: linear-gradient(to top right,
+            $color-science-a,
+            $color-science-a,
+            $color-science-b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.mast__container h1, &.preview h1
+    {
+        color: $color-science-a;
+        background: -webkit-linear-gradient(to top right,
+            $color-science-a,
+            $color-science-b);
+        background: -moz-linear-gradient(to top right,
+            $color-science-a,
+            $color-science-b);
+        background: linear-gradient(to top right,
+            $color-science-a,
+            $color-science-b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* gradient bg for next post link */
+    &.next__link
+    {
+        &:hover:after
+        {
+            background-color: rgba($color-science-a, 0.6) 
+        }
+    }
+
+    &.preview
+    {
+        &:hover:after
+        {
+            background-color: rgba($color-science-a, 0.6) 
+        }
+    }
+
+    /* archive background hover colour */
+    .card {
+        &__link { 
+            &:hover {
+            background-color: $color-science-light;
+            }
+        }
+    }
+}
+
+/* home page gradient heading */
+.previews__container h2 a.science
+{
+    color: $color-science-a;
+        background: -webkit-linear-gradient(to top right,
+            $color-science-a,
+            $color-science-b);
+        background: -moz-linear-gradient(to top right,
+            $color-science-a,
+            $color-science-b);
+        background: linear-gradient(to top right,
+            $color-science-a,
+            $color-science-b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.writing
+{
+    /* fancy gradient headings! */
+    h1, h2.card__header
+    {
+        color: $color-writing-a;
+        background: -webkit-linear-gradient(to top right,
+            $color-writing-a,
+            $color-writing-a,
+            $color-writing-b);
+        background: -moz-linear-gradient(to top right,
+            $color-writing-a,
+            $color-writing-a,
+            $color-writing-b);
+        background: linear-gradient(to top right,
+            $color-writing-a,
+            $color-writing-a,
+            $color-writing-b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.mast__container h1, &.preview h1
+    {
+        color: $color-writing-a;
+        background: -webkit-linear-gradient(to top right,
+            $color-writing-a,
+            $color-writing-b);
+        background: -moz-linear-gradient(to top right,
+            $color-writing-a,
+            $color-writing-b);
+        background: linear-gradient(to top right,
+            $color-writing-a,
+            $color-writing-b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    /* gradient bg for next post link */
+    &.next__link
+    {
+        &:hover:after
+        {
+            background-color: rgba($color-writing-a, 0.6) 
+        }
+    }
+
+    &.preview
+    {
+        &:hover:after
+        {
+            background-color: rgba($color-writing-a, 0.6) 
+        }
+    }
+
+    /* archive background hover colour */
+    .card {
+        &__link { 
+            &:hover {
+            background-color: $color-writing-light;
+            }
+        }
+    }
+}
+
+/* home page gradient heading */
+.previews__container h2 a.writing
+{
+    color: $color-writing-a;
+        background: -webkit-linear-gradient(to top right,
+            $color-writing-a,
+            $color-writing-b);
+        background: -moz-linear-gradient(to top right,
+            $color-writing-a,
+            $color-writing-b);
+        background: linear-gradient(to top right,
+            $color-writing-a,
+            $color-writing-b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}

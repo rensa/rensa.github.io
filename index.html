@@ -1,20 +1,69 @@
 ---
 layout: default
 ---
+<section class="previews">
+  <div>
+    
+    <div class="previews__container">
+      <h1>James Goldie</h1>
+      <h2>
+        <a class="science" href="{{ site.baseurl }}/science">Science</a> + 
+        <a class="projects" href="{{ site.baseurl }}/projects">Projects</a> + 
+        <a class="writing" href="{{ site.baseurl }}/writing">Writing</a>
+      </h2>
+      <p>{{ site.profile }}</p>
+      <ul class="footer__social">
+        {% for social in site.social %}
+          <li><a class="fa fa-lg fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank"></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 
-<div class="home">
+  <div>
+    <!--<header>
+      <ul class="tabs">
+        <li class="tabs__item">Posts</li>
+        <li class="tabs__item">Categories</li>
+      </ul>
+    </header>-->
 
-  <h1>Posts</h1>
+    <div class="tab">
+      <ul itemscope itemtype="http://schema.org/Blog">
+        {% for post in site.categories.science limit:1 %}
+          <li class="preview science" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <a class="preview__link" href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" itemprop="url">
+                <h1>LATEST SCIENCE</h1>
+              <h2 class="preview__header" itemprop="name">{{ post.title }}</h2>
+              <span class="preview__date" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <p class="preview__excerpt" itemprop="description">{{ post.description | strip_html | truncatewords: 30 }}</p>
+            </a>
+          </li>
+        {% endfor %}
+        {% for post in site.categories.projects limit:1 %}
+          <li class="preview projects" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <a class="preview__link" href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" itemprop="url">
+              <h1>LATEST PROJECT</h1>
+              <h2 class="preview__header" itemprop="name">{{ post.title }}</h2>
+              <span class="preview__date" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <p class="preview__excerpt" itemprop="description">{{ post.description | strip_html | truncatewords: 30 }}</p>
+            </a>
+          </li>
+        {% endfor %}
+        {% for post in site.categories.writing limit:1 %}
+          <li class="preview writing" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <a class="preview__link" href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" itemprop="url">
+              <h1>LATEST WRITING</h1>
+              <h2 class="preview__header" itemprop="name">{{ post.title }}</h2>
+              <span class="preview__date" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <p class="preview__excerpt" itemprop="description">{{ post.description | strip_html | truncatewords: 30 }}</p>
+            </a>
+          </li>
+        {% endfor %}
+        
+      </ul>
+    </div>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</section>

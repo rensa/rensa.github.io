@@ -1,10 +1,10 @@
 ---
 title: Global Game Jam 2016 (Raceline)
-layout: regpage
+layout: post
 category: projects
 date: 2016-02-02
-thumbnail: thumb-2016-02-02-global-game-jam-2016.png
-img: thumb-2016-02-02-global-game-jam-2016.png
+image-sm: thumb-2016-02-02-global-game-jam-2016.png
+image: thumb-2016-02-02-global-game-jam-2016.png
 alt: Raceline
 project-date: Jan 2016
 description: We made a dumb little JavaScript game. Which is more of a game than I've made before!

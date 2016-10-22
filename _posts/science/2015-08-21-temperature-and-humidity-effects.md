@@ -1,14 +1,14 @@
 ---
 title: Temperature and humidity effects on hospital morbidity in Darwin, Australia
 subtitle: Temp and humidity effects on Darwin hospital admissions
-layout: regpage
+layout: post
 category: science
 date: 2015-08-21
 img: thumb-2015-08-21-temperature-and-humidity-effects.png
 thumbnail: thumb-2015-08-21-temperature-and-humidity-effects.png
 alt: Thumbnail of my writing work
 project-date: Aug 2015
-work-type: paper
+work-type: Paper
 ref-authors: Goldie J, Sherwood S C, Green D & Alexander L
 ref-year: 2015
 ref-title: Temperature and humidity effects on hospital morbidity in Darwin, Australia

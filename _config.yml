@@ -1,62 +1,37 @@
-url: http://rensa.co
-baseurl:
-twitter_username: rensa_co
-github_username: rensa
-
 # Site settings
-title: "rensa.co"
-email: me@rensa.co
+title: "James Goldie"
+email: "me@rensa.co"
+url: http://rensa.co
 description: "PhD student (climate + health) @ UNSW + ANU. Climate, public health, gaming, code, vfx, data, science!"
+twitter_username: rensa_co
 
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: fe9036
-  secondary: fe7403  
-  secondary-dark: 333
+# paginate: 5
+# paginate_path: "/blog/page-:num"
+google_analytics: googlee53d5dca6b1758f3
+default_img: /assets/me.jpg
 
-# Team names, titles and social links
-people:
-- name: James Goldie
-  pic: 1
-  position: PhD Candidate
-  social:
-    - title: fa fa-facebook
-      url: http://facebook.com/rensa.co
-    - title: fa fa-twitter
-      url: http://twitter.com/rensa_co
-    - title: fa fa-linkedin
-      url: http://linkedin.com/in/rensaco
-    - title: fa fa-stack-exchange
-      url: http://stackexchange.com/users/3610237/rensa
-    - title: fa fa-github
-      url: http://github.com/rensa
-    - title: ai ai-researchgate
-      url: http://www.researchgate.net/profile/James_Goldie2
-    # - title: fa fa-youtube
-    #   url: http://youtube.com/c/RensaCo
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Profile settings
+name: James Goldie
+profile_img: /assets/me.jpg
+profile: "PhD student (climate + health). I build stuff to help people understand discoveries and change their feelings on issues." 
 social:
-  - title: fa fa-facebook
-    url: http://facebook.com/rensa.co
-  - title: fa fa-twitter
-    url: http://twitter.com/rensa_co
-  - title: fa fa-linkedin
-    url: http://linkedin.com/in/rensaco
-  - title: fa fa-stack-exchange
-    url: http://stackexchange.com/users/3610237/rensa
-  - title: fa fa-github
-    url: http://github.com/rensa
-  - title: ai ai-researchgate
-    url: http://www.researchgate.net/profile/James_Goldie2
-  # - title: fa fa-youtube
-  #   url: http://youtube.com/c/RensaCo
+  facebook: https://facebook.com/rensa
+  twitter: https://twitter.com/rensa_co
+  linkedin: http://au.linkedin.com/in/rensaco
+  github: http://github.com/rensa
+  stack-overflow: http://stackoverflow.com/story/rensa
+  flask: https://www.researchgate.net/profile/James_Goldie2
+
 
 # Build settings
+include: ["_categories"]
+exclude: ["_screenshots", "Gemfile", "Gemfile.lock"]
+markdown: kramdown
 permalink: "/:categories/:title/"
-# css for the syntax highlighting is manually linekd in _includes/head.html
 
-# redcarpet:
-#     extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
+# Sass
+sass:
+  style: compressed
 
-
+# Gems
+gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]

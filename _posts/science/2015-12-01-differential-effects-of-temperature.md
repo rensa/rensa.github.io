@@ -1,14 +1,14 @@
 ---
 title: Differential effects of temperature extremes...
 subtitle: Differential effects of temperature extremes on hospital admission rates for respiratory disease between Indigenous and non-Indigenous Australians in the Northern Territory
-layout: regpage
+layout: post
 category: science
 date: 2015-12-01
 img: thumb-2015-12-01-differential-effects-of-temperature.png
 thumbnail: thumb-2015-12-01-differential-effects-of-temperature.png
 alt: Differential effects of temperature extremes on hospital admission rates for respiratory disease between Indigenous and non-Indigenous Australians in the Northern Territory
 project-date: Nov 2015
-work-type: paper
+work-type: Paper
 ref-authors: Green D, Bambrick H, Tait P, Goldie J, Schultz R, Webb L, Alexander L & Pitman A
 ref-year: 2015
 ref-title: Differential effects of temperature extremes on hospital admission rates for respiratory disease between Indigenous and non-Indigenous Australians in the Northern Territory

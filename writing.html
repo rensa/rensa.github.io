@@ -1,0 +1,44 @@
+---
+layout: default
+title: Writing
+description: 
+permalink: /writing/
+---
+<section class="archives" itemscope itemtype="http://schema.org/Blog">
+  <div>
+    <div class="previews__container archive-category writing">
+      <a href="{{ site.baseurl }}/"><h2>rensa.co</h2></a>
+      <h1>Writing</h1>
+      <a href="{{ site.baseurl }}/science"><h2>Science</h2></a>
+      <a href="{{ site.baseurl }}/projects"><h2>Projects</h2></a>
+      <p>Long-form thoughts. Longer than 140 characters, anyway.</p>
+      <ul class="footer__social">
+        {% for social in site.social %}
+          <li><a class="fa fa-lg fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank"></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  
+  <div class="section-padding archives__container writing">
+    {% for post in site.categories.writing %}
+      <article class="card" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        <a class="card__link" href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" itemprop="url">
+          <div class="card__img">
+            {% if post.image-sm %}
+              <figure class="absolute-bg wow" style="background-image: url('/assets/post-img/{{ post.image-sm }}');"></figure>
+            {% else %}
+              <figure class="absolute-bg wow" style="background-image: url('/assets/post-img/{{ post.image }}');"></figure>
+            {% endif %}
+          </div>
+          <div class="card__container">
+            <h2 class="card__header" itemprop="name">{{ post.title }}</h2>
+            <p class="card__count" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%b %-d, %Y" }}
+            </p>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
