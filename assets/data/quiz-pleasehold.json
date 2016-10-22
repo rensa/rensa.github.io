@@ -1,0 +1,94 @@
+{
+    "title":"Please Hold",
+    "questions":
+    [
+        {
+            "q_id":"phq-type",
+            "q_text":"What are you doing?",
+            "answers":
+            [
+                {
+                    "a_id":"pha-type-call",
+                    "a_text":"Calling",
+                    "a_type":"button",
+                    "a_colour":"red",
+                    "a_icon":"fa-phone",
+                    "goto_id":"phq-call-startdt"
+                },
+                {
+                    "a_id":"pha-type-visit",
+                    "a_text":"Visiting",
+                    "a_type":"button",
+                    "a_colour":"blue",
+                    "a_icon":"fa-building",
+                    "goto_id":""
+                },
+                {
+                    "a_id":"pha-type-other",
+                    "a_text":"Calling",
+                    "a_type":"button",
+                    "a_colour":"green",
+                    "a_icon":"fa-paper-plane",
+                    "goto_id":""
+                }
+            ]
+        },
+
+        {
+            "q_id":"phq-call-startdt",
+            "q_text":"How long ago did you dial?",
+            "answers":
+            [
+                {
+                    "a_id":"pha-call-start-now",
+                    "a_text":"Just now",
+                    "a_type":"button",
+                    "a_colour":"green",
+                    "a_icon":"fa-clock-o",
+                    "goto_id":"phq-call-endhold"
+                },
+                {
+                    "a_id":"pha-call-start-minsago",
+                    "a_text":"mins ago",
+                    "a_type":"button",
+                    "a_colour":"blue",
+                    "a_icon":"fa-building",
+                    "goto_id":"phq-call-endhold"
+                }
+            ]
+        },
+
+        {
+            "q_id":"phq-call-endhold",
+            "q_text":"Did someone answer the call?",
+            "answers":
+            [
+                {
+                    "a_id":"pha-call-answered",
+                    "a_text":"They picked up!",
+                    "a_type":"button",
+                    "a_colour":"green",
+                    "a_icon":"fa-comments",
+                    "goto_id":"phq-call-start"
+                },
+                {
+                    "a_id":"pha-call-busy",
+                    "a_text":"The line was busy",
+                    "a_type":"button",
+                    "a_colour":"yellow",
+                    "a_icon":"fa-ban",
+                    "goto_id":""
+                },
+                {
+                    "a_id":"pha-call-disconnected",
+                    "a_text":"Calling",
+                    "a_type":"button",
+                    "a_colour":"red",
+                    "a_icon":"fa-unlink",
+                    "goto_id":""
+                }
+            ]
+        },
+
+    ]
+}
