@@ -57,6 +57,8 @@
     padding: 2em;
 
     color: $color-white;
+    background-image: url('/assets/cover.jpg');
+    background-size: cover;
 
     span {
       @extend %letter-spacing;
