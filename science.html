@@ -35,7 +35,7 @@ permalink: /science/
         {% for post in site.categories.science %}
           {% if post.work-type == 'Paper' %}
             <li>
-              <a href="{% if post.doi %}http://dx.doi.org/{{ post.doi }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"><h2 class="card__header" itemprop="name">{{ post.ref-authors }} {{ post.ref-year }}.</h2></a>
+              <a href="{% if post.ref-doi %}http://dx.doi.org/{{ post.ref-doi }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"><h2 class="card__header" itemprop="name">{{ post.ref-authors }} {{ post.ref-year }}.</h2></a>
               <p class="card__count">{{ post.ref-title }}. <em>{{ post.ref-journal}}</em>, {{ post.ref-vol }}. <a href="http://dx.doi.org/{{ post.ref-doi }}">doi: {{ post.ref-doi }}</a></p>
             </li>
           {% endif %}
