@@ -10,7 +10,7 @@
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:image" content="{% if page.image %}/assets/page-img/{{ page.image }}{% else %}/assets/page-img/{{ site.default_img }}{% endif %}">
+  <meta property="og:image" content="{% if page.image %}{{ site.url }}/assets/post-img/{{ page.image }}{% else %}{{ site.url }}/assets/post-img/{{ site.default_img }}{% endif %}">
   <meta property="og:type" content="blog">
 
   <meta name="twitter:card" content="summary">
@@ -20,7 +20,7 @@
   <meta name="twitter:site" content="{{ site.title }}">
   <meta name="twitter:creator" content="@{{ site.twitter_username }}">
   <meta name="twitter:domain" content="{{ site.url }}">
-  <meta property="twitter:image" content="{% if page.image %}/assets/page-img/{{ page.image }}{% else %}/assets/page-img/{{ site.default_img }}{% endif %}">
+  <meta property="twitter:image" content="{% if page.image %}{{ site.url }}/assets/post-img/{{ page.image }}{% else %}{{ site.url }}/assets/post-img/{{ site.default_img }}{% endif %}">
 
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Oswald:700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
