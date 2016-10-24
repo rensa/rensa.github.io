@@ -18,6 +18,9 @@ var Tabs = (function() {
         [].forEach.call(s.tab, function(tab) {
           tab.style.display = 'none';
         });
+        
+        /* james's mod: papers tab (0) uses block display, conferences (1)
+                 uses flex. papers pops up be default. */
         s.tab[0].style.display = 'block';
         s.tab[0].classList.add('active');
         s.tabs[0].classList.add('active');
@@ -38,7 +41,18 @@ var Tabs = (function() {
               s.tab[prevIdx].style.display = 'none';
               s.tab[prevIdx].classList.remove('active');
               s.tabs[prevIdx].classList.remove('active');
-              s.tab[currentIdx].style.display = 'block';
+              
+              /* james's mod: papers tab (0) uses block display, conferences (1)
+                 uses flex. set according to tab index */
+              console.log(currentIdx);
+              if (currentIdx == 0)
+              {
+                s.tab[currentIdx].style.display = 'block';  
+              }
+              else if (currentIdx == 1)
+              {
+                s.tab[currentIdx].style.display = 'flex';
+              }
               s.tab[currentIdx].classList.add('active');
               s.tabs[currentIdx].classList.add('active');
             }
@@ -70,7 +84,7 @@ var Preview = (function() {
         [].forEach.call(s.img, function(img) {
           img.style.display = 'none';
         });
-        s.img[0].style.display = 'block';
+        s.img[0].style.display = 'flex';
       }
     },
 
@@ -86,7 +100,7 @@ var Preview = (function() {
 
             if (prevIdx !== currentIdx) {
               s.img[prevIdx].style.display = 'none';
-              s.img[currentIdx].style.display = 'block';
+              s.img[currentIdx].style.display = 'flex';
             }
           });
         });

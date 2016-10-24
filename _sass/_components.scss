@@ -23,11 +23,11 @@
     cursor: pointer;
 
     &:not(.active) {
-      @include border-slide();
+      @include border-slide($color-black, $color-science-a);
     }
 
     &.active {
-      border-bottom: 3px solid $color-alpha;
+      border-bottom: 3px solid $color-science-a;
     }
   }
 }
@@ -609,3 +609,11 @@
     padding-right: 1em;
   }
 }
+
+/* papers: archive tab for papers. no flex grid, just some padding */
+.papers {
+    max-width: $mq-xl;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+} 

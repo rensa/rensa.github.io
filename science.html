@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Science
-description: 
+description:
 permalink: /science/
 ---
 <section class="archives" itemscope itemtype="http://schema.org/Blog">
@@ -12,7 +12,7 @@ permalink: /science/
       <a href="{{ site.baseurl }}/projects"><h2>Projects</h2></a>
       <a href="{{ site.baseurl }}/writing"><h2>Writing</h2></a>
       <p>I'm doing a PhD on climate change and health. I'm interested in how we identify dangerously hot days.</p>
-      <p>I'm primarily fluent in <a href="https://cran.r-project.org/">R</a> and <a href="https://www.gnu.org/software/bash/">bash</a>. I move between <a href="http://anu.edu.au">ANU</a> in Canberra and <a href="http://unsw.edu.au">UNSW</a> in Sydney.</p>
+      <p>I move between <a href="http://anu.edu.au">ANU</a> in Canberra and <a href="http://unsw.edu.au">UNSW</a> in Sydney.</p>
       <ul class="footer__social">
         {% for social in site.social %}
           <li><a class="fa fa-lg fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank"></a></li>
@@ -21,27 +21,51 @@ permalink: /science/
     </div>
   </div>
 
-  <div class="section-padding archives__container science">
-    {% for post in site.categories.science %}
-      
-      
-      <article class="card science" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-        <a class="card__link" href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" itemprop="url">
-          <div class="card__img">
-            {% if post.image-sm %}
-              <figure class="absolute-bg wow" style="background-image: url('/assets/post-img/{{ post.image-sm }}');"></figure>
-            {% else %}
-              <figure class="absolute-bg wow" style="background-image: url('/assets/post-img/{{ post.image }}');"></figure>
-            {% endif %}
-          </div>
-          <div class="card__container">
-            <h2 class="card__header" itemprop="name">{{ post.title }}</h2>
-            <p class="card__count" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">
-              <em>{{ post.work-type }}: </em>{{ post.date | date: "%b %-d, %Y" }}
-            </p>
-          </div>
-        </a>
-      </article>
-    {% endfor %}
+  
+  <div>
+    <header>
+      <ul class="tabs">
+        <li class="tabs__item">Papers</li>
+        <li class="tabs__item">Conferences</li>
+      </ul>
+    </header>
+    <! -- tab 1: papers -->
+    <div class="section-padding science papers tab">
+      <ul>
+        {% for post in site.categories.science %}
+          {% if post.work-type == 'Paper' %}
+            <li>
+              <a href="{% if post.doi %}http://dx.doi.org/{{ post.doi }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"><h2 class="card__header" itemprop="name">{{ post.ref-authors }} {{ post.ref-year }}.</h2></a>
+              <p class="card__count">{{ post.ref-title }}. <em>{{ post.ref-journal}}</em>, {{ post.ref-vol }}. <a href="http://dx.doi.org/{{ post.ref-doi }}">doi: {{ post.ref-doi }}</a></p>
+            </li>
+          {% endif %}
+        {% endfor %}
+      <ul>
+    </div>
+    
+    <!--tab 2: conference presentations (slides and posters) -->
+    <div class="section-padding archives__container science tab">
+      {% for post in site.categories.science %}
+        {% if post.work-type == 'Slides' or post.work-type == 'Poster' %}
+          <article class="card science" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <a class="card__link" href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" itemprop="url">
+              <div class="card__img">
+                {% if post.image-sm %}
+                  <figure class="absolute-bg wow" style="background-image: url('/assets/post-img/{{ post.image-sm }}');"></figure>
+                {% else %}
+                  <figure class="absolute-bg wow" style="background-image: url('/assets/post-img/{{ post.image }}');"></figure>
+                {% endif %}
+              </div>
+              <div class="card__container">
+                <h2 class="card__header" itemprop="name">{{ post.title }}</h2>
+                <p class="card__count" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">
+                  <em>{{ post.work-type }}: </em>{{ post.date | date: "%b %-d, %Y" }}
+                </p>
+              </div>
+            </a>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </section>
