@@ -1,5 +1,6 @@
 # Site settings
 title: "James Goldie"
+subtitle: "rensa.co"
 email: "me@rensa.co"
 url: http://rensa.co
 description: "PhD student (climate + health) @ UNSW + ANU. Climate, public health, gaming, code, vfx, data, science!"
@@ -35,3 +36,7 @@ sass:
 
 # Gems
 gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
+
+# other notes for posts:
+# use my_css and my_js to include a custom style sheet or js
+# use ext_js to include external js libs
