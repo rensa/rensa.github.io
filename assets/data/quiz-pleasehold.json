@@ -1,22 +1,54 @@
 {
     "title":"Please Hold",
     "questions":
-    [
+    {
+        "phq-who":
         {
-            "q_id":"phq-type",
+            "q_text":"Who are you dealing with?",
+            "answers":
+            [
+                {
+                    "a_id":"pha-who-centrelink",
+                    "a_text":"Centrelink",
+                    "a_type":"button",
+                    "a_colour":"red",
+                    "a_icon":"fa-phone",
+                    "goto_id":"phq-mode"
+                },
+                {
+                    "a_id":"pha-who-jobprovider",
+                    "a_text":"Job Services Provider",
+                    "a_type":"button",
+                    "a_colour":"blue",
+                    "a_icon":"fa-building",
+                    "goto_id":"phq-mode"
+                },
+                {
+                    "a_id":"pha-type-other",
+                    "a_text":"Someone else",
+                    "a_type":"button",
+                    "a_colour":"green",
+                    "a_icon":"fa-paper-plane",
+                    "goto_id":"phq-mode"
+                }
+            ]
+        },
+
+        "phq-mode":
+        {
             "q_text":"What are you doing?",
             "answers":
             [
                 {
-                    "a_id":"pha-type-call",
+                    "a_id":"pha-mode-call",
                     "a_text":"Calling",
                     "a_type":"button",
                     "a_colour":"red",
                     "a_icon":"fa-phone",
-                    "goto_id":"phq-call-startdt"
+                    "goto_id":"phq-call-dialdt"
                 },
                 {
-                    "a_id":"pha-type-visit",
+                    "a_id":"pha-mode-visit",
                     "a_text":"Visiting",
                     "a_type":"button",
                     "a_colour":"blue",
@@ -24,7 +56,7 @@
                     "goto_id":""
                 },
                 {
-                    "a_id":"pha-type-other",
+                    "a_id":"pha-mode-other",
                     "a_text":"Calling",
                     "a_type":"button",
                     "a_colour":"green",
@@ -34,13 +66,13 @@
             ]
         },
 
+        "phq-dial-dialdt":
         {
-            "q_id":"phq-call-startdt",
-            "q_text":"How long ago did you dial?",
+            "q_text":"When did you dial?",
             "answers":
             [
                 {
-                    "a_id":"pha-call-start-now",
+                    "a_id":"pha-call-dialdt-now",
                     "a_text":"Just now",
                     "a_type":"button",
                     "a_colour":"green",
@@ -48,9 +80,17 @@
                     "goto_id":"phq-call-endhold"
                 },
                 {
-                    "a_id":"pha-call-start-minsago",
+                    "a_id":"pha-call-dialdt-minsago",
                     "a_text":"mins ago",
-                    "a_type":"button",
+                    "a_type":"numpick",
+                    "a_colour":"blue",
+                    "a_icon":"fa-building",
+                    "goto_id":"phq-call-endhold"
+                },
+                {
+                    "a_id":"pha-call-dialdt-earlier",
+                    "a_text":"Earlier today",
+                    "a_type":"dtpick",
                     "a_colour":"blue",
                     "a_icon":"fa-building",
                     "goto_id":"phq-call-endhold"
@@ -58,8 +98,8 @@
             ]
         },
 
+        "phq-call-endhold":
         {
-            "q_id":"phq-call-endhold",
             "q_text":"Did someone answer the call?",
             "answers":
             [
@@ -69,7 +109,7 @@
                     "a_type":"button",
                     "a_colour":"green",
                     "a_icon":"fa-comments",
-                    "goto_id":"phq-call-start"
+                    "goto_id":"phq-call-answerdt"
                 },
                 {
                     "a_id":"pha-call-busy",
@@ -77,18 +117,119 @@
                     "a_type":"button",
                     "a_colour":"yellow",
                     "a_icon":"fa-ban",
-                    "goto_id":""
+                    "goto_id":"phq-call-enddt"
                 },
                 {
                     "a_id":"pha-call-disconnected",
-                    "a_text":"Calling",
+                    "a_text":"They hung up!",
                     "a_type":"button",
                     "a_colour":"red",
                     "a_icon":"fa-unlink",
-                    "goto_id":""
+                    "goto_id":"phq-call-enddt"
                 }
             ]
         },
 
-    ]
+        "phq-call-answerdt":
+        {
+            "q_text":"When did you get through?",
+            "answers":
+            [
+                {
+                    "a_id":"pha-call-answerdt-now",
+                    "a_text":"Just now",
+                    "a_type":"button",
+                    "a_colour":"green",
+                    "a_icon":"fa-clock-o",
+                    "goto_id":"phq-call-result"
+                },
+                {
+                    "a_id":"pha-call-answerdt-minsago",
+                    "a_text":"mins ago",
+                    "a_type":"numpick",
+                    "a_colour":"blue",
+                    "a_icon":"fa-building",
+                    "goto_id":"phq-call-result"
+                },
+                {
+                    "a_id":"pha-call-answerdt-earlier",
+                    "a_text":"Earlier",
+                    "a_type":"dtpick",
+                    "a_colour":"blue",
+                    "a_icon":"fa-building",
+                    "goto_id":"phq-call-result"
+                }
+            ]
+        },
+
+        "phq-call-result":
+        {
+            "q_text":"How'd things go?",
+            "answers":
+            [
+                {
+                    "a_id":"pha-call-result-good",
+                    "a_text":"Great! All sorted",
+                    "a_type":"button",
+                    "a_colour":"green",
+                    "a_icon":"fa-clock-o",
+                    "goto_id":"phq-wrapup"
+                },
+                {
+                    "a_id":"pha-call-rsult-meh",
+                    "a_text":"Good, buuuut...",
+                    "a_type":"button",
+                    "a_colour":"yellow",
+                    "a_icon":"fa-clock-o",
+                    "goto_id":"phq-wrapup"
+                },
+                {
+                    "a_id":"pha-call-rsult-bad",
+                    "a_text":"Terrible! No help at all",
+                    "a_type":"button",
+                    "a_colour":"red",
+                    "a_icon":"fa-clock-o",
+                    "goto_id":"phq-wrapup"
+                },
+            ]
+        },
+
+        "phq-call-enddt":
+        {
+            "q_text":"When did that happen?",
+            "answers":
+            [
+                {
+                    "a_id":"pha-call-enddt-now",
+                    "a_text":"Just now",
+                    "a_type":"button",
+                    "a_colour":"green",
+                    "a_icon":"fa-clock-o",
+                    "goto_id":"phq-wrapup"
+                },
+                {
+                    "a_id":"pha-call-enddt-minsago",
+                    "a_text":"mins ago",
+                    "a_type":"numpick",
+                    "a_colour":"blue",
+                    "a_icon":"fa-building",
+                    "goto_id":"phq-wrapup"
+                },
+                {
+                    "a_id":"pha-call-enddt-earlier",
+                    "a_text":"Earlier",
+                    "a_type":"dtpick",
+                    "a_colour":"blue",
+                    "a_icon":"fa-building",
+                    "goto_id":"phq-wrapup"
+                }
+            ]
+        },
+
+        "phq-wrapup":
+        {
+            "q_text":"Anything else you want to remember?",
+            "q_hint":"Something they said? Something you were asked to do?"
+        }
+    }
 }
