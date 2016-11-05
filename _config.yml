@@ -38,5 +38,6 @@ sass:
 gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
 
 # other notes for posts:
-# use my_css and my_js to include a custom style sheet or js
-# use ext_js to include external js libs
+# - use my_css and my_js to include a custom style sheet or js
+# - use ext_js to include external js libs
+# - use mast_mini: true to reduce the header size
