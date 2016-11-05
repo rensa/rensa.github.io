@@ -2,6 +2,15 @@
    james goldie, august 2016
 */
 
+$( document ).ready(function(){
+    alert('JQuery ready!');
+    
+    // load the quiz file
+    $.getJSON('/assets/data/quiz-pleasehold.json', function(qd) {
+        alert('Quiz file loaded! ' + qd.title);
+    });
+});
+
 /* possible localstorage contents:
     - start: Call, Visit, Something else
 
@@ -19,41 +28,41 @@
    and record the answer to local storage. a few grab a number of minutes from
    the adjacent text input */
 
-function click_ph_start_call()
-{
-    document.getElementById('ph-start').style.display = 'none'
-    document.getElementById('ph-call-startdt').style.display = 'block'
-    localStorage.setItem('start', 'Call')
-}
+// function click_ph_start_call()
+// {
+//     document.getElementById('ph-start').style.display = 'none'
+//     document.getElementById('ph-call-startdt').style.display = 'block'
+//     localStorage.setItem('start', 'Call')
+// }
 
-function click_ph_call_startdt_now()
-{
-    document.getElementById('ph-call-startdt').style.display = 'none'
-    document.getElementById('ph-call-pickup').style.display = 'block'
+// function click_ph_call_startdt_now()
+// {
+//     document.getElementById('ph-call-startdt').style.display = 'none'
+//     document.getElementById('ph-call-pickup').style.display = 'block'
     
-    // TODO - get the current time and save it to storage
-    // localStorage.setItem('startdt', )
-}
+//     // TODO - get the current time and save it to storage
+//     // localStorage.setItem('startdt', )
+// }
 
-function click_ph_start_visit()
-{
-    document.getElementById('ph-start').style.display = 'none'
-    document.getElementById('ph-visit-startdt').style.display = 'block'
-    localStorage.setItem('start', 'Visit')
-}
+// function click_ph_start_visit()
+// {
+//     document.getElementById('ph-start').style.display = 'none'
+//     document.getElementById('ph-visit-startdt').style.display = 'block'
+//     localStorage.setItem('start', 'Visit')
+// }
 
-function click_ph_start_call()
-{
-    document.getElementById('ph-start').style.display = 'none'
-    document.getElementById('ph-sthelse-startdt').style.display = 'block'
-    localStorage.setItem('start', 'Something Else')
-}
+// function click_ph_start_call()
+// {
+//     document.getElementById('ph-start').style.display = 'none'
+//     document.getElementById('ph-sthelse-startdt').style.display = 'block'
+//     localStorage.setItem('start', 'Something Else')
+// }
 
-/* attach the event listeners */
-document.getElementById('ph-start-call').
-    addEventListener('click', click_ph_start_call)
-// TODO - attach more event listeners
+// /* attach the event listeners */
+// document.getElementById('ph-start-call').
+//     addEventListener('click', click_ph_start_call)
+// // TODO - attach more event listeners
 
-/* onload: if localstorage check clears, find the right block to start with */
+// /* onload: if localstorage check clears, find the right block to start with */
 
-document.getElementById('ph-start').style.display = 'block'
+// document.getElementById('ph-start').style.display = 'block'
