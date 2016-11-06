@@ -343,7 +343,7 @@
 .mast {
   position: relative;
 
-  height: 35em;
+  height: 22em;
 
   color: $color-white;
   background-color: $color-black;
@@ -370,11 +370,6 @@
       font-weight: normal;
       font-size: 1.15em;
       margin: 0;
-    }
-
-    & mast-mini {
-
-      height: 50%;
     }
   }
 
