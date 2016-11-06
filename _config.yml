@@ -30,6 +30,9 @@ exclude: ["_screenshots", "Gemfile", "Gemfile.lock"]
 markdown: kramdown
 permalink: "/:categories/:title/"
 
+kramdown:
+  smart_quotes: ["lsquo", "rsquo", "ldquo", "rdquo"]
+
 # Sass
 sass:
   style: compressed
