@@ -5,8 +5,7 @@ layout: default
 
   <header class="section-padding--lg mast">
     <a class="nav nav--white" href="{{ site.baseurl }}/{{ page.categories }}">
-      <i class="fa fa-lg fa-arrow-left"></i>
-      <span>{{ page.categories | join: ', ' }}</span>
+      <h2>{{ site.subtitle }} | {{ page.categories | join: ', ' }}</h2>
     </a>
     <figure class="absolute-bg mast__img" style="background-image: url('/assets/post-img/{{ page.image }}');"></figure>
     <div class="mast__container {{ page.categories }}">
