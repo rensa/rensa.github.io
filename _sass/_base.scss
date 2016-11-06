@@ -102,6 +102,14 @@ a {
   }
 }
 
+blockquote {
+
+  & > p {
+    font-style: italic;
+    color: #333;
+  }
+}
+
 figure {
   margin: 0;
 }
