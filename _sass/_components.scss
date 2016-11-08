@@ -393,6 +393,10 @@
   align-items: center;
 
   font-family: $font-body;
+  
+  h2 {
+    font-size: 1em;
+  }
 
   @media (min-width: $mq-sm) {
     left: 2em;
