@@ -11,8 +11,7 @@ permalink: /science/
       <h1>Science</h1>
       <a href="{{ site.baseurl }}/projects"><h2>Projects</h2></a>
       <a href="{{ site.baseurl }}/writing"><h2>Writing</h2></a>
-      <p>I'm doing a PhD on climate change and health. I'm interested in how we identify dangerously hot days.</p>
-      <p>I move between <a href="http://anu.edu.au">ANU</a> in Canberra and <a href="http://unsw.edu.au">UNSW</a> in Sydney.</p>
+      <p>Learn more about my research and publications.</p>
       <ul class="footer__social">
         {% for social in site.social %}
           <li><a class="fa fa-lg fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank"></a></li>
@@ -25,11 +24,25 @@ permalink: /science/
   <div>
     <header>
       <ul class="tabs">
+        <li class="tabs__item">Bio</li>
         <li class="tabs__item">Papers</li>
         <li class="tabs__item">Conferences</li>
       </ul>
     </header>
-    <! -- tab 1: papers -->
+    
+  <!-- tab 1: bio -->
+    <div class="section-padding science papers tab">
+      <p>I'm a PhD student with the <a href="http://ccrc.unsw.edu.au">Climate Change Research Centre</a> at UNSW, Sydney. I'm interested in the health impacts of climate change: how we identify dangerously hot days, the effects those days have on public health and how those days are going to change in the future given human activity.</p>
+      
+      <p>I've presented my work at conferences in the past, so the slides and posters here are a good starting point for learning more about my work. If you're looking for a paper I've published, they're also available here.</p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.124846382947!2d149.1139164157679!3d-35.278022100995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164d458b8829b5%3A0x61d2a05d902d788a!2sForestry+Building%2C+ANU!5e0!3m2!1sen!2sau!4v1484465738475" width="100%" height="200" frameborder="0" style="border:0;margin:10px 0" allowfullscreen></iframe>
+
+      <p>Although I'm a UNSW student, I'm mostly based in Canberra at ANU's <a href="http://fennerschool.anu.edu.au/">Fenner School</a>. I also work as a student rep for the ACT branch of the <a href="https://www.amos.org.au/">Australian Meteorological &amp; Oceanographic Society</a>.</p>
+        
+    </div>
+
+    <!-- tab 2: papers -->
     <div class="section-padding science papers tab">
       <ul>
         {% for post in site.categories.science %}
@@ -43,7 +56,7 @@ permalink: /science/
       <ul>
     </div>
     
-    <!--tab 2: conference presentations (slides and posters) -->
+    <!-- tab 3: conference presentations (slides and posters) -->
     <div class="section-padding archives__container science tab">
       {% for post in site.categories.science %}
         {% if post.work-type == 'Slides' or post.work-type == 'Poster' %}
@@ -67,5 +80,6 @@ permalink: /science/
         {% endif %}
       {% endfor %}
     </div>
+
   </div>
 </section>

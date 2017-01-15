@@ -3,7 +3,7 @@ title: "James Goldie"
 subtitle: "rensa.co"
 email: "me@rensa.co"
 url: http://rensa.co
-description: "PhD student (climate + health) @ UNSW + ANU. Climate, public health, gaming, code, vfx, data, science!"
+description: "PhD student (climate change + health). I also code and build things for fun and for social change."
 twitter_username: rensa_co
 
 # paginate: 5
@@ -14,7 +14,8 @@ default_img: /assets/me.jpg
 # Profile settings
 name: James Goldie
 profile_img: /assets/me.jpg
-profile: "I'm a PhD student (in climate + health); I'm also interested in coding for social change." 
+profile: "PhD student (climate change + health). I also code and build things for fun and for social change."
+
 social:
   facebook: https://facebook.com/rensa
   twitter: https://twitter.com/rensa_co
