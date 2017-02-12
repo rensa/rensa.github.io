@@ -94,12 +94,16 @@ h3 {
 
 p {
   margin: 0 0 0.75em;
+  
+  /* only bold links within other text content! */
+  a {
+    font-weight: bold;
+  }
 }
 
 a {
   color: $color-black;
   text-decoration: none;
-  font-weight: bold;
   transition: color 0.4s ease-in-out;
 
   &:hover,
