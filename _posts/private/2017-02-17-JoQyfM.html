@@ -1,0 +1,74 @@
+---
+title: Sea rise VR test
+layout: post
+category: private
+date: 2017-02-17
+alt: Sea rise VR test
+project-date: Feb 2017
+description: Work in progress! Use the goggle button (bottom-right) to view in VR (on phones) or full-screen.
+ext_js_head:
+    - url: https://aframe.io/releases/0.5.0/aframe.min.js
+---
+
+<!--javascript (mostly event handlers) for the scene -->
+<script>
+    AFRAME.registerComponent('coogee2006-scene', {
+    
+    // emit text events when the scene is initialised
+    init: function () {
+        console.log('Running coogee2006-scene.init()')
+        document.querySelector("#coogee2006-text").emit('coogeetour');
+    }
+    });
+</script>
+
+<!-- scene elements -->
+<a-scene coogee2006-scene embedded style="width:100%;height:400px;">
+    <a-assets>
+        <img
+            id="coogee2006"
+            src="/assets/vr/sydney-coogee-3-peter-gawthrop.jpg"
+            preload="auto">
+        <audio
+            id="beachsound"
+            src="/assets/vr/beach1.wav"
+            preload="auto">
+    </a-assets>
+
+    <a-sky src="#coogee2006"
+        rotation="0 -90 0">
+    </a-sky>
+    
+    <!-- text animates in on startup (see searise_vr.js) -->
+    <a-text
+        id="coogee2006-text"
+        value="Coogee, Sydney\n2006"
+        position="5 12.5 -50"
+        rotation="0 -15 0"
+        scale="20 20 20"
+        visible="true"
+        text="anchor:align;alphaTest:0.2;width:5;
+        value:COOGEE, SYDNEY\n2006;
+        zOffset:0;color:#000;font:exo2bold"
+        sound="src:#beachsound;autoplay:true;loop:true;volume:20;">
+        <!--<a-animation
+            attribute="position"
+            dur="3000"
+            begin="coogeetour"
+            from="5 12.5 -50"
+            to="12.5 12.5 -50"
+            easing="ease-in"
+            fill="both"
+            repeat="0">
+        </a-animation>-->
+        <a-animation
+            attribute="opacity"
+            duration="3000"
+            begin="coogeetour"
+            from="0"
+            to="1"
+            fill="both"
+            repeat="0">
+        </a-animation>
+    </a-text>
+</a-scene>

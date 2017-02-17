@@ -44,4 +44,7 @@
       ga('send', 'pageview');
     </script>
   {% endif %}
+  {% for ext_js_head in page.ext_js_head %}
+    <script type="text/javascript" src="{{ ext_js_head.url }}"></script>
+  {% endfor %}
 </head>
