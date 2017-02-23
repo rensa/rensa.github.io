@@ -11,52 +11,81 @@ ext_js_head:
 
 ---
 
-<script>
-    // component to trigger scene initialisation events
-    AFRAME.registerComponent('coogee2006-ani', {
-        init: function () {
-            console.log('Text ani pls?');
-            document.querySelector("#coogee2006-text").emit("coogeetour");
-        }
-    });
-</script>
+<script type="text/javascript" src="/assets/js/searise_vr.js"></script>
 
 <!-- scene elements -->
 <a-scene embedded coogee2006-ani style="width:100%;height:400px;">
     <a-assets>
         <img
             id="coogee2006"
-            src="/assets/vr/sydney-coogee-3-peter-gawthrop.jpg"
-            preload="auto">
+            src="/assets/vr/sydney-coogee-3-peter-gawthrop.jpg">
         <audio
             id="beachsound"
             src="/assets/vr/beach1.mp3"
             preload="auto">
+        <a-mixin id="fadein"
+            attribute="opacity"
+            dur="3000"
+            delay="coogeetour"
+            from="0"
+            to="1"
+            fill="both"
+            repeat="0">
+        </a-mixin>
     </a-assets>
 
-    <a-sky id="coogee2006-sky"
+    <!-- starter object: gaze at to start coogeetour -->
+    <a-entity start-btn id="start-btn"
+        position="-5 5 -20"
+        rotation="-30 30 0"
+        geometry="primitive:box;mergeTo:null;depth:4;height:4;width:4"
+        material="color:#333;fog:false;">
+        <a-animation start-btn-fadeout id="start-btn-fadeout"
+            attribute="material.opacity"
+            dur="2000"
+            begin="coogeetour"
+            from="1"
+            to="0"
+            fill="both"
+            repeat="0">
+        </a-animation>
+    </a-entity>
+
+    <a-camera>
+        <a-cursor fuse="true" position="0 0 -1"></a-cursor>
+    </a-camera>
+
+    <!-- scene 1a: coogee, 2006 -->
+    <a-sky
+        id="coogee2006-sky"
         src="#coogee2006"
-        rotation="0 -90 0">
+        rotation="0 -90 0"
+        material="opacity:0"
+        visible="false">
+        <a-animation
+            attribute="material.opacity"
+            dur="7000"
+            begin="coogeetour"
+            from="0"
+            to="1"
+            fill="both"
+            repeat="0">
+        </a-animation>
     </a-sky>
-    
-    <!-- text animates in on startup -->
     <a-text id="coogee2006-text"
         value="Coogee, Sydney\n2006"
         rotation="0 -15 0"
         scale="20 20 20"
-        visible="true"
+        visible="false"
         text="anchor:align;alphaTest:0.2;width:5;
         value:COOGEE, SYDNEY\n2006;
-        zOffset:0;color:black;font:exo2bold"
-        sound="src:#beachsound;autoplay:true;loop:true;volume:20;">
-        <!-- dur: duration of ani
-             delay: event to trigger
-             begin: additional time delay -->
+        zOffset:0;color:black;opacity:0;font:exo2bold"
+        sound="src:#beachsound;on:coogeetour;loop:true;volume:20;">
         <a-animation
             attribute="position"
             dur="5000"
-            delay="coogeetour"
-            from="10 12.5 -50"
+            begin="coogeetour"
+            from="0 12.5 -50"
             to="15 12.5 -50"
             easing="ease-out"
             fill="both"
@@ -65,12 +94,16 @@ ext_js_head:
         <a-animation
             attribute="opacity"
             dur="3000"
-            delay="coogeetour"
-            begin="2000"
+            begin="coogeetour"
+            delay="2000"
             from="0"
             to="1"
             fill="both"
             repeat="0">
-        </a-animation>
     </a-text>
 </a-scene>
+
+<!-- animation attributes... 
+    dur: duration of ani
+    delay: event to trigger
+    begin: additional time delay -->
