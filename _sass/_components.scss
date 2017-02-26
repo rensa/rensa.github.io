@@ -499,6 +499,17 @@
     font-size: 0.85em;
     font-family: 'Input Mono Narrow';
   }
+
+  /* bulleted lists */
+  ol
+  {
+    list-style-type: decimal;
+  }
+
+  ul
+  {
+    list-style-type: disc;
+  }
 }
 
 /**
