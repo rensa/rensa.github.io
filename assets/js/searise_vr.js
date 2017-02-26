@@ -6,21 +6,12 @@ AFRAME.registerComponent('btn-coogee',
     init: function()
     {
         console.log('Coogee button component registered');
-        this.el.addEventListener('click', btn_coogee_fadeout);
         this.el.addEventListener('animationbegin', btn_coogee_disable)
         this.el.addEventListener('animationcomplete', coogee2006_scene_start)
     }
 });
 
 /* event handler definitions ------------------------------------------------ */
-
-// btn_coogee_fadeout: emit event for btn fadeout ani, turn off click listener
-function btn_coogee_fadeout()
-{
-    console.log('Coogee button fading');
-    document.querySelector("#btn-coogee").
-        emit("fadeout");
-}
 
 function btn_coogee_disable()
 {
