@@ -8,7 +8,6 @@ project-date: Feb 2017
 description: Work in progress! Use the goggle button (bottom-right) to view in VR (on phones) or full-screen.
 ext_js_head:
     - url: https://aframe.io/releases/0.5.0/aframe.min.js
-
 ---
 
 <script type="text/javascript" src="/assets/js/searise_vr.js"></script>
@@ -35,15 +34,15 @@ ext_js_head:
     </a-assets>
 
     <!-- starter object: gaze at to start coogeetour -->
-    <a-entity start-btn id="start-btn"
+    <a-entity btn-coogee id="btn-coogee"
         position="-5 5 -20"
         rotation="-30 30 0"
         geometry="primitive:box;mergeTo:null;depth:4;height:4;width:4"
         material="color:#333;fog:false;">
-        <a-animation start-btn-fadeout id="start-btn-fadeout"
+        <a-animation ani-btn-coogee id="ani-btn-coogee"
             attribute="material.opacity"
             dur="2000"
-            begin="coogeetour"
+            begin="fadeout"
             from="1"
             to="0"
             fill="both"
@@ -65,7 +64,7 @@ ext_js_head:
         <a-animation
             attribute="material.opacity"
             dur="7000"
-            begin="coogeetour"
+            begin="fadein"
             from="0"
             to="1"
             fill="both"
@@ -84,7 +83,7 @@ ext_js_head:
         <a-animation
             attribute="position"
             dur="5000"
-            begin="coogeetour"
+            begin="fadein"
             from="0 12.5 -50"
             to="15 12.5 -50"
             easing="ease-out"
