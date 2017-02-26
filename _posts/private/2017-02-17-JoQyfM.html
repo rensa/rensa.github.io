@@ -8,6 +8,7 @@ project-date: Feb 2017
 description: Work in progress! Use the goggle button (bottom-right) to view in VR (on phones) or full-screen.
 ext_js_head:
     - url: https://aframe.io/releases/0.5.0/aframe.min.js
+    - url: https://unpkg.com/aframe-animation-component@^3.2.0/dist/aframe-animation-component.min.js
 ---
 
 <script type="text/javascript" src="/assets/js/searise_vr.js"></script>
@@ -38,16 +39,12 @@ ext_js_head:
         position="-5 5 -20"
         rotation="-30 30 0"
         geometry="primitive:box;mergeTo:null;depth:4;height:4;width:4"
-        material="color:#333;fog:false;">
-        <a-animation ani-btn-coogee id="ani-btn-coogee"
-            attribute="material.opacity"
-            dur="2000"
-            begin="fadeout"
-            from="1"
-            to="0"
-            fill="both"
-            repeat="0">
-        </a-animation>
+        material="color:#333;fog:false;"
+        animation="
+            property:material.opacity;
+            dur:2000;
+            to:0;
+            startEvents:fadeout;">
     </a-entity>
 
     <a-camera>
@@ -60,45 +57,44 @@ ext_js_head:
         src="#coogee2006"
         rotation="0 -90 0"
         material="opacity:0"
-        visible="false">
-        <a-animation
-            attribute="material.opacity"
-            dur="7000"
-            begin="fadein"
-            from="0"
-            to="1"
-            fill="both"
-            repeat="0">
-        </a-animation>
+        visible="false"
+        animation="
+            property: material.opacity;
+            dur: 7000;
+            to: 1;
+            startEvents: fadein">
     </a-sky>
     <a-text id="coogee2006-text"
         value="Coogee, Sydney\n2006"
+        position="0 12.5 -50"
         rotation="0 -15 0"
         scale="20 20 20"
         visible="false"
-        text="anchor:align;alphaTest:0.2;width:5;
-        value:COOGEE, SYDNEY\n2006;
-        zOffset:0;color:black;opacity:0;font:exo2bold"
-        sound="src:#beachsound;on:coogeetour;loop:true;volume:20;">
-        <a-animation
-            attribute="position"
-            dur="5000"
-            begin="fadein"
-            from="0 12.5 -50"
-            to="15 12.5 -50"
-            easing="ease-out"
-            fill="both"
-            repeat="0">
-        </a-animation>
-        <a-animation
-            attribute="opacity"
-            dur="3000"
-            begin="coogeetour"
-            delay="2000"
-            from="0"
-            to="1"
-            fill="both"
-            repeat="0">
+        text="anchor: align;
+            alphaTest: 0.2;
+            width: 5;
+            value: COOGEE, SYDNEY\n2006;
+            zOffset: 0;
+            color: black;
+            opacity: 0;
+            font: exo2bold"
+        sound="
+            src: #beachsound;
+            on: fadein;
+            loop: true;
+            volume: 20"
+        animation__pos="
+            property: position;
+            dur: 3000;
+            to: 15 12.5 -50;
+            easing: easeOutQuad;
+            startEvents: fadein"
+        animation__opa="
+            property: opacity;
+            dur: 3000;
+            to: 1;
+            startEvents: fadein;
+            delay: 4000">
     </a-text>
 </a-scene>
 
