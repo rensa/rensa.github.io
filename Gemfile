@@ -4,4 +4,5 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
   gem "octopress-autoprefixer"
+  gem "rouge", "1.11.1"
 end

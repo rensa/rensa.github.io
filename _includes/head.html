@@ -24,10 +24,14 @@
   <meta name="twitter:domain" content="{{ site.url }}">
   <meta property="twitter:image" content="{% if page.image %}{{ site.url }}/assets/post-img/{{ page.image }}{% else %}{{ site.url }}/assets/post-img/{{ site.default_img }}{% endif %}">
 
+  <!-- style and other imports -->
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Oswald:700" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <!-- syntax highlighting -->
+  <link rel="stylesheet" href="/assets/css/solarized_dark.css">
+  <!-- custom post css -->
   <link rel="stylesheet" href="{% if page.my_css %}{{ site.baseurl }}/assets/css/{{ page.my_css }}{% else %}{{ '/assets/css/main.css' | prepend: site.baseurl }}{% endif %}">
 
 
@@ -44,6 +48,8 @@
       ga('send', 'pageview');
     </script>
   {% endif %}
+  
+  <!-- external javascript needed in header for a post? -->
   {% for ext_js_head in page.ext_js_head %}
     <script type="text/javascript" src="{{ ext_js_head.url }}"></script>
   {% endfor %}

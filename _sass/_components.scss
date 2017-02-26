@@ -472,6 +472,33 @@
   figure > img {
     padding-bottom: 0;
   }
+
+  /* code block figures */
+  figure.highlight
+  {
+    padding-bottom: 0;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px solid;
+    overflow: auto;
+
+    > pre
+    {
+      margin: 0;
+    }
+
+    td.gutter
+    {
+      border-right: 1px solid;
+    }
+  }
+
+  /* all code (inline + figures) */
+  pre, code
+  {
+    font-size: 0.85em;
+    font-family: 'Input Mono Narrow';
+  }
 }
 
 /**

@@ -34,13 +34,14 @@ permalink: "/:categories/:title/"
 
 kramdown:
   smart_quotes: ["lsquo", "rsquo", "ldquo", "rdquo"]
+  syntax_highlighter: rouge
 
 # Sass
 sass:
   style: compressed
 
 # Gems
-gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
+gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer, rouge]
 
 # other notes for posts:
 # - use my_css and my_js to include a custom style sheet or js
