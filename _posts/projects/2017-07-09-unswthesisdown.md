@@ -4,7 +4,7 @@ layout: post
 category: projects
 date: 2017-07-09
 image-sm: thumb-2017-07-09-unswthesisdown.png
-image: thumb-2017-07-09-unswthesisdown.png
+image: 2017-07-09-unswthesisdown.png
 alt: unswthesisdown
 project-date: Jun 2017
 description: A package for writing your thesis in RMarkdown according to UNSW guidelines.
