@@ -10,7 +10,7 @@ alt: Comparative evaluation of human heat stress indices on selected hospital ad
 project-date: May 2017
 work-type: Paper
 ref-authors: Goldie J, Alexander L, Lewis S C & Sherwood S
-ref-year: Accepted
+ref-year: 2017
 ref-title: Comparative evaluation of human heat stress indices on selected hospital admissions in Sydney, Australia
 ref-journal: Australian and New Zealand Journal of Public Health
 ref-doi: 10.1111/1753-6405.12692
