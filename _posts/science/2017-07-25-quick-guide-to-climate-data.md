@@ -4,6 +4,7 @@ subtitle:
 layout: post
 category: science
 date: 2017-07-25
+image: 2017-07-25-quick-guide-to-climate-data.png
 image-sm: thumb-2017-07-25-quick-guide-to-climate-data.png
 alt: AMOS 2015 Presentation
 project-date: Jul 2017
