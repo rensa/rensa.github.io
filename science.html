@@ -58,7 +58,7 @@ permalink: /science/
     <!-- tab 4: conference presentations (slides and posters) -->
     <div class="section-padding archives__container science tab">
       {% for post in site.categories.science %}
-        {% if post.work-type == 'Slides' or post.work-type == 'Poster' %}
+        {% if post.work-type == 'Talk' or post.work-type == 'Poster' %}
           <article class="card science" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
             <a class="card__link" href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" itemprop="url">
               <div class="card__img">
