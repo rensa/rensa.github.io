@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/rensa
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://rensa.co
+  * I am rensa (https://keybase.io/rensa) on keybase.
+  * I have a public key ASA7ajH7t3SoJUFPOHW5j0sspNwOd_CjnhkNzk8aBZTj_wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01203b6a31fbb774a825414f3875b98f4b2ca4dc0e77f0a39e190dce4f1a0594e3ff0a",
+      "host": "keybase.io",
+      "kid": "01203b6a31fbb774a825414f3875b98f4b2ca4dc0e77f0a39e190dce4f1a0594e3ff0a",
+      "uid": "46ee6da58d8ff3168bab7267278e5119",
+      "username": "rensa"
+    },
+    "merkle_root": {
+      "ctime": 1501122041,
+      "hash": "a4904b28604f1b72b488daee538e5346c2a979aadbdbc82238a4aef757a870d971bc747ff2289b1d11fe63f5c73316af0085e734a6d57b9cf06f752286dee628",
+      "hash_meta": "2457c65adb287ce642a81a51c584be4f36d382c4cb49b1856109f2e0cd0af968",
+      "seqno": 1283722
+    },
+    "service": {
+      "hostname": "rensa.co",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.26"
+  },
+  "ctime": 1501122059,
+  "expire_in": 504576000,
+  "prev": "3eeece5e550fae68d85c17f6c08334143394693e2cff634f90c1ca0bc9eea7e3",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgO2ox+7d0qCVBTzh1uY9LLKTcDnfwo54ZDc5PGgWU4/8Kp3BheWxvYWTFAzx7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwM2I2YTMxZmJiNzc0YTgyNTQxNGYzODc1Yjk4ZjRiMmNhNGRjMGU3N2YwYTM5ZTE5MGRjZTRmMWEwNTk0ZTNmZjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwM2I2YTMxZmJiNzc0YTgyNTQxNGYzODc1Yjk4ZjRiMmNhNGRjMGU3N2YwYTM5ZTE5MGRjZTRmMWEwNTk0ZTNmZjBhIiwidWlkIjoiNDZlZTZkYTU4ZDhmZjMxNjhiYWI3MjY3Mjc4ZTUxMTkiLCJ1c2VybmFtZSI6InJlbnNhIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTAxMTIyMDQxLCJoYXNoIjoiYTQ5MDRiMjg2MDRmMWI3MmI0ODhkYWVlNTM4ZTUzNDZjMmE5NzlhYWRiZGJjODIyMzhhNGFlZjc1N2E4NzBkOTcxYmM3NDdmZjIyODliMWQxMWZlNjNmNWM3MzMxNmFmMDA4NWU3MzRhNmQ1N2I5Y2YwNmY3NTIyODZkZWU2MjgiLCJoYXNoX21ldGEiOiIyNDU3YzY1YWRiMjg3Y2U2NDJhODFhNTFjNTg0YmU0ZjM2ZDM4MmM0Y2I0OWIxODU2MTA5ZjJlMGNkMGFmOTY4Iiwic2Vxbm8iOjEyODM3MjJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoicmVuc2EuY28iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjI2In0sImN0aW1lIjoxNTAxMTIyMDU5LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjNlZWVjZTVlNTUwZmFlNjhkODVjMTdmNmMwODMzNDE0MzM5NDY5M2UyY2ZmNjM0ZjkwYzFjYTBiYzllZWE3ZTMiLCJzZXFubyI6NywidGFnIjoic2lnbmF0dXJlIn2jc2lnxEB1tMYkzm2QTVVWQx+UEEsMaDxrUxdY29AWXHrqWBVi9YApQvODinnVK2hb1OM1hzPJsfGCpagROzX4jVwd9PQBqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgUPxtVq1G/S6IPu9yeTwVT7OoURLd2hAzYY/0dSRzC8yjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rensa
+
+==================================================================
