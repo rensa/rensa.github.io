@@ -2,6 +2,7 @@
 title: Kitchen speaker, charger and voice assistant
 layout: post
 category: projects
+tags: [diy, bluetooth, raspberry pi, voice assistants]
 date: 2017-06-05
 alt: Please Hold
 image: TK

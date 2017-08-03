@@ -2,6 +2,7 @@
 title: Humid heat sucks. This is how we measure it
 layout: post
 category: writing
+tags: [explainer, heat stress]
 date: 2017-02-11
 image-sm: thumb-2017-02-11-humid-heat-sucks.jpg
 image: 2017-02-11-humid-heat-sucks.jpg

@@ -2,6 +2,7 @@
 title: Welfare is a waste of time
 layout: post
 category: writing
+tags: [centrelink, welfare, opinion]
 date: 2016-11-06
 image-sm: thumb-2016-11-13-welfare-is-a-waste-of-time.jpeg
 image: 2016-11-13-welfare-is-a-waste-of-time.jpeg

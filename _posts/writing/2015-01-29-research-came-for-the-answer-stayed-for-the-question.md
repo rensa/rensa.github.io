@@ -2,6 +2,7 @@
 title: Research—came for the answer, stayed for the question
 layout: post
 category: writing
+tags: [opinion]
 date: 2015-01-29
 image: writing-thumb-default.png
 image-sm: writing-thumb-default.png
