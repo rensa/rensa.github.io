@@ -18,18 +18,13 @@ layout: default
           <li><a class="fa fa-lg fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank"></a></li>
         {% endfor %}
       </ul>
+      <a id="scroll_to_latest" class="fa fa-2x fa-angle-down"
+        href="#latest"></a>
     </div>
   </div>
 
   <div>
-    <!--<header>
-      <ul class="tabs">
-        <li class="tabs__item">Posts</li>
-        <li class="tabs__item">Categories</li>
-      </ul>
-    </header>-->
-
-    <div class="tab">
+    <div class="tab" id="latest">
       <ul itemscope itemtype="http://schema.org/Blog">
         {% for post in site.categories.science limit:1 %}
           <li class="preview science" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">

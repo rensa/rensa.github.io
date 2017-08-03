@@ -328,6 +328,17 @@
   }
 }
 
+#scroll_to_latest
+{
+  color: #fff;
+  padding: 2em;
+
+  @media (min-width: $mq-md)
+  {
+    display: none;
+  }
+}
+
 .archive-category .footer__social
 {
   @media (min-width: $mq-md)
