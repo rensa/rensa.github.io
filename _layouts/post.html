@@ -64,7 +64,7 @@ layout: default
 
 {% if page.previous.url %}
   <section class="next">
-    <a class="next__link {{ page.previous.categories }}" href="{{page.previous.url | prepend: site.baseurl }}" style="background-image: url('/assets/post-img/{{ page.previous.image }}');">
+    <a class="next__link {{ page.previous.categories }}" href="{{page.previous.url | prepend: site.baseurl }}"">
       <div class="next__container">
         <span>Read Next</span>
         <h2>{{page.previous.title}}</h2>

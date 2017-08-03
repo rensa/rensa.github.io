@@ -185,17 +185,17 @@
 .card {
 
   &__link {
-    @include box-shadow(1px);
+    // @include box-shadow(1px);
 
     position: relative;
 
     display: block;
 
-    background-color: $color-white;
+    background-color: none;
     transition: background-color 0.2s ease-in-out;
 
     &:after {
-      @include box-shadow(3px);
+      // @include box-shadow(3px);
 
       content: '';
       position: absolute;
@@ -211,7 +211,7 @@
     }
 
     &:hover {
-      background-color: $color-alpha--light;
+      background-color: none;
 
       &:after {
         opacity: 1;
@@ -237,7 +237,7 @@
   }
 
   &__container {
-    padding: 2em 1em;
+    padding: 1em 0;
   }
 
   &__header {
@@ -619,8 +619,8 @@
 
   &__link {
     display: block;
-    height: 25em;
-    padding: 6em 0;
+    height: 8em;
+    padding: 3em 0;
 
     color: $color-white;
     background-size: cover;
@@ -687,7 +687,7 @@
 
 /* papers: archive tabs for papers. no flex grid, just some padding */
 .papers {
-    max-width: $mq-sm;
+    max-width: $mq-md;
     margin: 0 auto;
     padding-left: 1em;
     padding-right: 1em;
