@@ -3,6 +3,26 @@ layout: default
 ---
 <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <!-- regular header for posts where mast == FALSE (F, No, N) specified -->
+  {% if page.mast == false %}
+  <header class="section-padding--lg mast mast_off">
+    <a class="nav nav--white" href="{{ site.baseurl }}/{{ page.categories }}">
+      <h2>{{ site.subtitle }} | {{ page.categories | join: ', ' }}</h2>
+    </a>
+  </header>
+
+  <section class="section-padding post" itemprop="articleBody">
+    <div class="mast__container mast_off {{ page.categories }}">
+      <span><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></span>
+      <h1 itemprop="name headline">{{ page.title }}</h1>
+      <h4>{{ page.description }}</h4>
+      <span></span>
+    </div>
+    
+    {{ content }}
+  </section>
+  {% else %}
+  <!-- full-bleed cover mast (default) -->
   <header class="section-padding--lg mast">
     <a class="nav nav--white" href="{{ site.baseurl }}/{{ page.categories }}">
       <h2>{{ site.subtitle }} | {{ page.categories | join: ', ' }}</h2>
@@ -15,10 +35,11 @@ layout: default
       <span></span>
     </div>
   </header>
-
+  
   <section class="section-padding post" itemprop="articleBody">
     {{ content }}
   </section>
+  {% endif %}
 
   <section class="profile">
     <div class="profile__card">

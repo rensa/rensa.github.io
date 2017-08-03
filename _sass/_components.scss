@@ -362,6 +362,12 @@
   color: $color-white;
   background-color: $color-black;
 
+  /* shrink it down to a bar if mast == false in yaml */
+  &.mast_off
+  {
+    height: 4.25em
+  }
+
   &:after {
     @extend %overlay;
   }
@@ -381,7 +387,15 @@
 
     @media (min-width: $mq-sm) {
       padding: 2em;
-    }    
+    }
+
+    /* ditch the big and expand it out if mast == false in yaml */
+    &.mast_off
+    {
+      background: none;
+      padding: 0;
+      padding-bottom: 2em;
+    }
 
     h4
     {
@@ -467,8 +481,8 @@
 
   font-family: $font-post;
 
-  @media (min-width: $mq-md) {
-    width: 55%;
+  @media (min-width: calc($mq-md + 2em)) {
+    max-width: $mq-md;
   }
 
   h1, 
