@@ -571,18 +571,43 @@
 
   &__img {
     position: relative;
-
-    min-height: 15em;
-
-    background-color: $color-black;
+    padding: 1em 1em 0 1em;
+    background-color: none;
 
     @media (min-width: $mq-md) {
-      flex-basis: 45%;
-      max-width: 45%;
+      min-height: 15em;
+      padding: 2.5em 1em;
+      flex-basis: 35%;
+      max-width: 35%;
     }
 
     &:after {
-      @extend %overlay;
+      // @extend %overlay;
+    }
+
+    &> figure
+    {
+      position: static;
+      height: 150px;
+      width: 150px;
+      margin: auto;
+      border-radius: 50%;
+      background-color: none;
+    }
+
+    &.home
+    {
+        flex-basis: auto;
+        height: 125px;
+        width: 125px;
+        min-height: 125px;
+        margin-bottom: 2em;
+        padding: 0;
+        &> figure
+        {
+          height: 125px;
+          width: 125px;
+        }
     }
   }
 
@@ -590,13 +615,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0 1em 1em 1em;
 
     background-color: $color-white;
 
     @media (min-width: $mq-md) {
-      flex-basis: 55%;
-      max-width: 55%;
+      flex-basis: 65%;
+      max-width: 65%;
+      padding: 1em;
     }
   }
 
