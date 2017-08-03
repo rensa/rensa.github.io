@@ -354,7 +354,10 @@
 .mast {
   position: relative;
 
-  height: 22em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
   color: $color-white;
   background-color: $color-black;
@@ -371,9 +374,14 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 100%;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.5);
+
+    @media (min-width: $mq-sm) {
+      padding: 2em;
+    }    
 
     h4
     {
