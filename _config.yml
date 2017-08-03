@@ -9,11 +9,11 @@ twitter_username: rensa_co
 # paginate: 5
 # paginate_path: "/blog/page-:num"
 google_analytics: googlee53d5dca6b1758f3
-default_img: /assets/me.jpg
+default_img: assets/me.jpg
 
 # Profile settings
 name: James Goldie
-profile_img: /assets/me.jpg
+profile_img: assets/me.jpg
 profile: "PhD student (climate change + health). I also code and build things for fun and for social change."
 
 social:
