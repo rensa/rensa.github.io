@@ -512,8 +512,10 @@
     padding-bottom: 0;
     margin-bottom: 25px;
     border-radius: 5px;
-    border: 1px solid;
+    border: 1px solid black;
     overflow: auto;
+
+    background: #333339;
 
     > pre
     {
@@ -522,15 +524,25 @@
 
     td.gutter
     {
-      border-right: 1px solid;
+      border-right: 1px solid #666;
     }
+  }
+
+  /* inline code */
+  p code
+  {
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #d06;
+    padding: 2px;
   }
 
   /* all code (inline + figures) */
   pre, code
   {
     font-size: 0.85em;
-    font-family: 'Input Mono Narrow';
+    font-family: 'Input Mono';
   }
 
   /* bulleted lists */
