@@ -23,7 +23,7 @@ permalink: /projects/
   <div class="section-padding archives__container projects">
     {% for post in site.categories.projects %}
       <article class="card" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-        <a class="card__link" href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" itemprop="url">
+        <a href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" itemprop="url">
           <div class="card__img">
             {% if post.image-sm %}
               <figure class="absolute-bg wow" style="background-image: url('/assets/post-img/{{ post.image-sm }}');"></figure>
