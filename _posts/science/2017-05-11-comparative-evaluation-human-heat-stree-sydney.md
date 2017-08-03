@@ -4,6 +4,7 @@ subtitle: Comparative evaluation of human heat stress indices on selected hospit
 layout: post
 category: science
 date: 2017-05-11
+mast: false
 img: thumb-2017-05-11-comparative-evaluation-human-heat-stree-sydney.png
 thumbnail: thumb-2017-05-11-comparative-evaluation-human-heat-stree-sydney.png
 alt: Comparative evaluation of human heat stress indices on selected hospital admissions in Sydney, Australia

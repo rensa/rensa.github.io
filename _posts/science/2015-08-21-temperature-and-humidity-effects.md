@@ -4,6 +4,7 @@ subtitle: Temp and humidity effects on Darwin hospital admissions
 layout: post
 category: science
 date: 2015-08-21
+mast: false
 img: thumb-2015-08-21-temperature-and-humidity-effects.png
 thumbnail: thumb-2015-08-21-temperature-and-humidity-effects.png
 alt: Thumbnail of my writing work

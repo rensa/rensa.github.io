@@ -4,6 +4,7 @@ subtitle: Differential effects of temperature extremes on hospital admission rat
 layout: post
 category: science
 date: 2015-12-01
+mast: false
 img: thumb-2015-12-01-differential-effects-of-temperature.png
 thumbnail: thumb-2015-12-01-differential-effects-of-temperature.png
 alt: Differential effects of temperature extremes on hospital admission rates for respiratory disease between Indigenous and non-Indigenous Australians in the Northern Territory

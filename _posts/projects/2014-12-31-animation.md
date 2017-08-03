@@ -3,6 +3,7 @@ title: Freelance animation
 layout: post
 category: projects
 date: 2014-12-31
+mast: false
 image: thumb-2014-12-31-animation.png
 image-sm: thumb-2014-12-31-animation.png
 alt: image-alt
