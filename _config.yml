@@ -24,7 +24,7 @@ social:
   stack-overflow: http://stackoverflow.com/story/rensa
   flask: https://www.researchgate.net/profile/James_Goldie2
   envelope-o: mailto:me@rensa.co
-
+  rss: http://rensa.co/feed.xml
 
 # Build settings
 include: ["_categories"]
