@@ -26,9 +26,9 @@ layout: default
   </div>
   <div>
     <div class="tab" id="latest">
-      <ul itemscope itemtype="http://schema.org/Blog">
+      <ul itemscope itemtype="https://schema.org/Blog">
         {% for post in site.categories.science limit:1 %}
-          <li class="preview science" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          <li class="preview science" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
             <a class="preview__link" href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" itemprop="url">
                 <h1>LATEST SCIENCE</h1>
               <h2 class="preview__header" itemprop="name">{{ post.title }}</h2>
@@ -38,7 +38,7 @@ layout: default
           </li>
         {% endfor %}
         {% for post in site.categories.projects limit:1 %}
-          <li class="preview projects" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          <li class="preview projects" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
             <a class="preview__link" href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" itemprop="url">
               <h1>LATEST PROJECT</h1>
               <h2 class="preview__header" itemprop="name">{{ post.title }}</h2>
@@ -48,7 +48,7 @@ layout: default
           </li>
         {% endfor %}
         {% for post in site.categories.writing limit:1 %}
-          <li class="preview writing" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          <li class="preview writing" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
             <a class="preview__link" href="{% if post.ext-link %}{{ post.ext-link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" itemprop="url">
               <h1>LATEST WRITING</h1>
               <h2 class="preview__header" itemprop="name">{{ post.title }}</h2>

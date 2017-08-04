@@ -2,13 +2,13 @@
 title: "James Goldie"
 subtitle: "rensa.co"
 email: "me@rensa.co"
-url: http://rensa.co
+url: https://rensa.co
 description: "PhD student (climate change + health). I also code and build things for fun and for social change."
 twitter_username: rensa_co
 
 # paginate: 5
 # paginate_path: "/blog/page-:num"
-google_analytics: googlee53d5dca6b1758f3
+google_analytics: UA-104057153-1
 default_img: assets/me.jpg
 
 # Profile settings
@@ -19,12 +19,12 @@ profile: "PhD student (climate change + health). I also code and build things fo
 social:
   facebook: https://facebook.com/rensa
   twitter: https://twitter.com/rensa_co
-  linkedin: http://au.linkedin.com/in/rensaco
-  github: http://github.com/rensa
-  stack-overflow: http://stackoverflow.com/story/rensa
+  linkedin: https://au.linkedin.com/in/rensaco
+  github: https://github.com/rensa
+  stack-overflow: https://stackoverflow.com/story/rensa
   flask: https://www.researchgate.net/profile/James_Goldie2
   envelope-o: mailto:me@rensa.co
-  rss: http://rensa.co/feed.xml
+  rss: https://rensa.co/feed.xml
 
 # Build settings
 include: ["_categories"]
