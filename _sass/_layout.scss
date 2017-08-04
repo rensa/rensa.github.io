@@ -84,6 +84,25 @@ section {
       @media (min-width: $mq-md) {
         margin-left: 50%;
       }
+
+      // home page footer
+      footer
+      {
+        font-style: italic;
+        
+        font-size: 0.75em;
+        color: $color-black;
+        background: $color-grey;
+        p
+        {
+          padding: 1.5em;
+          margin: 0;
+        }
+        a
+        {
+          color: $color-alpha;
+        }
+      }
     }
   }
 }
