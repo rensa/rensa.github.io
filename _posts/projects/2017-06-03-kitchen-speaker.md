@@ -1,4 +1,5 @@
 ---
+published: false
 title: Kitchen speaker, charger and voice assistant
 layout: post
 category: projects
