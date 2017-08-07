@@ -304,12 +304,15 @@
 
   &__social {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     margin-top: 1em;
     
     /* social icon colours (except in cards) */
     li a
     {
       color: #fff;
+      margin-bottom: 0.75em;
 
       &:hover
       {
@@ -322,8 +325,8 @@
       
     }
 
-    & > *:not(:last-child) {
-      margin-right: 1em;
+    & > *:not(:first-child) {
+      margin-left: 0.75em;
     }    
   }
 }
@@ -585,12 +588,14 @@
     position: relative;
     padding: 1em 1em 0 1em;
     background-color: none;
+    margin-bottom: 1em;
 
     @media (min-width: $mq-md) {
       min-height: 15em;
       padding: 2.5em 1em;
       flex-basis: 35%;
       max-width: 35%;
+      margin-bottom: 0;
     }
 
     &:after {
@@ -600,11 +605,13 @@
     &> figure
     {
       position: static;
-      height: 150px;
-      width: 150px;
+      height: 125px;
+      width: 125px;
+      min-height: 125px;
       margin: auto;
       border-radius: 50%;
       background-color: none;
+
     }
 
     &.home
@@ -613,7 +620,7 @@
         height: 125px;
         width: 125px;
         min-height: 125px;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
         padding: 0;
         &> figure
         {
@@ -641,9 +648,15 @@
   &__social {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 
-    & > *:not(:last-child) {
-      margin-right: 1em;
+    li a
+    {
+      margin-bottom: 0.75em;
+    }
+
+    & > *:not(:first-child) {
+      margin-left: 1em;
     }
   }
 }
