@@ -2,7 +2,7 @@
 title: Leave your research question at the door when you first visualise data
 layout: post
 category: writing
-tags: [data analysis]
+tags: [data analysis, rstats]
 date: 2017-08-22
 image-sm: thumb-2017-08-22-viz-data-without-research-question.jpg
 image: 2017-08-22-viz-data-without-research-question.jpg
