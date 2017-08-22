@@ -1,5 +1,5 @@
 ---
-title: Leave your research question at the door when you visualise data
+title: Leave your research question at the door when you first visualise data
 layout: post
 category: writing
 tags: [data analysis]
