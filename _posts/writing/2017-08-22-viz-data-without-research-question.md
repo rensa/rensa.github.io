@@ -75,7 +75,7 @@ library(viridis)
 # murray 1967 (doi: 10.1175/1520-0450(1967)006<0203:OTCOSV>2.0.CO;2)
 claus.clap = function(T)
 {
-	return (6.1078 * exp((17.2693882 * T) / (T + 237.3)))
+  return (6.1078 * exp((17.2693882 * T) / (T + 237.3)))
 }
 
 # build that plot!
