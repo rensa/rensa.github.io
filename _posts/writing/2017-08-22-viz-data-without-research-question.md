@@ -8,11 +8,11 @@ image-sm: thumb-2017-08-22-viz-data-without-research-question.jpg
 image: 2017-08-22-viz-data-without-research-question.jpg
 alt: Leave your research question at the door when you first visualise data
 project-date: Aug 2017
-description: One tough lesson that I've had to learn over and over (and continue to be reminded of) in my PhD is the importance of a disciplined data science pipeline.
+description: One tough lesson that I've had to learn over and over in my PhD is the importance of a disciplined data science pipeline.
 ---
-The Hadley view of such a pipeline [looks like this](http://r4ds.had.co.nz/introduction.html):
+The Hadley view of data science [looks like this](http://r4ds.had.co.nz/introduction.html):
 
-![Hadley data science pipeline: import, tidy, (transform, visualise, model), communicate](http://r4ds.had.co.nz/diagrams/data-science.png)
+[![Hadley data science pipeline: import, tidy, (transform, visualise, model), communicate](http://r4ds.had.co.nz/diagrams/data-science.png)](http://r4ds.had.co.nz/introduction.html)
 
 The approach I took in my honours and for like half of my PhD was more like:
 
