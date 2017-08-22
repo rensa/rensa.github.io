@@ -60,3 +60,5 @@ And the corresponding plot of temperature and humidity also looks clearer:
 I wouldn't have caught this if I'd gone straight for the research question goal. In fact, if I'd gone to exploratory data visualisation as soon as my data was tidy, I probably would've saved myself a lot of time.
 
 Now, as I do the last parts of my PhD analysis, I try to make sure that my scripts clearly follow a standard analysis pipeline. That isn't always possible, but thinking about the pipeline when I get started on a research question means that I'm getting a lot more science done in my last year.
+
+_Image credit: [kris kruüg](https://www.flickr.com/photos/kk/9243272454/)_
