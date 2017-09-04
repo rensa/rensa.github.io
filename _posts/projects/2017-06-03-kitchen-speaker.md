@@ -94,15 +94,29 @@ button = Button(2)
 
 Then `button.is_pressed` returns `True` or `False` depending on the state of the button. For a switch, that's when it's in the active position; for a momentary button, it's when it's held down. (I didn't have one of those to test). Seems to work fine! I also have an illuminated rocker, but I couldn't get figure out how to light it up 😞 I'll get some regular LEDs and resistors to test separately. But anyway, the GPIO pins all work, which is the important thing.
 
-### 9. Hook the amp up to the Pi (via the audio filter)
+### 9. Hook the amp up to the Pi
 
-Next up, we're gonna hook the amp and audio filter up to the Pi. This is, apparently, [an involved process](https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio), but I used the first DTO described in Option 1 to make it a lot easier. You just append `dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4` to `/boot/config.txt`, reboot, then plug GPIO pins 18 and 13 into the right and left channels of the filter, respectively. Then plug the ends of the filter into the amp's input channels, hook the amp up the speakers, plug it into the power, flip the switch, and—
+Next up, we're gonna hook the amp and audio filter up to the Pi. I'm gonna present two ways to do this. The first way, which I did originally, is to send audio out to the amp through the GPIO pins via an audio filter. The second, which I switch to later, is to hook a USB sound card up to the Pi and send audio to the amp from there via a 3.5 mm connection.
+
+The advantage with the former method is less USB periperhals. However, one issue I ran into is that the Pi Zero W (and the Pi 3) can't (reliably) use their onboard Wifi and Bluetooth simultaneously—they interfere with each other. If you're just making a Bluetooth speaker, that isn't a big problem: you only need Wifi to SSH in (and you can hook up a USB Ethernet adapter if you're desperate). But if you want to add other stuff, like a microphone or a Wifi dongle, then you need a hub for the Zero's single USB port... and at that point, the gains start to look a little silly (though doing it this way helped me learn basic breadboarding).
+
+So I recommend the second method. Cheap USB sound cards like [this one](https://core-electronics.com.au/usb-audio-adapter-works-with-raspberry-pi.html) are basically plug and play, and they have an analogue mic port too. Combine it with small hub like [this one](https://core-electronics.com.au/usb-mini-hub-with-power-switch-otg-micro-usb.html) and you can probably run a Wifi dongle too without too many problems (though I haven't tested it yet).
+
+Anyway, I leave both methods, and the choice, to you.
+
+#### 9A: send audio to the amp via GPIO
+
+This is, apparently, [an involved process](https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio), but I used the first DTO described in Option 1 to make it a lot easier. You just append `dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4` to `/boot/config.txt`, reboot, then plug GPIO pins 18 and 13 into the right and left channels of the filter, respectively. Then plug the ends of the filter into the amp's input channels, hook the amp up the speakers, plug it into the power, flip the switch, and—
 
 _**BWAAAAAAH.**_
 
 Crap. Okay, I'm gonna hope for the best and take a punt that this is because I didn't wire the I2C pins up to the Pi, rather than because of a bad connection or sth. This requires four additional wires from the Pi's GPIO pins to the amp header, as outlined in [this Python support library's README](https://github.com/adafruit/Adafruit_Python_MAX9744). Let's flick the switch again and hope for the best.
 
 Silence! And, better, when I tested an example sound on the Pi using `omxxplayer example.mp3` (sidenote: omxplayer had to be installed from source, but I'll skip that since I only used it for testing), it came out nice and clear. There was a bit of crackle when I bump the connections, but otherwise it sounded fine. Phew.
+
+#### 9B: send audio to the amp via a USB sound card
+
+TKTKTKTK
 
 ### 10. Test the I2C volume control
 
@@ -112,15 +126,17 @@ The test ran fine, but I couldn't verify that it worked because it doesn't play 
 
 ### 10. Turn the Pi into a Bluetooth audio receiver
 
-Okay, time to get to the meat of it. I've forked someone else's instructions and scripts for this part (and they've forked it, and...), so you can follow along [here](https://github.com/rensa/bearspeaker/). The main deviations for me were:
+Okay, time to get to the meat of it. I had a bunch of problems trying to get Bluetooth audio going with pulseaudio myself, so in the end I turned to [someone else's solution](https://github.com/lukasjapan/bt-speaker). With one-liner (okay, two) installation, it works pretty much perfectly and automatically.
 
-- to skip setting up USB audio (since we're not using it) and to ammend `/etc/bluetooth/main.conf` instead of `/etc/bluetooth/audio.conf`, due to changes in Raspbian over the years (just with the `Name` and `Class` lines, not the `Enable` one);
-- to add `connect [mac address]` after `trust [mac address]` when manually connecting, since the connection didn't seem to happen otherwise (or actually, maybe I just forgot to hit Connect on my phone after pairing 😅); and
-- rather than `/etc/udev/rules.d/99-input.rules`, I added the a2dp-autoconnect script to `/etc/udev/rules.d/99-com.rules`. Also, because I cloned into home, the line is changed to: `KERNEL=="input[0-9]*", RUN+="/home/pi/bearspeaker/a2dp-autoconnect"`.
+However, this solution ties the volume control on your phone (or whatever is connected to the speaker) to the Pi's volume. I don't want that: I want the Pi's volume fixed at about 80%, and I want the phone's volume controls to work with the amp's volume. I'm working on a forked version that'll do exactly that.
 
-But otherwise, it mostly worked! My phone connects and plays stuff, and the phone's volume changes the output volume (though I suspect that it's changing the Pi volume, not the amp volume—I might have to change the change the script for that).
+You'll notice one other big thing: Raspberry Pis that have integrated Wi-fi and Bluetooth all appear to have them on the same bus, and using both at the same time (eg. playing Bluetooth audio while SSHing in over Wifi) leads to choppy audio.
 
-There is one big problem, though: the Raspberry Pis that all have integrated Wi-fi and Bluetooth all have them on the same chip, and using both at the same time (eg. playing Bluetooth audio while SSHing in over Wifi) leads to choppy audio. I could just turn off the Wi-fi interface when everything's setup, since (ideally) I won't need Wifi unless I add a voice assistant in. But I'd like to—and besides, chances are _something_ will go wrong down the road. I don't wanna have to SSH in with a pair of USB Ethernet adapters.
+There're a few ways to get 'round this, but I chose to plug an external Wifi dongle in (a TP-Link TL-WDN3200). I'll need a hub if I ever decide to add a mic, and without one I can't hotplug the Wifi dongle (doing so reboots the Pi due to a current overload). But hey: it works. Adding `dtoverlay=pi3-disable-wifi` to `/boot/config.txt` [disables the onboard Wifi](https://github.com/raspberrypi/firmware/blob/master/boot/overlays/README), preventing the choppy audio.
+
+
+
+<!-- 
 
 So that means that I need either a USB Wifi dongle or a USB Bluetooth dongle (and if I add a mic, I'll need a hub... I may just have the Pi's USB port run to the outside of the case when I put this in a box) to fix the choppy audio.
 
@@ -128,7 +144,7 @@ So I'll probably stop here until I can buy (a) some momentary push buttons with 
 
 - I'll look at what needs to change with the `a2dp-autoconnect` script to have it play nice with the I2C volume controls.
 - Then we need to get the Pi and the Qi charger running off the amp's 12V out. I have a cigarette lighter that can do that, but it needs a sockt because I don't fancy trying to stick jumper leads onto its terminals.
-- Once I've verified that everything runs off one power source, we can start talking about a box. I basically failed Year 7 woodworking, so that'll be interesting 😂
+- Once I've verified that everything runs off one power source, we can start talking about a box. I basically failed Year 7 woodworking, so that'll be interesting 😂 -->
 
 
 
