@@ -5,8 +5,8 @@ category: writing
 tags: [technical, webdev, jekyll]
 date: 2017-08-22
 mast: false
-image-sm: thumb-2017-09-21-jekyll-for-academics-publication-list.jpg
-image: 2017-09-21-jekyll-for-academics-publication-list.jpg
+image: thumb-2017-09-21-jekyll-for-academics-publication-list.png
+image-sm: thumb-2017-09-21-jekyll-for-academics-publication-list.png
 alt: "Jekyll for academics: add a publication list"
 project-date: Sep 2017
 description: Making a personal website for a researcher? They'll probably want their publications on it.
@@ -15,7 +15,7 @@ Publication lists are a big part of your academic CV, and if you’re a research
 
 But if you’re looking for something a little more configurable and almost as easy, you can set one up yourself! Once it’s set up, you can add entries to it by adding blog posts (which can have content of their own or be empty). My version looks like this:
 
-{% include figure.html url='/assets/science/jekyll-publist.png' %}
+{% include figure.html url='/assets/post-img/thumb-2017-09-21-jekyll-for-academics-publication-list.png' %}
 
 The key is custom front matter. Jekyll posts (and other pages) have a block at the start specifying metadata like title and date:
 
@@ -47,7 +47,7 @@ ref-doi: 10.1017/j.mai.2015.08.009
 ---
 {% endhighlight %}
 
-The second set of tags are all made up. They don't _do_ anything, on their own, but Jekyll will recognise them when it builds the site. That makes them available if I reference posts elsewhere—like on a post archive page.
+The second set of tags are all made up. They don't _do_ anything on their own, but Jekyll will recognise them when it builds the site. That makes them available if I reference posts elsewhere—like on a post archive page.
 
 So, for example, my [science page](/science) contains a section for my publications. It looks like this:
 
