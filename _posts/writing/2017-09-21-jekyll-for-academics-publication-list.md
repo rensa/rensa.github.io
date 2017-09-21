@@ -3,7 +3,7 @@ title: "Jekyll for academics: add a publication list"
 layout: post
 category: writing
 tags: [technical, webdev, jekyll]
-date: 2017-08-22
+date: 2017-09-21
 mast: false
 image: thumb-2017-09-21-jekyll-for-academics-publication-list.png
 image-sm: thumb-2017-09-21-jekyll-for-academics-publication-list.png
