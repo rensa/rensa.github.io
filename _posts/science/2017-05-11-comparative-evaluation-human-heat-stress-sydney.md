@@ -5,16 +5,17 @@ layout: post
 category: science
 date: 2017-05-11
 mast: false
-img: thumb-2017-05-11-comparative-evaluation-human-heat-stree-sydney.png
-thumbnail: thumb-2017-05-11-comparative-evaluation-human-heat-stree-sydney.png
+img: thumb-2017-05-11-comparative-evaluation-human-heat-stress-sydney.png
+thumbnail: thumb-2017-05-11-comparative-evaluation-human-heat-stress-sydney.png
 alt: Comparative evaluation of human heat stress indices on selected hospital admissions in Sydney, Australia
-project-date: May 2017
+project-date: July 2017
 work-type: Paper
 ref-authors: Goldie J, Alexander L, Lewis S C & Sherwood S
 ref-year: 2017
 ref-title: Comparative evaluation of human heat stress indices on selected hospital admissions in Sydney, Australia
 ref-journal: Australian and New Zealand Journal of Public Health
+ref-vol: 41(4):381-387
 ref-doi: 10.1111/1753-6405.12692
 ---
 
-This article has been accepted by the _Australian and New Zealand Journal of Public Health_ but has not yet been published.
+This article has been published in the [_Australian and New Zealand Journal of Public Health_](http://10.1111/1753-6405.12692).
