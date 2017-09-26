@@ -19,8 +19,8 @@ var Tabs = (function() {
           tab.style.display = 'none';
         });
         
-        /* james's mod: bio and papers tabs (0, 1) use block display,
-           conferences (2) uses flex. papers pops up be default. */
+        /* james's mod: papers tabs (0) use block display,
+           conferences (1) uses flex. papers pops up be default. */
         s.tab[0].style.display = 'block';
         s.tab[0].classList.add('active');
         s.tabs[0].classList.add('active');
@@ -42,14 +42,14 @@ var Tabs = (function() {
               s.tab[prevIdx].classList.remove('active');
               s.tabs[prevIdx].classList.remove('active');
               
-              /* james's mod: bio and papers tab (0, 1) use block display,
-                 conferences (2) uses flex. set according to tab index */
+              /* james's mod: bio and papers tab (0) use block display,
+                 conferences (1) uses flex. set according to tab index */
               console.log(currentIdx);
-              if (currentIdx == 0 || currentIdx == 1)
+              if (currentIdx == 0)
               {
                 s.tab[currentIdx].style.display = 'block';  
               }
-              else if (currentIdx == 2)
+              else if (currentIdx == 1)
               {
                 s.tab[currentIdx].style.display = 'flex';
               }

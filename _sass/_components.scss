@@ -736,8 +736,14 @@
   }
 }
 
+.science_intro
+{
+  padding: 1em;
+}
+
 /* papers: archive tabs for papers. no flex grid, just some padding */
-.papers {
+.papers
+{
     max-width: $mq-md;
     margin: 0 auto;
     padding-left: 1em;
