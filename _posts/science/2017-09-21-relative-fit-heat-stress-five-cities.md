@@ -15,7 +15,7 @@ ref-year: In press
 ref-title: Changes in relative fit of human heat stress indices to cardiovascular, respiratory and renal hospitalizations across five Australian urban populations
 ref-journal: International Journal of Biometeorology
 # ref-vol: 81(3):333-341
-# ref-doi: 
+ref-doi: 10.1007/s00484-017-1451-9
 ---
 
 This article has been accepted by the _International Journal of Biometeorology_ but has not yet been published.
