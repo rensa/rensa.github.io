@@ -5,8 +5,8 @@ layout: post
 category: science
 date: 2015-08-21
 mast: false
-img: thumb-2015-08-21-temperature-and-humidity-effects.png
-thumbnail: thumb-2015-08-21-temperature-and-humidity-effects.png
+image: thumb-2015-08-21-temperature-and-humidity-effects.png
+image-sm: thumb-2015-08-21-temperature-and-humidity-effects.png
 alt: Thumbnail of my writing work
 project-date: Aug 2015
 work-type: Paper

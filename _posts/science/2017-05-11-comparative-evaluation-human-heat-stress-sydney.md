@@ -5,8 +5,8 @@ layout: post
 category: science
 date: 2017-05-11
 mast: false
-img: thumb-2017-05-11-comparative-evaluation-human-heat-stress-sydney.png
-thumbnail: thumb-2017-05-11-comparative-evaluation-human-heat-stress-sydney.png
+image: thumb-2017-05-11-comparative-evaluation-human-heat-stress-sydney.png
+image-sm: thumb-2017-05-11-comparative-evaluation-human-heat-stress-sydney.png
 alt: Comparative evaluation of human heat stress indices on selected hospital admissions in Sydney, Australia
 project-date: July 2017
 work-type: Paper
