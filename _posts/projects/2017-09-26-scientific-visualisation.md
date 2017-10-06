@@ -1,16 +1,17 @@
 ---
-title: Freelance animation
+published: false
+title: Scientific visualisation
 layout: post
 category: projects
-work-type: Other
+work-type: Data Vis
 tags: [video]
-date: 2014-12-31
+date: 2017-09-26
 mast: false
-image: thumb-2014-12-31-animation.png
-image-sm: thumb-2014-12-31-animation.png
+image: thumb-2017-09-26-scientific-visualisation.png
+image-sm: thumb-2017-09-26-scientific-visualisation.png
 alt: image-alt
-project-date: 2010&mdash;2014
-description: I used to be a freelance animator!
+project-date: 2014–2017
+description: I visualise scientific results using video and the web.
 ---
 I used to be a freelance animator! I made ads for small businesses and entered ([and won](https://www.youtube.com/watch?v=V9twu1h7vxY&list=PLAU1kotoDhrwmKwfvTssxmI7mHg485GhN)!) video competitions. I'm channeling my creative energies into other projects outside business hours these days, but I still put these skills to use [explaining science](https://www.youtube.com/watch?v=_YZxqRM97eo) on occasion.
 

@@ -2,6 +2,7 @@
 title: Global Game Jam 2016 (Raceline)
 layout: post
 category: projects
+work-type: App
 date: 2016-02-02
 tags: [js, gamedev, web app]
 image-sm: thumb-2016-02-02-global-game-jam-2016.png

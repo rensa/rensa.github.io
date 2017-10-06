@@ -2,6 +2,7 @@
 title: CCRC Weather Station
 layout: post
 category: projects
+work-type: DIY
 date: 2015-09-21
 tags: [raspberry pi, ffmpeg, shell, diy]
 image-sm: thumb-2015-09-21-ccrc-weather-station.jpg
