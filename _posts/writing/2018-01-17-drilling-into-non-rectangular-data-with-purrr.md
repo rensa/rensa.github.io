@@ -329,7 +329,11 @@ The important thing to keep track of all these pipes is that the pipe operator `
 
 So now we have a totally automated way to bring together the interesting observations from all stations of interest across a number of files. In fact, we _did_ automate it: for [Is It Hot Right Now](https://isithotrightnow.com), we schedule R to run a script with this pipe in it every half hour.
 
+## Next stop
+
 One of the best things about `map` is its flexibility: you can use this approach to deal with just about any structured data in R, whether it's complex objects like regression models, data structures you've built yourself or files brought in using other packages.
+
+If you're looking for more detail, I—like many others—recommend [Jenny Bryan's incomparable purrr tutorial](https://jennybc.github.io/purrr-tutorial/index.html). It covers a lot of the other sophisticated ways you can use purrr. One particular use case from her tutorial that I didn't cover is roundtripping a data frame list column with `map` inside a `mutate` verb, the way you would other a regular data frame column verbs. That's mostly because I've only done it once and I still only 80% understand it 😅
 
 Think I could've done this better? Got a question? [Let me know](https://twitter.com/rensa_co)!
 
