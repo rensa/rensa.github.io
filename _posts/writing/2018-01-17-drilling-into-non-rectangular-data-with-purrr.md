@@ -9,7 +9,7 @@ image: 2018-01-17-drilling-into-non-rectangular-data-with-purrr.jpg
 image-sm: thumb-2018-01-17-drilling-into-non-rectangular-data-with-purrr.jpg
 alt: "Drilling into non-rectangular data with purrr"
 project-date: Jan 2018
-description: Purrr and pipes go a long way.
+description: Use purrr and nested pipes to get to the juicy parts of XML, HTML, JSON and other kinds of files.
 ---
 My PhD is in climate science, and climate data is usually rectangular—or some higher-dimensional analogue of rectangular, anyway. (Blocky?) And since rectangular data is R's bread and butter, I've had a pretty good time of things up until now.
 
