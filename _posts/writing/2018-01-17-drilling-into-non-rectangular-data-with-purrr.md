@@ -77,7 +77,7 @@ str(stations)
 #   ..- attr(*, "names")= chr [1:3] "id" "name" "label"
 {% endhighlight %}
 
-_**UPDATE: [Maëlle Salmon](https://twitter.com/ma_salmon) pointed me to the excellent [`jsonlite` package](https://cran.r-project.org/web/packages/jsonlite/index.html), which works the same way as RJSONIO but can also process JSON arrays and data frame-like structures into native R vectors and data frames. It could save you a lot of time for simple files!_
+_**UPDATE:** [Maëlle Salmon](https://twitter.com/ma_salmon) pointed me to the excellent [`jsonlite` package](https://cran.r-project.org/web/packages/jsonlite/index.html), which works the same way as RJSONIO but can also process JSON arrays and data frame-like structures into native R vectors and data frames. It could save you a lot of time for simple files!_
 
 So this is a list of lists. We can look at one of the outer list elements (a single station) and see that it's a list with a bunch of named elements inside. We can get an element out:
 
