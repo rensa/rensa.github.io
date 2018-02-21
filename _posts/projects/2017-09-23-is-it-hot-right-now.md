@@ -1,23 +1,18 @@
 ---
-published: false
 title: Is It Hot Right Now?
 layout: post
 category: projects
 work-type: App
-tags: [js, rstats, shiny, web app, climate, weather]
+tags: [js, rstats, web app, climate, weather]
 date: 2017-09-23
 alt: Is It Hot Right Now?
-image-sm: thumb-2017-09-23-is-it-hot-right-now.jpeg
+image-sm: thumb-2017-09-23-is-it-hot-right-now.png
 
 ext-link: https://isithotrightnow.com
 description: 
 ---
-Does what it says on the tin: is it hot (in Sydney) right now? Built by Mat Lipson, Steefan Contractor and me over a few weekend, this web app compares today's temperature in Sydney to 150 years of observations and give you an idea of just how unsuaully hot it is.
+Does what it says on the tin: Is It Hot Right Now?
 
-We have a few priorities for expansion:
-
-- Expanding to more locations,
-- Better explaining a station's history, including hardware and location changes, and
-- Visualisaing the role of climate change.
+Mat Lipson, Steefan Contractor and I cobbled the basic concept for this over a few weekend in late 2017. Since our first proof of concept with the Sydney Observatory Hill weather station, we've expanded to 9 locations, analysing decades of historical weather data to tell you whether it's unusually hot.
 
 Find it at [isithotrightnow.com](https://isithotrightnow.com).
