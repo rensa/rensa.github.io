@@ -1,6 +1,6 @@
 ---
 title: Australian climate extremes in the 21st century...
-subtitle: "Australian climate extremes in the 21st century according to a regional climate model ensemble: implications for health and agriculture."
+subtitle: "Australian climate extremes in the 21st century according to a regional climate model ensemble: implications for health and agriculture"
 layout: post
 category: science
 date: 2018-04-10
