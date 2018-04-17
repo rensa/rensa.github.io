@@ -3,7 +3,7 @@ title: Findus.space
 layout: post
 category: projects
 work-type: App
-tags: [js, web app, govhack, hackathon]
+tags: [rstats, js, web app, govhack, hackathon]
 date: 2017-07-30
 alt: Findus.space
 image-sm: thumb-2017-07-30-findus-space.png

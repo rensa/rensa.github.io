@@ -2,7 +2,7 @@
 title: unswthesisdown
 layout: post
 category: projects
-work-type: Open Source
+work-type: Packages
 tags: [rstats, thesis, packages]
 date: 2017-07-09
 mast: false
