@@ -5,9 +5,9 @@ category: projects
 work-type: App
 tags: [js, rstats, web app, climate, weather]
 date: 2017-09-23
+mast: false
 alt: Is It Hot Right Now?
 image-sm: thumb-2017-09-23-is-it-hot-right-now.png
-
 ext-link: https://isithotrightnow.com
 description: 
 ---
