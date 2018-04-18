@@ -513,7 +513,8 @@
   figure.highlight
   {
     padding-bottom: 0;
-    margin-bottom: 25px;
+    margin: 0 auto 25px auto;
+    max-width: 55ch;
     border-radius: 5px;
     border: 1px solid black;
     overflow: auto;
@@ -523,34 +524,31 @@
     > pre
     {
       margin: 0;
+      text-shadow: 1px 1px 1px #111;
     }
 
     td.gutter
     {
       border-right: 1px solid #666;
+      color: #777;
     }
   }
 
   /* inline code */
-  p code
+  p code, ul code, ol code 
   {
     background: #eee;
     border: 1px solid #ddd;
     border-radius: 2px;
     color: #d06;
     padding: 2px;
-    text-shadow: 1px 1px 1px #999;
   }
 
-  /* all code (inline + figures) */
+  /* all code (inline + blocks) */
   pre, code
   {
     font-size: 0.85em;
     font-family: 'Fira Mono';
-  }
-
-  code {
-    text-shadow: 1px 1px 1px #111;
   }
 
   /* bulleted lists */
