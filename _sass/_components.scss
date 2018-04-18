@@ -539,6 +539,7 @@
     border-radius: 2px;
     color: #d06;
     padding: 2px;
+    text-shadow: 1px 1px 1px #999;
   }
 
   /* all code (inline + figures) */
@@ -546,6 +547,10 @@
   {
     font-size: 0.85em;
     font-family: 'Fira Mono';
+  }
+
+  code {
+    text-shadow: 1px 1px 1px #111;
   }
 
   /* bulleted lists */
