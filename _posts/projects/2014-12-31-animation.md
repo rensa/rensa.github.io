@@ -3,7 +3,7 @@ title: Freelance animation
 layout: post
 category: projects
 work-type: Other
-tags: [video]
+tags: [video, dataviz]
 date: 2014-12-31
 mast: false
 image: thumb-2014-12-31-animation.png
