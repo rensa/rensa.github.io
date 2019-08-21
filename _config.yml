@@ -3,7 +3,7 @@ title: "James Goldie"
 subtitle: "rensa.co"
 email: "me@rensa.co"
 url: https://rensa.co
-description: "PhD student (climate change + health). I also code and build things for fun and for social change."
+description: "Knowledge Broker and climate change + health researcher. I build things for fun and for social change."
 twitter_username: rensa_co
 
 # paginate: 5
@@ -14,7 +14,7 @@ default_img: assets/me.jpg
 # Profile settings
 name: James Goldie
 profile_img: assets/me.jpg
-profile: "PhD student (climate change + health). I also code and build things for fun and for social change."
+profile: "I build things for fun and for social change."
 
 social:
   facebook: https://facebook.com/rensa
@@ -23,7 +23,6 @@ social:
   github: https://github.com/rensa
   stack-overflow: https://stackoverflow.com/story/rensa
   flask: https://www.researchgate.net/profile/James_Goldie2
-  font: https://unsw.academia.edu/JamesGoldie
   envelope-o: mailto:me@rensa.co
   key: https://keybase.io/rensa
   rss: https://rensa.co/feed.xml

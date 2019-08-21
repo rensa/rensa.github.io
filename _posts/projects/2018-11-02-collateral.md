@@ -8,6 +8,7 @@ date: 2018-11-02
 mast: false
 image-sm: thumb-2018-11-02-collateral
 alt: collateral
+ext-link: https://rensa.co/collateral
 project-date: Nov 2018
 description: Automatically map complex operations safely or quietly, and quickly see the captured side effects.
 ---
