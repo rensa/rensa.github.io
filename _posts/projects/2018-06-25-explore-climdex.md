@@ -8,7 +8,7 @@ date: 2018-06-25
 mast: false
 image-sm: thumb-2018-06-25-explore-climdex.png
 image: 2018-06-25-explore-climdex.png
-ext-link: https://exploreclimdexnetlify.com
+ext-link: https://exploreclimdex.netlify.com
 alt: Explore Climdex
 project-date: Jun 2018
 description: Explore observed climate extremes, and learn about the research into them.
